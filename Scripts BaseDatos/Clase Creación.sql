@@ -1,0 +1,5 @@
+CREATE TABLE clase ( 
+id_clase INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+ nombre_clase VARCHAR(128) NOT NULL, 
+descripcion_clase VARCHAR(1280) NOT NULL
+ );
