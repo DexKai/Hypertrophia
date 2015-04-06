@@ -16,6 +16,12 @@ $this->title = 'My Yii Application';
 
         <div class="row">
             <div class="col-lg-4">
+
+
+
+
+
+
                 <h2>Heading</h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -25,6 +31,8 @@ $this->title = 'My Yii Application';
 
                 <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
             </div>
+
+
             <div class="col-lg-4">
                 <h2>Heading</h2>
 
