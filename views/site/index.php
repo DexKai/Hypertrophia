@@ -17,8 +17,8 @@ $this->title = 'My Yii Application';
             <div class='item active'>
                 <img src='images/slide-1.jpg' alt='imagen-1' />
             <div class='carousel-caption'>
-            <h1> Caption title</h1>
-            <p>Hola :D</p>
+            <h4> Caption title</h4>
+            <p>Descripcion</p>
             </div>
             
             <div class='item'>
@@ -39,10 +39,13 @@ $this->title = 'My Yii Application';
         
     
     </div>
+    </div>
 
 <hr>
 
+</div>
 
+</div>
 
 
 <div class="site-index">
