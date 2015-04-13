@@ -39,6 +39,10 @@ AppAsset::register($this);
                     ['label' => '¿Quienes Somos?', 'url' => ['/site/about']],
                     ['label' => 'Contact', 'url' => ['/site/contact']],
                     ['label' => 'Clases', 'url' => ['/clase/index']],
+                    ['label' => 'Horarios', 'url' => ['/horario/index']],
+                    ['label' => 'Sueldos', 'url' => ['/sueldo/index']],
+                    ['label' => 'Profesores', 'url' => ['/profesor/index']],
+                    ['label' => 'Tipo de profesores', 'url' => ['/tipo-profesor/index']],
                     Yii::$app->user->isGuest ?
 
                         ['label' => 'Conectar', 'url' => ['/site/login']] :
