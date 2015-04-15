@@ -16,27 +16,33 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'PRO_id')->textInput() ?>
 
-    <?= $form->field($model, 'IM_cardiacas')->textInput(['maxlength' => 10]) ?>
+    <?php echo $form->field($model, 'IM_cardiacas[]')->dropDownList(['a' => '-', 'b' => 'Si', 'c' => 'No']); ?>
 
     <?= $form->field($model, 'IM_cardicas_detalle')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'IM_alergias')->textInput(['maxlength' => 10]) ?>
+  
+    <?php echo $form->field($model, 'IM_alergias[]')->dropDownList(['a' => '-', 'b' => 'Si', 'c' => 'No']); ?>
 
     <?= $form->field($model, 'IM_alergia_detalle')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'IM_osea')->textInput(['maxlength' => 10]) ?>
+    
+    <?php echo $form->field($model, 'IM_osea[]')->dropDownList(['a' => '-', 'b' => 'Si', 'c' => 'No']); ?>
 
     <?= $form->field($model, 'IM_osea_detalle')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'IM_muscular')->textInput(['maxlength' => 10]) ?>
+  
+    <?php echo $form->field($model, 'IM_muscular[]')->dropDownList(['a' => '-', 'b' => 'Si', 'c' => 'No']); ?>
 
     <?= $form->field($model, 'IM_muscualr_detalle')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'IM_asfixia')->textInput(['maxlength' => 10]) ?>
 
-    <?= $form->field($model, 'IM_embarazada')->textInput(['maxlength' => 10]) ?>
+    <?php echo $form->field($model, 'IM_asfixia[]')->dropDownList(['a' => '-', 'b' => 'Si', 'c' => 'No']); ?>
 
-    <?= $form->field($model, 'IM_anemia')->textInput(['maxlength' => 10]) ?>
+    
+    <?php echo $form->field($model, 'IM_embarazada[]')->dropDownList(['a' => '-', 'b' => 'Si', 'c' => 'No']); ?>
+
+    
+    <?php echo $form->field($model, 'IM_anemia[]')->dropDownList(['a' => '-', 'b' => 'Si', 'c' => 'No']); ?>
 
     <?= $form->field($model, 'IM_medicamentos')->textarea(['rows' => 6]) ?>
 
