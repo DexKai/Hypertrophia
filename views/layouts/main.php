@@ -43,6 +43,7 @@ AppAsset::register($this);
                     ['label' => 'Sueldos', 'url' => ['/sueldo/index']],
                     ['label' => 'Profesores', 'url' => ['/profesor/index']],
                     ['label' => 'Tipo de profesores', 'url' => ['/tipo-profesor/index']],
+                    ['label' => 'Informes medicos', 'url' => ['/informe-medico/index']],
                     Yii::$app->user->isGuest ?
 
                         ['label' => 'Conectar', 'url' => ['/site/login']] :
