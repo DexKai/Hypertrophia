@@ -17,6 +17,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'SUE_id') ?>
 
+    <?= $form->field($model, 'PRO_id') ?>
+
     <?= $form->field($model, 'SUE_sueldo') ?>
 
     <div class="form-group">

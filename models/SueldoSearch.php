@@ -18,7 +18,7 @@ class SueldoSearch extends Sueldo
     public function rules()
     {
         return [
-            [['SUE_id', 'SUE_sueldo'], 'integer'],
+            [['SUE_id', 'PRO_id', 'SUE_sueldo'], 'integer'],
         ];
     }
 
@@ -56,6 +56,7 @@ class SueldoSearch extends Sueldo
 
         $query->andFilterWhere([
             'SUE_id' => $this->SUE_id,
+            'PRO_id' => $this->PRO_id,
             'SUE_sueldo' => $this->SUE_sueldo,
         ]);
 
