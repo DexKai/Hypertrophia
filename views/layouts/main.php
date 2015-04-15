@@ -64,7 +64,7 @@ AppAsset::register($this);
 
     <footer class="footer">
         <div class="container">
-            <p class="pull-left">&copy; TISW_GRUPO2 IECI-2015 <?= date('Y') ?></p>
+            <p class="pull-left">&copy; TISW_GRUPO2 IECI <?= date('Y') ?></p>
             <p class="pull-right"><?= Yii::powered() ?></p>
         </div>
     </footer>
