@@ -47,7 +47,7 @@ create table CLASE
 create table DISCIPLINA
 (
    DIS_ID               int not null auto_increment,
-   DIS_NOMBRE           char(256),
+   DIS_NOMBRE           varchar(256),
    DIS_DESCRIPCION      text,
    primary key (DIS_ID)
 );
@@ -159,13 +159,13 @@ create table SOCIO
    PROG_ID              int,
    IM_ID                int,
    PA_ID_PAGO           int,
-   SO_RUT               char(256),
-   SO_NOMBRE            char(256),
-   SO_APELLIDO_MATERNO  char(256),
-   SO_APELLIDO_PATERNO  char(256),
-   SO_EMAIL             char(256),
-   SO_DIRECCION         char(256),
-   SO_ESTADO_ACTIVIDAD  char(256),
+   SO_RUT               varchar(256),
+   SO_NOMBRE            varchar(256),
+   SO_APELLIDO_MATERNO  varchar(256),
+   SO_APELLIDO_PATERNO  varchar(256),
+   SO_EMAIL             varchar(256),
+   SO_DIRECCION         varchar(256),
+   SO_ESTADO_ACTIVIDAD  varchar(256),
    primary key (SO_ID_SOCIO)
 );
 
