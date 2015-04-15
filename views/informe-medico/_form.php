@@ -16,21 +16,27 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'PRO_id')->textInput() ?>
 
-    <?= $form->field($model, 'IM_cardiacas')->textInput() ?>
+    <?= $form->field($model, 'IM_cardiacas')->textInput(['maxlength' => 10]) ?>
 
-    <?= $form->field($model, 'IM_alergias')->textInput() ?>
+    <?= $form->field($model, 'IM_cardicas_detalle')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'IM_osea')->textInput() ?>
+    <?= $form->field($model, 'IM_alergias')->textInput(['maxlength' => 10]) ?>
 
-    <?= $form->field($model, 'IM_muscular')->textInput() ?>
+    <?= $form->field($model, 'IM_alergia_detalle')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'IM_asfixia')->textInput() ?>
+    <?= $form->field($model, 'IM_osea')->textInput(['maxlength' => 10]) ?>
 
-    <?= $form->field($model, 'IM_embarazada')->textInput() ?>
+    <?= $form->field($model, 'IM_osea_detalle')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'IM_anemia')->textInput() ?>
+    <?= $form->field($model, 'IM_muscular')->textInput(['maxlength' => 10]) ?>
 
-    <?= $form->field($model, 'IM_alergia')->textInput() ?>
+    <?= $form->field($model, 'IM_muscualr_detalle')->textarea(['rows' => 6]) ?>
+
+    <?= $form->field($model, 'IM_asfixia')->textInput(['maxlength' => 10]) ?>
+
+    <?= $form->field($model, 'IM_embarazada')->textInput(['maxlength' => 10]) ?>
+
+    <?= $form->field($model, 'IM_anemia')->textInput(['maxlength' => 10]) ?>
 
     <?= $form->field($model, 'IM_medicamentos')->textarea(['rows' => 6]) ?>
 

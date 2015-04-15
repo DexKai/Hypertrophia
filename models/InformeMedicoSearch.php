@@ -18,8 +18,8 @@ class InformeMedicoSearch extends InformeMedico
     public function rules()
     {
         return [
-            [['IM_id', 'SO_id', 'PRO_id', 'IM_cardiacas', 'IM_alergias', 'IM_osea', 'IM_muscular', 'IM_asfixia', 'IM_embarazada', 'IM_anemia', 'IM_alergia'], 'integer'],
-            [['IM_medicamentos'], 'safe'],
+            [['IM_id', 'SO_id', 'PRO_id'], 'integer'],
+            [['IM_cardiacas', 'IM_cardicas_detalle', 'IM_alergias', 'IM_alergia_detalle', 'IM_osea', 'IM_osea_detalle', 'IM_muscular', 'IM_muscualr_detalle', 'IM_asfixia', 'IM_embarazada', 'IM_anemia', 'IM_medicamentos'], 'safe'],
         ];
     }
 
@@ -59,17 +59,20 @@ class InformeMedicoSearch extends InformeMedico
             'IM_id' => $this->IM_id,
             'SO_id' => $this->SO_id,
             'PRO_id' => $this->PRO_id,
-            'IM_cardiacas' => $this->IM_cardiacas,
-            'IM_alergias' => $this->IM_alergias,
-            'IM_osea' => $this->IM_osea,
-            'IM_muscular' => $this->IM_muscular,
-            'IM_asfixia' => $this->IM_asfixia,
-            'IM_embarazada' => $this->IM_embarazada,
-            'IM_anemia' => $this->IM_anemia,
-            'IM_alergia' => $this->IM_alergia,
         ]);
 
-        $query->andFilterWhere(['like', 'IM_medicamentos', $this->IM_medicamentos]);
+        $query->andFilterWhere(['like', 'IM_cardiacas', $this->IM_cardiacas])
+            ->andFilterWhere(['like', 'IM_cardicas_detalle', $this->IM_cardicas_detalle])
+            ->andFilterWhere(['like', 'IM_alergias', $this->IM_alergias])
+            ->andFilterWhere(['like', 'IM_alergia_detalle', $this->IM_alergia_detalle])
+            ->andFilterWhere(['like', 'IM_osea', $this->IM_osea])
+            ->andFilterWhere(['like', 'IM_osea_detalle', $this->IM_osea_detalle])
+            ->andFilterWhere(['like', 'IM_muscular', $this->IM_muscular])
+            ->andFilterWhere(['like', 'IM_muscualr_detalle', $this->IM_muscualr_detalle])
+            ->andFilterWhere(['like', 'IM_asfixia', $this->IM_asfixia])
+            ->andFilterWhere(['like', 'IM_embarazada', $this->IM_embarazada])
+            ->andFilterWhere(['like', 'IM_anemia', $this->IM_anemia])
+            ->andFilterWhere(['like', 'IM_medicamentos', $this->IM_medicamentos]);
 
         return $dataProvider;
     }

@@ -23,19 +23,25 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'IM_cardiacas') ?>
 
-    <?= $form->field($model, 'IM_alergias') ?>
+    <?= $form->field($model, 'IM_cardicas_detalle') ?>
+
+    <?php // echo $form->field($model, 'IM_alergias') ?>
+
+    <?php // echo $form->field($model, 'IM_alergia_detalle') ?>
 
     <?php // echo $form->field($model, 'IM_osea') ?>
 
+    <?php // echo $form->field($model, 'IM_osea_detalle') ?>
+
     <?php // echo $form->field($model, 'IM_muscular') ?>
+
+    <?php // echo $form->field($model, 'IM_muscualr_detalle') ?>
 
     <?php // echo $form->field($model, 'IM_asfixia') ?>
 
     <?php // echo $form->field($model, 'IM_embarazada') ?>
 
     <?php // echo $form->field($model, 'IM_anemia') ?>
-
-    <?php // echo $form->field($model, 'IM_alergia') ?>
 
     <?php // echo $form->field($model, 'IM_medicamentos') ?>
 
