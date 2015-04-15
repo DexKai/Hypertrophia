@@ -17,19 +17,23 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'PRO_id') ?>
 
-    <?= $form->field($model, 'PRO_nombre') ?>
+    <?= $form->field($model, 'HOR_id') ?>
 
-    <?= $form->field($model, 'PRO_apellido') ?>
+    <?= $form->field($model, 'SUE_id') ?>
 
-    <?= $form->field($model, 'PRO_rut') ?>
+    <?= $form->field($model, 'IM_id') ?>
 
-    <?= $form->field($model, 'PRO_email') ?>
+    <?= $form->field($model, 'TIP_id') ?>
 
-    <?php // echo $form->field($model, 'HOR_id') ?>
+    <?php // echo $form->field($model, 'PRO_rut') ?>
 
-    <?php // echo $form->field($model, 'SUE_id') ?>
+    <?php // echo $form->field($model, 'PRO_nombre') ?>
 
-    <?php // echo $form->field($model, 'TIP_id') ?>
+    <?php // echo $form->field($model, 'PRO_apellidop') ?>
+
+    <?php // echo $form->field($model, 'PRO_apellidom') ?>
+
+    <?php // echo $form->field($model, 'PRO_email') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

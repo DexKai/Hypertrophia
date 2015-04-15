@@ -18,8 +18,8 @@ class ProfesorSearch extends Profesor
     public function rules()
     {
         return [
-            [['PRO_id', 'HOR_id', 'SUE_id', 'TIP_id'], 'integer'],
-            [['PRO_nombre', 'PRO_apellido', 'PRO_rut', 'PRO_email'], 'safe'],
+            [['PRO_id', 'HOR_id', 'SUE_id', 'IM_id', 'TIP_id'], 'integer'],
+            [['PRO_rut', 'PRO_nombre', 'PRO_apellidop', 'PRO_apellidom', 'PRO_email'], 'safe'],
         ];
     }
 
@@ -59,12 +59,14 @@ class ProfesorSearch extends Profesor
             'PRO_id' => $this->PRO_id,
             'HOR_id' => $this->HOR_id,
             'SUE_id' => $this->SUE_id,
+            'IM_id' => $this->IM_id,
             'TIP_id' => $this->TIP_id,
         ]);
 
-        $query->andFilterWhere(['like', 'PRO_nombre', $this->PRO_nombre])
-            ->andFilterWhere(['like', 'PRO_apellido', $this->PRO_apellido])
-            ->andFilterWhere(['like', 'PRO_rut', $this->PRO_rut])
+        $query->andFilterWhere(['like', 'PRO_rut', $this->PRO_rut])
+            ->andFilterWhere(['like', 'PRO_nombre', $this->PRO_nombre])
+            ->andFilterWhere(['like', 'PRO_apellidop', $this->PRO_apellidop])
+            ->andFilterWhere(['like', 'PRO_apellidom', $this->PRO_apellidom])
             ->andFilterWhere(['like', 'PRO_email', $this->PRO_email]);
 
         return $dataProvider;
