@@ -12,9 +12,11 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'HOR_ENTRADA')->textInput() ?>
+    <?= $form->field($model, 'PRO_id')->textInput() ?>
 
-    <?= $form->field($model, 'HOR_SALIDA')->textInput() ?>
+    <?= $form->field($model, 'HOR_entrada')->textInput() ?>
+
+    <?= $form->field($model, 'HOR_salida')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

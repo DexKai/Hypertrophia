@@ -18,8 +18,8 @@ class HorarioSearch extends Horario
     public function rules()
     {
         return [
-            [['HOR_id'], 'integer'],
-            [['HOR_ENTRADA', 'HOR_SALIDA'], 'safe'],
+            [['HOR_id', 'PRO_id'], 'integer'],
+            [['HOR_entrada', 'HOR_salida'], 'safe'],
         ];
     }
 
@@ -57,8 +57,9 @@ class HorarioSearch extends Horario
 
         $query->andFilterWhere([
             'HOR_id' => $this->HOR_id,
-            'HOR_ENTRADA' => $this->HOR_ENTRADA,
-            'HOR_SALIDA' => $this->HOR_SALIDA,
+            'PRO_id' => $this->PRO_id,
+            'HOR_entrada' => $this->HOR_entrada,
+            'HOR_salida' => $this->HOR_salida,
         ]);
 
         return $dataProvider;

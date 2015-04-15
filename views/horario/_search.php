@@ -17,9 +17,11 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'HOR_id') ?>
 
-    <?= $form->field($model, 'HOR_ENTRADA') ?>
+    <?= $form->field($model, 'PRO_id') ?>
 
-    <?= $form->field($model, 'HOR_SALIDA') ?>
+    <?= $form->field($model, 'HOR_entrada') ?>
+
+    <?= $form->field($model, 'HOR_salida') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

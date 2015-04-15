@@ -8,9 +8,11 @@ use Yii;
  * This is the model class for table "horario".
  *
  * @property integer $HOR_id
- * @property string $HOR_ENTRADA
- * @property string $HOR_SALIDA
+ * @property integer $PRO_id
+ * @property string $HOR_entrada
+ * @property string $HOR_salida
  *
+ * @property Profesor $pRO
  * @property Profesor[] $profesors
  */
 class Horario extends \yii\db\ActiveRecord
@@ -29,7 +31,8 @@ class Horario extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['HOR_ENTRADA', 'HOR_SALIDA'], 'safe']
+            [['PRO_id'], 'integer'],
+            [['HOR_entrada', 'HOR_salida'], 'safe']
         ];
     }
 
@@ -40,9 +43,18 @@ class Horario extends \yii\db\ActiveRecord
     {
         return [
             'HOR_id' => 'Hor ID',
-            'HOR_ENTRADA' => 'Hor  Entrada',
-            'HOR_SALIDA' => 'Hor  Salida',
+            'PRO_id' => 'Pro ID',
+            'HOR_entrada' => 'Hor Entrada',
+            'HOR_salida' => 'Hor Salida',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getPRO()
+    {
+        return $this->hasOne(Profesor::className(), ['PRO_id' => 'PRO_id']);
     }
 
     /**
