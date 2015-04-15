@@ -18,8 +18,8 @@ class ClaseSearch extends Clase
     public function rules()
     {
         return [
-            [['id_clase'], 'integer'],
-            [['nombre_clase', 'descripcion_clase'], 'safe'],
+            [['CLA_id', 'DIS_id'], 'integer'],
+            [['CLA_nombre', 'CLA_descripcion', 'CLA_imagen'], 'safe'],
         ];
     }
 
@@ -56,11 +56,13 @@ class ClaseSearch extends Clase
         }
 
         $query->andFilterWhere([
-            'id_clase' => $this->id_clase,
+            'CLA_id' => $this->CLA_id,
+            'DIS_id' => $this->DIS_id,
         ]);
 
-        $query->andFilterWhere(['like', 'nombre_clase', $this->nombre_clase])
-            ->andFilterWhere(['like', 'descripcion_clase', $this->descripcion_clase]);
+        $query->andFilterWhere(['like', 'CLA_nombre', $this->CLA_nombre])
+            ->andFilterWhere(['like', 'CLA_descripcion', $this->CLA_descripcion])
+            ->andFilterWhere(['like', 'CLA_imagen', $this->CLA_imagen]);
 
         return $dataProvider;
     }

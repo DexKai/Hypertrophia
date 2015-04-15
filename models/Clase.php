@@ -7,9 +7,13 @@ use Yii;
 /**
  * This is the model class for table "clase".
  *
- * @property integer $id_clase
- * @property string $nombre_clase
- * @property string $descripcion_clase
+ * @property integer $CLA_id
+ * @property integer $DIS_id
+ * @property string $CLA_nombre
+ * @property string $CLA_descripcion
+ * @property string $CLA_imagen
+ *
+ * @property Disciplina $dIS
  */
 class Clase extends \yii\db\ActiveRecord
 {
@@ -27,9 +31,10 @@ class Clase extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['nombre_clase', 'descripcion_clase'], 'required'],
-            [['nombre_clase'], 'string', 'max' => 128],
-            [['descripcion_clase'], 'string', 'max' => 1280]
+            [['DIS_id'], 'integer'],
+            [['CLA_descripcion'], 'string'],
+            [['CLA_nombre'], 'string', 'max' => 20],
+            [['CLA_imagen'], 'string', 'max' => 1024]
         ];
     }
 
@@ -39,9 +44,19 @@ class Clase extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id_clase' => 'Id Clase',
-            'nombre_clase' => 'Nombre Clase',
-            'descripcion_clase' => 'Descripcion Clase',
+            'CLA_id' => 'Cla ID',
+            'DIS_id' => 'Dis ID',
+            'CLA_nombre' => 'Cla Nombre',
+            'CLA_descripcion' => 'Cla Descripcion',
+            'CLA_imagen' => 'Cla Imagen',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getDIS()
+    {
+        return $this->hasOne(Disciplina::className(), ['DIS_id' => 'DIS_id']);
     }
 }
