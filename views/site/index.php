@@ -5,6 +5,14 @@ $this->title = 'My Yii Application';
 
 <div class="jumbotron">
 
+
+
+
+
+</br>
+</br>
+
+
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -50,7 +58,15 @@ $this->title = 'My Yii Application';
 
 </div>
 
-
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 
 
 
