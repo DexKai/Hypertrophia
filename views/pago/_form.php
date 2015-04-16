@@ -18,6 +18,15 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'PA_pago_mes')->textInput() ?>
 
+
+
+
+    <?= $form->field($model, 'PA_pago_mes')->dropDownList(
+                    ['Si','NO'],
+        ['prompt'=>'¿Se efectuo el pago ? ']
+        )?>
+
+
     <?= $form->field($model, 'PA_fecha_pago')->textInput() ?>
 
     <div class="form-group">

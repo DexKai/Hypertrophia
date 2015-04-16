@@ -41,10 +41,10 @@ class Pago extends \yii\db\ActiveRecord
     {
         return [
             'PA_id' => 'Pa ID',
-            'SO_id' => 'So ID',
-            'PA_monto' => 'Pa Monto',
-            'PA_pago_mes' => 'Pa Pago Mes',
-            'PA_fecha_pago' => 'Pa Fecha Pago',
+            'SO_id' => 'Ingrese el socio correspondiente al pago ',
+            'PA_monto' => 'Ingrese el  Monto',
+            'PA_pago_mes' => 'Ingrese si el pago se efectuo en el Mes',
+            'PA_fecha_pago' => 'Ingrese la Fecha Pago',
         ];
     }
 }

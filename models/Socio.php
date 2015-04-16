@@ -50,13 +50,13 @@ class Socio extends \yii\db\ActiveRecord
             'PROG_id' => 'Prog ID',
             'IM_id' => 'Im ID',
             'PA_id' => 'Pa ID',
-            'SO_rut' => 'So Rut',
-            'SO_nombre' => 'So Nombre',
-            'SO_apellido_materno' => 'So Apellido Materno',
-            'SO_apellido_paterno' => 'So Apellido Paterno',
-            'SO_email' => 'So Email',
-            'SO_direccion' => 'So Direccion',
-            'SO_estado_actividad' => 'So Estado Actividad',
+            'SO_rut' => 'Ingrese el Rut',
+            'SO_nombre' => 'Ingrese el Nombre',
+            'SO_apellido_materno' => 'Ingrese el Apellido Materno',
+            'SO_apellido_paterno' => 'Ingrese el  Apellido Paterno',
+            'SO_email' => 'Ingrese el  Email',
+            'SO_direccion' => 'Ingrese el  Direccion',
+            'SO_estado_actividad' => 'Ingrese el  Estado Actividad',
         ];
     }
 }
