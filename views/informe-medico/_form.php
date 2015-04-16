@@ -26,27 +26,27 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'PRO_id')->textInput() ?>
       
-    <?php echo $form->field($model, 'IM_cardiacas[]')->dropDownList(['Si' => 'Si', 'No' => 'No'],['prompt'=>'Seleccione una opción']); ?>
+    <?php echo $form->field($model, 'IM_cardiacas')->dropDownList(['Si' => 'Si', 'No' => 'No'],['prompt'=>'Seleccione una opción']); ?>
 
     <?= $form->field($model, 'IM_cardicas_detalle')->textarea(['rows' => 6]) ?>
 
-    <?php echo $form->field($model, 'IM_alergias[]')->dropDownList(['Si' => 'Si', 'No' => 'No'],['prompt'=>'Seleccione una opción']); ?>
+    <?php echo $form->field($model, 'IM_alergias')->dropDownList(['Si' => 'Si', 'No' => 'No'],['prompt'=>'Seleccione una opción']); ?>
 
     <?= $form->field($model, 'IM_alergia_detalle')->textarea(['rows' => 6]) ?>
   
-    <?php echo $form->field($model, 'IM_osea[]')->dropDownList(['Si' => 'Si', 'No' => 'No'],['prompt'=>'Seleccione una opción']); ?>
+    <?php echo $form->field($model, 'IM_osea')->dropDownList(['Si' => 'Si', 'No' => 'No'],['prompt'=>'Seleccione una opción']); ?>
 
     <?= $form->field($model, 'IM_osea_detalle')->textarea(['rows' => 6]) ?>
 
-    <?php echo $form->field($model, 'IM_muscular[]')->dropDownList(['Si' => 'Si', 'No' => 'No'],['prompt'=>'Seleccione una opción']); ?>
+    <?php echo $form->field($model, 'IM_muscular')->dropDownList(['Si' => 'Si', 'No' => 'No'],['prompt'=>'Seleccione una opción']); ?>
 
     <?= $form->field($model, 'IM_muscualr_detalle')->textarea(['rows' => 6]) ?>
 
-    <?php echo $form->field($model, 'IM_asfixia[]')->dropDownList(['Si' => 'Si', 'No' => 'No'],['prompt'=>'Seleccione una opción']); ?>
+    <?php echo $form->field($model, 'IM_asfixia')->dropDownList(['Si' => 'Si', 'No' => 'No'],['prompt'=>'Seleccione una opción']); ?>
     
-    <?php echo $form->field($model, 'IM_embarazada[]')->dropDownList(['Si' => 'Si', 'No' => 'No'],['prompt'=>'Seleccione una opción']); ?>
+    <?php echo $form->field($model, 'IM_embarazada')->dropDownList(['Si' => 'Si', 'No' => 'No'],['prompt'=>'Seleccione una opción']); ?>
 
-    <?php echo $form->field($model, 'IM_anemia[]')->dropDownList(['Si' => 'Si', 'No' => 'No'],['prompt'=>'Seleccione una opción']); ?>
+    <?php echo $form->field($model, 'IM_anemia')->dropDownList(['Si' => 'Si', 'No' => 'No'],['prompt'=>'Seleccione una opción']); ?>
 
     <?= $form->field($model, 'IM_medicamentos')->textarea(['rows' => 6]) ?>
 
