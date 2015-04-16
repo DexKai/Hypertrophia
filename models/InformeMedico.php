@@ -70,7 +70,7 @@ class InformeMedico extends \yii\db\ActiveRecord
             'IM_asfixia' => 'Cuando usted realiza ejercicio ¿Siente alguna clase de asfixia?',
             'IM_embarazada' => 'De ser mujer ¿Sabe o sospecha que podria estar embarazada?',
             'IM_anemia' => 'Actualemnte ¿Usted posee anemia?',
-            'IM_medicamentos' => '¿Usted toma algun topo de medicameto? especificar',
+            'IM_medicamentos' => '¿Usted toma algun tipo de medicameto? especificar',
         ];
     }
 
