@@ -40,6 +40,7 @@ AppAsset::register($this);
                     ['label' => 'Contacto', 'url' => ['/site/contact']],
                     ['label' => 'Clases', 'url' => ['/clase/index']],
                      ['label' => 'Socios', 'url' => ['/socio/index']],
+                     ['label' => 'Pagos', 'url' => ['/pago/index']],
                     ['label' => 'Horarios', 'url' => ['/horario/index']],
                     ['label' => 'Sueldos', 'url' => ['/sueldo/index']],
                     ['label' => 'Profesores', 'url' => ['/profesor/index']],
