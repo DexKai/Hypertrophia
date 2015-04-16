@@ -37,7 +37,7 @@ AppAsset::register($this);
                 'items' => [
                     ['label' => 'Inicio', 'url' => ['/site/index']],
                     ['label' => '¿Quienes Somos?', 'url' => ['/site/about']],
-                    ['label' => 'Contact', 'url' => ['/site/contact']],
+                    ['label' => 'Contacto', 'url' => ['/site/contact']],
                     ['label' => 'Clases', 'url' => ['/clase/index']],
                     ['label' => 'Horarios', 'url' => ['/horario/index']],
                     ['label' => 'Sueldos', 'url' => ['/sueldo/index']],
