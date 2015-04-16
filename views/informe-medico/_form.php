@@ -1,9 +1,9 @@
 <?php
 
 use yii\helpers\Html;
-
+use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
-
+use app\models\Profesor;
 
 
 
@@ -24,8 +24,12 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'SO_id')->textInput() ?>
 
-    <?= $form->field($model, 'PRO_id')->textInput() ?>
-      
+
+    <?= $form->field($model, 'PRO_id')->dropDownList(
+        ArrayHelper::map(Profesor::find()->all(),'PRO_id','PRO_nombre'),
+        ['prompt'=>'Seleccione un profesor']
+        )?>
+    
     <?php echo $form->field($model, 'IM_cardiacas')->dropDownList(['Si' => 'Si', 'No' => 'No'],['prompt'=>'Seleccione una opción']); ?>
 
     <?= $form->field($model, 'IM_cardicas_detalle')->textarea(['rows' => 6]) ?>
