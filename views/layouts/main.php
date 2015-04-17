@@ -39,9 +39,9 @@ AppAsset::register($this);
                     ['label' => '¿Quienes Somos?', 'url' => ['/site/about']],
                     ['label' => 'Contacto', 'url' => ['/site/contact']],
                     ['label' => 'Clases', 'url' => ['/clase/index']],
-                     ['label' => 'Socios', 'url' => ['/socio/index']],
-                     ['label' => 'Pagos', 'url' => ['/pago/index']],
-                     ['label' => 'Progresos', 'url' => ['/progreso/index']],
+                    ['label' => 'Socios', 'url' => ['/socio/index']],
+                    ['label' => 'Pagos', 'url' => ['/pago/index']],
+                    ['label' => 'Progresos', 'url' => ['/progreso/index']],
                     ['label' => 'Horarios', 'url' => ['/horario/index']],
                     ['label' => 'Sueldos', 'url' => ['/sueldo/index']],
                     ['label' => 'Profesores', 'url' => ['/profesor/index']],
@@ -49,9 +49,9 @@ AppAsset::register($this);
                     ['label' => 'Informes medicos', 'url' => ['/informe-medico/index']],
                     Yii::$app->user->isGuest ?
 
-                        ['label' => 'Conectar', 'url' => ['/site/login']] :
-                        ['label' => 'Desconectar (' . Yii::$app->user->identity->username . ')',
-                            'url' => ['/site/logout'],
+                        ['label' => 'Iniciar Sesión', 'url' => ['/user/security/login']] :
+                        ['label' => 'Cierrar Sesión (' . Yii::$app->user->identity->username . ')',
+                            'url' => ['/user/security/logout'],
                             'linkOptions' => ['data-method' => 'post']],
                 ],
             ]);
