@@ -35,9 +35,12 @@ AppAsset::register($this);
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
+
                     ['label' => 'Inicio', 'url' => ['/site/index']],
                     ['label' => '¿Quienes Somos?', 'url' => ['/site/about']],
                     ['label' => 'Contacto', 'url' => ['/site/contact']],
+
+                    ['label' => 'Administrar', 'items'=> [
                     ['label' => 'Clases', 'url' => ['/clase/index']],
                     ['label' => 'Socios', 'url' => ['/socio/index']],
                     ['label' => 'Pagos', 'url' => ['/pago/index']],
@@ -47,6 +50,9 @@ AppAsset::register($this);
                     ['label' => 'Profesores', 'url' => ['/profesor/index']],
                     ['label' => 'Tipo de profesores', 'url' => ['/tipo-profesor/index']],
                     ['label' => 'Informes medicos', 'url' => ['/informe-medico/index']],
+                    
+                    ]],
+
                     Yii::$app->user->isGuest ?
 
                         ['label' => 'Iniciar Sesión', 'url' => ['/user/security/login']] :
