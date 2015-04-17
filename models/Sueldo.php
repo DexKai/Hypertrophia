@@ -41,7 +41,7 @@ class Sueldo extends \yii\db\ActiveRecord
     {
         return [
             'SUE_id' => 'Sue ID',
-            'PRO_id' => 'Pro ID',
+            'PRO_id' => 'Nombre profesor',
             'SUE_sueldo' => 'Sueldo del profesor',
         ];
     }

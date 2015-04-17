@@ -58,7 +58,7 @@ class InformeMedico extends \yii\db\ActiveRecord
         return [
             'IM_id' => 'Im ID',
             'SO_id' => 'So ID',
-            'PRO_id' => 'Pro ID',
+            'PRO_id' => 'Nombre profesor',
             'IM_cardiacas' => '¿Posee algun tipo de afecciones cardicas?',
             'IM_cardicas_detalle' => 'De ser afirmativa su respuesta, especifiquela',
             'IM_alergias' => 'Usted posee algun tipo de alergias?',

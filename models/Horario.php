@@ -43,7 +43,7 @@ class Horario extends \yii\db\ActiveRecord
     {
         return [
             'HOR_id' => 'Hor ID',
-            'PRO_id' => 'Pro ID',
+            'PRO_id' => 'Nombre Profesor',
             'HOR_entrada' => 'Ingrese la hora de entrada del profesor',
             'HOR_salida' => 'Ingrese la hora de salida del profesor',
         ];

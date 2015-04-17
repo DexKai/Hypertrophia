@@ -22,7 +22,7 @@ use app\models\Profesor;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'SO_id')->textInput() ?>
+  
 
 
     <?= $form->field($model, 'PRO_id')->dropDownList(
