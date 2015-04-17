@@ -3,7 +3,7 @@
 $this->title = 'Hypertrophia';
 ?>
 
-<div class="jumbotron">
+<div class="jumbotron wrap">
 
 
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -51,6 +51,8 @@ $this->title = 'Hypertrophia';
 
 </div>
 
+<div class="jumbotron body-content">
+
 <h1>BIENVENIDOS A HYPERTROPHIA</h1>
 
 </div>
@@ -97,4 +99,4 @@ $this->title = 'Hypertrophia';
 
     </div>
 -->
-</div>
+
