@@ -1,16 +1,9 @@
 <?php
 /* @var $this yii\web\View */
-$this->title = 'My Yii Application';
+$this->title = 'Hypertrophia';
 ?>
 
 <div class="jumbotron">
-
-
-
-
-
-</br>
-</br>
 
 
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -37,7 +30,7 @@ $this->title = 'My Yii Application';
       </div>
 
       <div class="item ">
-      <img src="http://rompetuslimites.com/wp-content/uploads/2013/09/gym-para-el-cererbro.jpg" alt="Logotipo APR2" width="200%">
+      <img src="http://4.bp.blogspot.com/-82EuJytyzUo/Up1OYv_aLKI/AAAAAAAAEQQ/aO2fK5GlkFo/s1600/portada%2Bblogger.jpg" alt="Logotipo APR2" width="200%">
       <div class="carousel-caption">
         
       </div>
@@ -58,20 +51,11 @@ $this->title = 'My Yii Application';
 
 </div>
 
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-
-
-
+<h1>BIENVENIDOS A HYPERTROPHIA</h1>
 
 </div>
+
+<!-- 
     <div class="body-content">
 
         <div class="row">
@@ -112,4 +96,5 @@ $this->title = 'My Yii Application';
         </div>
 
     </div>
+-->
 </div>

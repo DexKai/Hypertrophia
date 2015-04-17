@@ -41,6 +41,7 @@ AppAsset::register($this);
                     ['label' => 'Contacto', 'url' => ['/site/contact']],
 
                     ['label' => 'Administrar', 'items'=> [
+                    ['label' => 'Disciplina', 'url' => ['/disciplina/index']],
                     ['label' => 'Clases', 'url' => ['/clase/index']],
                     ['label' => 'Socios', 'url' => ['/socio/index']],
                     ['label' => 'Pagos', 'url' => ['/pago/index']],

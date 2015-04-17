@@ -44,11 +44,11 @@ class Clase extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'CLA_id' => 'Cla ID',
-            'DIS_id' => 'Dis ID',
-            'CLA_nombre' => 'Cla Nombre',
-            'CLA_descripcion' => 'Cla Descripcion',
-            'CLA_imagen' => 'Cla Imagen',
+            'CLA_id' => 'ID',
+            'DIS_id' => 'ID Disciplina',
+            'CLA_nombre' => 'Nombre',
+            'CLA_descripcion' => 'Descripcion',
+            'CLA_imagen' => 'Imagen',
         ];
     }
 
