@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     22-04-2015 0:44:38                           */
+/* Created on:     23-04-2015 17:51:46                          */
 /*==============================================================*/
 
 
@@ -11,12 +11,6 @@ drop table if exists DISCIPLINA;
 drop table if exists FK_DISCIPLINA_TIPO_PROFESOR;
 
 drop table if exists FK_SOCIO_PROFESOR;
-
-drop table if exists HORARIO_CLASE;
-
-drop table if exists HORARIO_LABORAL;
-
-drop table if exists INFORME_EDUCACION;
 
 drop table if exists INFORME_MEDICO_PROFESOR;
 
@@ -41,7 +35,7 @@ create table CLASE
 (
    CLA_ID               int not null auto_increment,
    DIS_ID               int,
-   CLA_NOMBRE           varchar(500),
+   CLA_NOMBRE           varchar(20),
    CLA_DESCRIPCION      text,
    CLA_IMAGEN           varchar(1024),
    primary key (CLA_ID)
@@ -53,7 +47,7 @@ create table CLASE
 create table DISCIPLINA
 (
    DIS_ID               int not null auto_increment,
-   DIS_NOMBRE           char(256),
+   DIS_NOMBRE           char(200),
    DIS_DESCRIPCION      text,
    primary key (DIS_ID)
 );
@@ -76,48 +70,6 @@ create table FK_SOCIO_PROFESOR
    PRO_ID               int not null,
    SO_ID_SOCIO          int not null,
    primary key (PRO_ID, SO_ID_SOCIO)
-);
-
-/*==============================================================*/
-/* Table: HORARIO_CLASE                                         */
-/*==============================================================*/
-create table HORARIO_CLASE
-(
-   HORC_ID              int not null auto_increment,
-   CLA_ID               int,
-   HORC_ENTRADA         time,
-   HORC_SALIDA          time,
-   primary key (HORC_ID)
-);
-
-/*==============================================================*/
-/* Table: HORARIO_LABORAL                                       */
-/*==============================================================*/
-create table HORARIO_LABORAL
-(
-   HOR_ID               int not null auto_increment,
-   PRO_ID               int,
-   HOR_ENTRADA          time,
-   HOR_SALIDA           time,
-   primary key (HOR_ID)
-);
-
-/*==============================================================*/
-/* Table: INFORME_EDUCACION                                     */
-/*==============================================================*/
-create table INFORME_EDUCACION
-(
-   IE_ID                int not null auto_increment,
-   PRO_ID               int,
-   IE_ENSENANZA_COMPLETA varchar(1024),
-   IE_UNIVERSIDAD       varchar(1024),
-   IE_UNIVRESIDAD_DETALLE varchar(1024),
-   IE_INSTITUTO         varchar(1024),
-   IE_INSTITUTO_DETALLE varchar(1024),
-   IE_POSTGRADO         text,
-   IE_CERTIFICACION     text,
-   IE_DIPLOMADO         text,
-   primary key (IE_ID)
 );
 
 /*==============================================================*/
@@ -147,21 +99,21 @@ create table INFORME_MEDICO_PROFESOR
 /*==============================================================*/
 create table INFORME_MEDICO_SOCIO
 (
-   IMS_ID               int not null auto_increment,
+   IM_ID3               int not null auto_increment,
    SO_ID_SOCIO          int,
-   IMS_CARDIACAS        varchar(1024),
-   IMS_CARDIACAS_DETALLE text,
-   IMS_ALERGIAS         varchar(1024),
-   IMS_ALERGIAS_DETALLE text,
-   IMS_OSEA             varchar(1024),
-   IMS_OSEA_DEATALLE    text,
-   IMS_MUSCULAR         varchar(1024),
-   IMS_MUSCULAR_DETALLE text,
-   IMS_ASFIXIA          varchar(1024),
-   IMS_EMBARAZADA       varchar(1024),
-   IMS_ANEMIA           varchar(1024),
-   IMS_MEDICAMENTO      text,
-   primary key (IMS_ID)
+   IM_CARDIACAS         varchar(1024),
+   IM_CARDIACAS_DETALLE text,
+   IM_ELERGIAS          varchar(1024),
+   IM_ALERGIAS_DETALLE  text,
+   IM_OSEA3             varchar(1024),
+   IM_OSEA_DETALLE      text,
+   IM_MUSCULAR3         varchar(1024),
+   IM_MUSCULAR_DETALLE  text,
+   IM_ASFIXIA3          varchar(1024),
+   IM_EMBARAZADA3       varchar(1024),
+   IM_ANEMIA3           varchar(1024),
+   IM_MEDICAMENTOS3     text,
+   primary key (IM_ID3)
 );
 
 /*==============================================================*/
@@ -183,18 +135,16 @@ create table PAGO
 create table PROFESOR
 (
    PRO_ID               int not null auto_increment,
-   HOR_ID               int,
    SUE_ID               int,
    IM_ID                int,
    TIP_ID               int,
-   IE_ID                int,
    PRO_RUT              varchar(10),
    PRO_NOMBRE           varchar(20),
    PRO_APELLIDOP        varchar(20),
    PRO_APELLIDOM        varchar(20),
-   PRO_EMAIL            varchar(1024),
-   PRO_IMAGEN           varchar(1024),
-   PRO_TIPO             varchar(1024),
+   PRO_EMAIL            varchar(100),
+   PRO_HORARIOE         time,
+   PRO_HORARIOS         time,
    primary key (PRO_ID)
 );
 
@@ -220,17 +170,15 @@ create table SOCIO
 (
    SO_ID_SOCIO          int not null auto_increment,
    PROG_ID              int,
+   IM_ID3               int,
    PA_ID_PAGO           int,
-   IMS_ID               int,
-   SO_RUT               varchar(1024),
-   SO_NOMBRE            varchar(1024),
-   SO_APELLIDO_MATERNO  varchar(1024),
-   SO_APELLIDO_PATERNO  varchar(1024),
-   SO_EMAIL             varchar(1024),
-   SO_DIRECCION         varchar(1024),
-   SO_ESTADO_ACTIVIDAD  varchar(1024),
-   SO_IMAGEN            varchar(1024),
-   SO_TIPO              varchar(1024),
+   SO_RUT               char(200),
+   SO_NOMBRE            char(200),
+   SO_APELLIDO_MATERNO  char(200),
+   SO_APELLIDO_PATERNO  char(200),
+   SO_EMAIL             char(200),
+   SO_DIRECCION         char(200),
+   SO_ESTADO_ACTIVIDAD  char(200),
    primary key (SO_ID_SOCIO)
 );
 
@@ -243,7 +191,7 @@ create table SUELDO
    PRO_ID               int,
    SUE_SUELDO           int,
    SUE_FECHA            time,
-   SUE_PAGADO           varchar(500),
+   SUE_PAGADO           varchar(2),
    primary key (SUE_ID)
 );
 
@@ -273,26 +221,14 @@ alter table FK_SOCIO_PROFESOR add constraint FK_FK_SOCIO_PROFESOR foreign key (P
 alter table FK_SOCIO_PROFESOR add constraint FK_FK_SOCIO_PROFESOR2 foreign key (SO_ID_SOCIO)
       references SOCIO (SO_ID_SOCIO) on delete restrict on update restrict;
 
-alter table HORARIO_CLASE add constraint FK_FK_CLASE_HORARIO_CLASE foreign key (CLA_ID)
-      references CLASE (CLA_ID) on delete restrict on update restrict;
-
-alter table HORARIO_LABORAL add constraint FK_FK_HORARIO_PROFESOR foreign key (PRO_ID)
-      references PROFESOR (PRO_ID) on delete restrict on update restrict;
-
-alter table INFORME_EDUCACION add constraint FK_INFORME_EDUCACION_PROFESOR foreign key (PRO_ID)
-      references PROFESOR (PRO_ID) on delete restrict on update restrict;
-
 alter table INFORME_MEDICO_PROFESOR add constraint FK_FK_PREFESOR_INFORMEMEDICO foreign key (PRO_ID)
       references PROFESOR (PRO_ID) on delete restrict on update restrict;
 
-alter table INFORME_MEDICO_SOCIO add constraint FK_FK_INFORME_MEDICO_SOCIO_SOCIO2 foreign key (SO_ID_SOCIO)
+alter table INFORME_MEDICO_SOCIO add constraint FK_FK_SOCIO_INFORME_MEDICO2 foreign key (SO_ID_SOCIO)
       references SOCIO (SO_ID_SOCIO) on delete restrict on update restrict;
 
 alter table PAGO add constraint FK_FK_SOCIO_PAGO2 foreign key (SO_ID_SOCIO)
       references SOCIO (SO_ID_SOCIO) on delete restrict on update restrict;
-
-alter table PROFESOR add constraint FK_FK_HORARIO_PROFESOR2 foreign key (HOR_ID)
-      references HORARIO_LABORAL (HOR_ID) on delete restrict on update restrict;
 
 alter table PROFESOR add constraint FK_FK_PREFESOR_INFORMEMEDICO2 foreign key (IM_ID)
       references INFORME_MEDICO_PROFESOR (IM_ID) on delete restrict on update restrict;
@@ -303,14 +239,11 @@ alter table PROFESOR add constraint FK_FK_PROFESOR_SUELDO foreign key (SUE_ID)
 alter table PROFESOR add constraint FK_FK_PROFESOR_TIPOPROFESOR foreign key (TIP_ID)
       references TIPO_PROFESOR (TIP_ID) on delete restrict on update restrict;
 
-alter table PROFESOR add constraint FK_INFORME_EDUCACION_PROFESOR2 foreign key (IE_ID)
-      references INFORME_EDUCACION (IE_ID) on delete restrict on update restrict;
-
 alter table PROGRESO add constraint FK_FK_SOCIO_PROGRESO foreign key (SO_ID_SOCIO)
       references SOCIO (SO_ID_SOCIO) on delete restrict on update restrict;
 
-alter table SOCIO add constraint FK_FK_INFORME_MEDICO_SOCIO_SOCIO foreign key (IMS_ID)
-      references INFORME_MEDICO_SOCIO (IMS_ID) on delete restrict on update restrict;
+alter table SOCIO add constraint FK_FK_SOCIO_INFORME_MEDICO foreign key (IM_ID3)
+      references INFORME_MEDICO_SOCIO (IM_ID3) on delete restrict on update restrict;
 
 alter table SOCIO add constraint FK_FK_SOCIO_PAGO foreign key (PA_ID_PAGO)
       references PAGO (PA_ID_PAGO) on delete restrict on update restrict;
@@ -323,4 +256,3 @@ alter table SUELDO add constraint FK_FK_PROFESOR_SUELDO2 foreign key (PRO_ID)
 
 alter table TIPO_PROFESOR add constraint FK_FK_PROFESOR_TIPOPROFESOR2 foreign key (PRO_ID)
       references PROFESOR (PRO_ID) on delete restrict on update restrict;
-
