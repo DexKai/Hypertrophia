@@ -46,9 +46,9 @@ class Profesor extends \yii\db\ActiveRecord
     {
         return [
             [['HOR_id', 'SUE_id', 'IM_id', 'TIP_id'], 'integer'],
-            [['PRO_rut'], 'string', 'max' => 10],
+            [['PRO_rut'], 'validarRut'],
             [['PRO_nombre', 'PRO_apellidop', 'PRO_apellidom'], 'string', 'max' => 20],
-            [['PRO_email'], 'string', 'max' => 100]
+            [['PRO_email'], 'email']
         ];
     }
 
@@ -63,14 +63,13 @@ class Profesor extends \yii\db\ActiveRecord
             'SUE_id' => 'Sue ID',
             'IM_id' => 'Im ID',
             'TIP_id' => 'Tip ID',
-            'PRO_rut' => 'Pro Rut',
-            'PRO_nombre' => 'Pro Nombre',
-            'PRO_apellidop' => 'Pro Apellidop',
-            'PRO_apellidom' => 'Pro Apellidom',
-            'PRO_email' => 'Pro Email',
+            'PRO_nombre' => 'Nombre ',
+            'PRO_apellidop' => 'Apellido paterno ',
+            'PRO_rut' => 'Rut',
+            'PRO_apellidom' => 'Apellido materno',
+            'PRO_email' => 'Email',
         ];
     }
-
     /**
      * @return \yii\db\ActiveQuery
      */
@@ -150,4 +149,40 @@ class Profesor extends \yii\db\ActiveRecord
     {
         return $this->hasMany(TipoProfesor::className(), ['PRO_id' => 'PRO_id']);
     }
+
+
+     public function getProNombre()
+    {
+        return $this->hasMany(Profesor::className(), ['PRO_id' => 'PRO_nombre']);
+    }
+
+
+
+
+   
+
+    public function validarRut($attribute, $params) {
+        $data = explode('-', $this->PRO_rut);
+        $evaluate = strrev($data[0]);
+        $multiply = 2;
+        $store = 0;
+        for ($i = 0; $i < strlen($evaluate); $i++) {
+            $store += $evaluate[$i] * $multiply;
+            $multiply++;
+            if ($multiply > 7)
+                $multiply = 2;
+        }
+        isset($data[1]) ? $verifyCode = strtolower($data[1]) : $verifyCode = '';
+        $result = 11 - ($store % 11);
+        if ($result == 10)
+            $result = 'k';
+        if ($result == 10)
+            $result = 'K';
+        if ($result == 11)
+            $result = 0;
+        if ($verifyCode != $result)
+            $this->addError('PRO_rut', 'Rut inválido.');
+    }
+
+
 }

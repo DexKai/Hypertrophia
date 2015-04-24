@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use app\models\Profesor;
+use yii\helpers\ArrayHelper;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Sueldo */
@@ -12,7 +14,11 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'PRO_id')->textInput() ?>
+    
+    <?= $form->field($model, 'PRO_id')->dropDownList(
+        ArrayHelper::map(Profesor::find()->all(),'PRO_id','PRO_nombre'),
+        ['prompt'=>'Seleccione un profesor']
+        )?>
 
     <?= $form->field($model, 'SUE_sueldo')->textInput() ?>
 
