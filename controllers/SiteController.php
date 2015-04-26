@@ -93,4 +93,19 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    public function actionMision()
+    {
+        return $this->render('mision');
+    }
+
+    public function actionVision()
+    {
+        return $this->render('vision');
+    }
+
+    public function actionValores()
+    {
+        return $this->render('valores');
+    }
 }

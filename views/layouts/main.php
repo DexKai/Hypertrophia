@@ -5,6 +5,7 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
+
 /* @var $this \yii\web\View */
 /* @var $content string */
 
@@ -73,7 +74,37 @@ AppAsset::register($this);
         </div>
     </div>
 
+    <footer class="container">
+    <div class="jumbotron">
+    <div class="col-md-4 col-md-offset-4">
+    <table >
+    <tr>
+        <td><a href="http://www.facebook.com/"><img src="img/facebook.png"></a></td>
+        <td><a href="http://www.twitter.com/"><img src="img/twitter.png"></a></td>
+        <td><a href="https://plus.google.com/"><img src="img/googleplus.png"></a></td>
+        <td><a href="http://www.youtube.com/"><img src="img/youtube.png"></a></td>
+    </tr>
+    </table>
+    </div>
+    </div>
+    </footer>
+<!-- 
+    <footer class="container">
+
+        <div class="col-md-3"> <a href="http://www.us.powerade.com/"><img src="img/Power-Logo2.png"></a></div>
+        <div class="col-md-3"> <a href="http://www.adidas.com/"><img src="img/adidas-logo2.png"></a></div>
+        
+        <div class="col-md-3"> <a href="http://www.us.powerade.com/"><img src="img/Power-Logo2.png"></a></div>
+        <div class="col-md-3"> <a href="http://www.adidas.com/"><img src="img/adidas-logo2.png"></a></div>
+
+    </footer>
+    -->
+
     <footer class="footer">
+    
+    
+
+
         <div class="container">
             <p class="pull-left">&copy; TISW_GRUPO2 IECI <?= date('Y') ?></p>
             <p class="pull-right"><?= Yii::powered() ?></p>
