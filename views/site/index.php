@@ -12,25 +12,42 @@ $this->title = 'Hypertrophia';
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-prn2/t31.0-8/c0.85.851.315/p851x315/892841_675802232431160_1953035035_o.jpg" alt="Logotipo APR2" width="200%">
+      <img src="img/banner/banner1.jpg"  width="200%">
       <div class="carousel-caption">
     
       </div>
     </div>
-    <div class="item ">
-      <img src="http://rompetuslimites.com/wp-content/uploads/2013/09/gym-para-el-cererbro.jpg" alt="Logotipo APR2" width="200%">
-      <div class="carousel-caption">
-
-      </div>
-      </div>
+    
 
       <div class="item ">
-      <img src="http://4.bp.blogspot.com/-82EuJytyzUo/Up1OYv_aLKI/AAAAAAAAEQQ/aO2fK5GlkFo/s1600/portada%2Bblogger.jpg" alt="Logotipo APR2" width="200%">
+      <img src="img/banner/banner3.jpg" width="200%">
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+    <div class="item ">
+      <img src="img/banner/banner4.jpg" width="200%">
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+
+    <div class="item ">
+      <img src="img/banner/banner5.jpg" width="200%">
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+
+    <div class="item ">
+      <img src="img/banner/banner6.jpg" width="200%">
       <div class="carousel-caption">
         
       </div>
@@ -51,11 +68,20 @@ $this->title = 'Hypertrophia';
 
 </div>
 
-<div class="jumbotron body-content">
+<div class="site-index">
 
-<h1>BIENVENIDOS A HYPERTROPHIA</h1>
+    <div class="jumbotron">
+        
+        <h1>Bienvenidos a Hypertrophia!</h1>
 
-</div>
+        <p class="lead">Obtenen nuestra Aplicación Movil!</p>
+        
+
+        <p><a class="btn btn-lg btn-success" href="#"><span class="glyphicon glyphicon-download" aria-hidden="true"></span> Descargar</a></p>
+    
+
+
+
 
 <!-- 
     <div class="body-content">
