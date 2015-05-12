@@ -19,11 +19,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'SO_id') ?>
 
-    <?= $form->field($model, 'PRO_id') ?>
+    <?= $form->field($model, ArrayHelper::map(Profesor::find()->all(),'PRO_id','PRO_nombre') ?>
 
     <?= $form->field($model, 'IM_cardiacas') ?>
 
     <?= $form->field($model, 'IM_cardicas_detalle') ?>
+
+    
 
     <?php // echo $form->field($model, 'IM_alergias') ?>
 

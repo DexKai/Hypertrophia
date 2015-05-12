@@ -12,7 +12,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="informe-medico-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+
 
     <p>
         <?= Html::a('Update', ['update', 'id' => $model->IM_id], ['class' => 'btn btn-primary']) ?>
@@ -29,6 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             
+
             
             'PRO_id',
             'IM_cardiacas',

@@ -26,6 +26,7 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
     <div class="wrap">
         <?php
+         
             NavBar::begin([
                 'brandLabel' => 'Hypertrophia',
                 'brandUrl' => Yii::$app->homeUrl,
@@ -39,7 +40,9 @@ AppAsset::register($this);
 
                     ['label' => 'Inicio', 'url' => ['/site/index']],
                     ['label' => '¿Quienes Somos?', 'url' => ['/site/about']],
+                    ['label' => 'Clases', 'url' => ['/site/about2']],
                     ['label' => 'Contacto', 'url' => ['/site/contact']],
+
 
                     ['label' => 'Administrar', 'items'=> [
                     ['label' => 'Disciplina', 'url' => ['/disciplina/index']],
@@ -88,6 +91,9 @@ AppAsset::register($this);
     </div>
     </div>
     </footer>
+
+
+
 <!-- 
     <footer class="container">
 
@@ -111,7 +117,10 @@ AppAsset::register($this);
         </div>
     </footer>
 
+
+
 <?php $this->endBody() ?>
 </body>
 </html>
 <?php $this->endPage() ?>
+
