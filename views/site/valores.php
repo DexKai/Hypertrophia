@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="row">
         
     <div class="col-md-4">
-<img src="http://www.sportlife.cl/img/somos/valores-1410276843-0.jpg?1412257452" class="img-thumbnail">
+<img src="http://www.sportlife.cl/img/somos/valores-1410276843-0.jpg?1412257452" class="img-circle">
 </div>  
 <div class="col-md-8">
 <div>
