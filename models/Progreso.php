@@ -45,11 +45,11 @@ class Progreso extends \yii\db\ActiveRecord
         return [
             'PROG_id' => 'Prog ID',
             'SO_id' => 'Ingrese el socio al que corresponde el progreso',
-            'PROG_peso' => 'Ingrese el  Peso',
-            'PROG_altura' => 'Ingrese el  Altura',
-            'PROG_porcentaje_grasa' => 'Ingrese el Porcentaje Grasa',
-            'PROG_indice_masa_corporal' => 'Ingrese el Indice Masa Corporal',
-            'PROG_fecha_evaluacion' => 'Ingrese el Fecha Evaluacion',
+            'PROG_peso' => 'Peso',
+            'PROG_altura' => 'Altura',
+            'PROG_porcentaje_grasa' => 'Porcentaje Grasa',
+            'PROG_indice_masa_corporal' => 'Indice Masa Corporal',
+            'PROG_fecha_evaluacion' => 'Fecha Evaluacion',
         ];
     }
 }
