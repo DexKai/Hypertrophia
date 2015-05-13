@@ -26,7 +26,7 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
     <div class="wrap">
         <?php
-         
+
             NavBar::begin([
                 'brandLabel' => 'Hypertrophia',
                 'brandUrl' => Yii::$app->homeUrl,
@@ -45,24 +45,23 @@ AppAsset::register($this);
 
 
                     ['label' => 'Administrar', 'items'=> [
-                    ['label' => 'Disciplina', 'url' => ['/disciplina/index']],
-                    ['label' => 'Clases', 'url' => ['/clase/index']],
-                    ['label' => 'Socios', 'url' => ['/socio/index']],
-                    ['label' => 'Pagos', 'url' => ['/pago/index']],
-                    ['label' => 'Progresos', 'url' => ['/progreso/index']],
-                    ['label' => 'Horarios', 'url' => ['/horario/index']],
-                    ['label' => 'Sueldos', 'url' => ['/sueldo/index']],
-                    ['label' => 'Profesores', 'url' => ['/profesor/index']],
-                    ['label' => 'Tipo de profesores', 'url' => ['/tipo-profesor/index']],
-                    ['label' => 'Informes medicos', 'url' => ['/informe-medico/index']],
-                    
+                        ['label' => 'Disciplina', 'url' => ['/disciplina/index']],
+                        ['label' => 'Clases', 'url' => ['/clase/index']],
+                        ['label' => 'Socios', 'url' => ['/socio/index']],
+                        ['label' => 'Pagos', 'url' => ['/pago/index']],
+                        ['label' => 'Progresos', 'url' => ['/progreso/index']],
+                        ['label' => 'Horarios', 'url' => ['/horario/index']],
+                        ['label' => 'Sueldos', 'url' => ['/sueldo/index']],
+                        ['label' => 'Profesores', 'url' => ['/profesor/index']],
+                        ['label' => 'Tipo de profesores', 'url' => ['/tipo-profesor/index']],
+                        ['label' => 'Informes medicos', 'url' => ['/informe-medico/index']],
+
                     ]],
 
                     Yii::$app->user->isGuest ?
-
-                        ['label' => 'Iniciar Sesión', 'url' => ['/user/security/login']] :
-                        ['label' => 'Cierrar Sesión (' . Yii::$app->user->identity->username . ')',
-                            'url' => ['/user/security/logout'],
+                        ['label' => 'Iniciar Sesión', 'url' => ['/user/login']] :
+                        ['label' => 'Cierrar Sesión (' . Yii::$app->user->displayName . ')',
+                            'url' => ['/user/logout'],
                             'linkOptions' => ['data-method' => 'post']],
                 ],
             ]);
@@ -94,12 +93,12 @@ AppAsset::register($this);
 
 
 
-<!-- 
+<!--
     <footer class="container">
 
         <div class="col-md-3"> <a href="http://www.us.powerade.com/"><img src="img/Power-Logo2.png"></a></div>
         <div class="col-md-3"> <a href="http://www.adidas.com/"><img src="img/adidas-logo2.png"></a></div>
-        
+
         <div class="col-md-3"> <a href="http://www.us.powerade.com/"><img src="img/Power-Logo2.png"></a></div>
         <div class="col-md-3"> <a href="http://www.adidas.com/"><img src="img/adidas-logo2.png"></a></div>
 
@@ -107,8 +106,8 @@ AppAsset::register($this);
     -->
 
     <footer class="footer">
-    
-    
+
+
 
 
         <div class="container">

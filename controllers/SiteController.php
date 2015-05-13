@@ -109,10 +109,6 @@ class SiteController extends Controller
         return $this->render('valores');
     }
 
-
-
-
-
     public function actionAbout2()
     {
         return $this->render('about2');
