@@ -10,7 +10,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <ul class="nav nav-tabs  ">
   <li class="active"><a href="index.php?r=site%2Fabout2"><strong>Meditacion</strong></a></li>
-  <li ><a href="index.php?r=site%2Fmision2"><strong>Muscular</strong></a></li>
+  <li ><a href="index.php?r=site%2Fmision2"><strong>Musculacion</strong></a></li>
   <li><a href="index.php?r=site%2Fvision2"><strong>Fitness grupal</strong></a></li>
 </ul>
 

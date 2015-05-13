@@ -8,8 +8,8 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="container-fluid">
 
 <ul class="nav nav-tabs  ">
-  <li ><a href="index.php?r=site%2Fabout2"><strong>Meditacion</strong>n</a></li>
-  <li class="active" ><a href="index.php?r=site%2Fmision"><strong>Muscular</strong></a></li>
+  <li ><a href="index.php?r=site%2Fabout2"><strong>Meditacion</strong></a></li>
+  <li class="active" ><a href="index.php?r=site%2Fmision"><strong>Musculacion</strong></a></li>
   <li ><a href="index.php?r=site%2Fvision2"><strong>Fitness grupal</strong></a></li>
 
 </ul>
