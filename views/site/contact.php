@@ -51,10 +51,10 @@ $this->params['breadcrumbs'][] = $this->title;
                 <p><i class="fa fa-phone"></i>
                     <abbr title="Phone">Teléfono</abbr>: (41) 3111200</p>
                 <p><i class="fa fa-envelope-o"></i>
-                    <abbr title="Email">Email</abbr>: <a href="mailto:name@example.com">joesalaz@alumnos.ubiobio.cl</a>
+                    <abbr title="Email">Email</abbr>: <a href="mailto:name@example.com">Contacto@Hypertrophia.com</a>
                 </p>
                 <p><i class="fa fa-clock-o"></i>
-                    <abbr title="Hours">Horario</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
+                    <abbr title="Hours">Horario</abbr>: Lunes - Sabado: 9:00 AM to 9:00 PM</p>
                 <ul class="list-unstyled list-inline list-social-icons">
                     <li>
                         <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
