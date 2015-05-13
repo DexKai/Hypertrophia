@@ -8,10 +8,10 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="container-fluid">
 
 <ul class="nav nav-tabs  ">
-  <li role="presentation" ><a href="index.php?r=site%2Fabout">Historia</a></li>
-  <li role="presentation" ><a href="index.php?r=site%2Fmision">Mision</a></li>
-  <li role="presentation" ><a href="index.php?r=site%2Fvision">Vision</a></li>
-  <li class="active" role="presentation" ><a href="index.php?r=site%2Fvalores">Valores</a></li>
+  <li role="presentation" ><a href="index.php?r=site%2Fabout"><strong>Historia</strong></a></li>
+  <li role="presentation" ><a href="index.php?r=site%2Fmision"><strong>Mision</strong></a></li>
+  <li role="presentation" ><a href="index.php?r=site%2Fvision"><strong>Vision</strong></a></li>
+  <li class="active" role="presentation" ><a href="index.php?r=site%2Fvalores"><strong>Valores</strong></a></li>
 </ul>
 
 	
@@ -26,6 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
 </br>
 </br>
 </br>
+
 <strong>Pasión</strong>
 <p>Somos apasionados por nuestro trabajo, anteponemos esta pasión por encima de todas las dificultades y nos entusiasman los desafíos que nos prepara el futuro.
 </p>

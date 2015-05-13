@@ -8,10 +8,10 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="container-fluid">
 
 <ul class="nav nav-tabs  ">
-  <li ><a href="index.php?r=site%2Fabout">Historia</a></li>
-  <li class="active" ><a href="index.php?r=site%2Fmision">Mision</a></li>
-  <li ><a href="index.php?r=site%2Fvision">Vision</a></li>
-  <li ><a href="index.php?r=site%2Fvalores">Valores</a></li>
+  <li ><a href="index.php?r=site%2Fabout"><strong>Historia</strong></a></li>
+  <li class="active" ><a href="index.php?r=site%2Fmision"><strong>Mision</strong></a></li>
+  <li ><a href="index.php?r=site%2Fvision"><strong>Vision</strong></a></li>
+  <li ><a href="index.php?r=site%2Fvalores"><strong>Valores</strong></a></li>
 </ul>
 
 
@@ -26,9 +26,10 @@ $this->params['breadcrumbs'][] = $this->title;
 </br>
 </br>
     <p>  
+<strong>
 Somos una empresa dedicada a la administración y operación de centros deportivos, con el propósito de educar y motivar a todas las personas a mejorar su calidad de vida, a través de una experiencia única e integral.
 </p>
-<p>Nuestra Misión es Educar y Motivar a todas las personas a mejorar su bienestar, entregando una experiencia única con un servicio de excelencia a través de una cultura deportiva integral.
+<p>Nuestra Misión es Educar y Motivar a todas las personas a mejorar su bienestar, entregando una experiencia única con un servicio de excelencia a través de una cultura deportiva integral.</strong>
 </p>
 </div >
 
