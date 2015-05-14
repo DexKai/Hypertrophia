@@ -13,7 +13,7 @@ use yii\widgets\ActiveForm;
     <?php $form = ActiveForm::begin(); ?>
 
 
-    <?= $form->field($model, 'PRO_rut')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'PRO_rut')->textInput(array('placeholder' => 'ejemplo: 12345678-9')) ?>
 
     <?= $form->field($model, 'PRO_nombre')->textInput(['maxlength' => true]) ?>
 
@@ -21,7 +21,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'PRO_apellidom')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'PRO_email')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'PRO_email')->textInput(array('placeholder' => 'ejemplo@ejemplo.com')) ?>
 
     <?= $form->field($model, 'PRO_disciplina')->textInput(['maxlength' => true]) ?>
 

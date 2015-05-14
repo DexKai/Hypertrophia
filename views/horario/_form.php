@@ -20,9 +20,10 @@ use app\models\Profesor;
         ['prompt'=>'Seleccione un profesor']
         )?>
 
-    <?= $form->field($model, 'HOR_entrada')->textInput() ?>
 
-    <?= $form->field($model, 'HOR_salida')->textInput() ?>
+    <?= $form->field($model, 'HOR_entrada')->textInput(array('placeholder' => 'ejemplo: 09:40')) ?>
+
+    <?= $form->field($model, 'HOR_salida')->textInput(array('placeholder' => 'ejemplo: 17:00')) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
