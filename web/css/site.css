@@ -1,7 +1,11 @@
 html,
 body {
     height: 100%;
+<<<<<<< HEAD
     background: #0d0d0d url(../img/fondo.jpg) ;
+=======
+    background: #0d0d0d url(../img/fondo.jpg);
+>>>>>>> 9779d058eb7d8652e75c0d18bf9cb49dd5bcbb2b
 }
 
 .wrap {

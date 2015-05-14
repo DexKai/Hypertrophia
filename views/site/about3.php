@@ -10,8 +10,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <ul class="nav nav-tabs  ">
   <li class="active"><a href="index.php?r=site%2Fabout3"><strong>Eventos </strong></a></li>
-  <li ><a href="index.php?r=site%2Fmision3"><strong>Musculacion</strong></a></li>
-  <li><a href="index.php?r=site%2Fvision3"><strong>Fitness grupal</strong></a></li>
+  <li ><a href="index.php?r=site%2Fmision3"><strong>Consejos</strong></a></li>
+  <li><a href="index.php?r=site%2Fvision3"><strong>Bienestar</strong></a></li>
 </ul>
 
 
@@ -19,8 +19,11 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="row">
         
     <div class="col-md-4">
-<img src="http://www.elrancaguino.cl/rancaguino/news/6527/4.JPG" class="img-thumbnail">
+      </br>
+</br>
+<img src="http://4.bp.blogspot.com/_x6qoBa8-CS8/SwrY_DbXoZI/AAAAAAAAARw/vo0tHfAcMPU/s1600/2%C2%AApas+perros+Generals20.JPG" class="img-thumbnail">
 </div>  
+
 <div class="col-md-8">
 <div>
 </br>
@@ -39,11 +42,11 @@ Si te gusta la zumba, tenemos una invitación para ti. No te pierdas este espect
 <p>
 
 
-<strong>Maraton Perruna</strong>
+<strong>Maraton Perruna y muestra de talentos</strong>
 <p>
 
 	Si eres un amante de los animales esta es tu oportunidad por 5°  vez el 10 de enero se realizara una
-	 entrenida maraton acompañada por tu mascota con interesantes premios y concursos .estas seran de 5K y 10K. 
+	 entrenida maraton acompañada por tu mascota ademas de muestra de talentos, con interesantes premios y concursos .estas seran de 5K y 10K. 
 	 NO TE LA PIERDAS
 </p>
 

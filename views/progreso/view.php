@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Progreso */
 
-$this->title = $model->PROG_id;
+
 $this->params['breadcrumbs'][] = ['label' => 'Progresos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -15,8 +15,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
     <p>
-        <?= Html::a('Update', ['update', 'id' => $model->PROG_id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->PROG_id], [
+        <?= Html::a('actualizar', ['update', 'id' => $model->PROG_id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Borrar', ['delete', 'id' => $model->PROG_id], [
             'class' => 'btn btn-danger',
             'data' => [
                 'confirm' => '¿Estas seguro que deseas borrar este item?',
