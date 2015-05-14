@@ -2,7 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-
+use app\models\Socio;
+use yii\helpers\ArrayHelper;
 /* @var $this yii\web\View */
 /* @var $model app\models\Pago */
 /* @var $form yii\widgets\ActiveForm */
@@ -12,11 +13,17 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'SO_id')->textInput() ?>
+    
+
+     <?= $form->field($model, 'SO_id')->dropDownList(
+        ArrayHelper::map(Socio::find()->all(),'SO_id','SO_nombre'),
+        ['prompt'=>'Seleccione a que socio corresponde el PAGO ']
+        )?>
+
 
     <?= $form->field($model, 'PA_monto')->textInput() ?>
 
-    <?= $form->field($model, 'PA_pago_mes')->textInput() ?>
+   
 
 
 

@@ -19,10 +19,7 @@ use app\models\Progreso;
    
 
 
-    <?= $form->field($model, 'PROG_id')->dropDownList(
-    ArrayHelper::map(Progreso::find()->all(),'PROG_id','PROG_peso'),
-        ['prompt'=>'Seleccione que progreso le corresponde ']
-        )?>
+    
 
     <?= $form->field($model, 'SO_rut')->textInput([]) ?>
 

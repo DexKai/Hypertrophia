@@ -32,7 +32,11 @@ class Progreso extends \yii\db\ActiveRecord
     {
         return [
             [['SO_id'], 'integer'],
-            [['PROG_peso', 'PROG_altura', 'PROG_porcentaje_grasa', 'PROG_indice_masa_corporal'], 'number'],
+            
+             [['PROG_peso'], 'number', 'max' => 300,'min' => 0],
+              [['PROG_altura'], 'number', 'max' => 240,'min' => 100 ],
+               [['PROG_porcentaje_grasa'], 'number', 'max' => 50,'min' => 2],
+                [['PROG_indice_masa_corporal'], 'number', 'max' => 100,'min' => 10],
             [['PROG_fecha_evaluacion'], 'safe']
         ];
     }
@@ -44,12 +48,12 @@ class Progreso extends \yii\db\ActiveRecord
     {
         return [
             'PROG_id' => 'Prog ID',
-            'SO_id' => 'Ingrese el socio al que corresponde el progreso',
-            'PROG_peso' => 'Peso',
-            'PROG_altura' => 'Altura',
-            'PROG_porcentaje_grasa' => 'Porcentaje Grasa',
-            'PROG_indice_masa_corporal' => 'Indice Masa Corporal',
-            'PROG_fecha_evaluacion' => 'Fecha Evaluacion',
+            'SO_id' => 'Socio al que corresponde el progreso',
+            'PROG_peso' => 'Peso (KG)',
+            'PROG_altura' => 'Altura (CM)',
+            'PROG_porcentaje_grasa' => 'Porcentaje Grasa (%)',
+            'PROG_indice_masa_corporal' => 'Indice Masa Corporal (IMC)',
+            'PROG_fecha_evaluacion' => 'Fecha Evaluacion (formato AAAA-MM-DD HH:MM:SS ) ',
         ];
     }
 }

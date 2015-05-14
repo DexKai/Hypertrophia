@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use app\models\Socio;
+use yii\helpers\ArrayHelper;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\PagoSearch */
@@ -15,7 +17,7 @@ use yii\widgets\ActiveForm;
         'method' => 'get',
     ]); ?>
 
-    <?= $form->field($model, 'PA_id') ?>
+    <?= $form->field($model,  ArrayHelper::map(Socio::find()->all(),'SO_id','SO_nombre') ?>
 
     <?= $form->field($model, 'SO_id') ?>
 

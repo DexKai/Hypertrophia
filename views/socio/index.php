@@ -25,7 +25,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-          //'SO_id',
+          ///'SO_id',
            // 'PROG_id',
            // 'IM_id',
             //'PA_id',
@@ -35,7 +35,7 @@ $this->params['breadcrumbs'][] = $this->title;
              'SO_apellido_paterno',
             // 'SO_email:email',
             // 'SO_direccion',
-            // 'SO_estado_actividad',
+            'SO_estado_actividad',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
