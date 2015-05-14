@@ -36,13 +36,15 @@ class Socio extends \yii\db\ActiveRecord
     {
         return [
             [['PROG_id', 'IM_id', 'PA_id'], 'integer'],
-            [['SO_rut', 'SO_nombre', 'SO_apellido_materno', 'SO_apellido_paterno', 'SO_email', 'SO_direccion', 'SO_estado_actividad'], 'string', 'max' => 256]
+            [['SO_nombre', 'SO_apellido_materno', 'SO_apellido_paterno', 'SO_direccion', 'SO_estado_actividad'], 'string', 'max' => 256],
+          [['SO_rut'], 'validarRut'],
+          [['SO_email'], 'email']
         ];
     }
 
     /**
      * @inheritdoc
-     */
+     */     
     public function attributeLabels()
     {
         return [
@@ -59,4 +61,44 @@ class Socio extends \yii\db\ActiveRecord
             'SO_estado_actividad' => 'Estado Actividad',
         ];
     }
+
+
+
+
+public function validarRut($attribute, $params) {
+        $data = explode('-', $this->SO_rut);
+        $evaluate = strrev($data[0]);
+        $multiply = 2;
+        $store = 0;
+        for ($i = 0; $i < strlen($evaluate); $i++) {
+            $store += $evaluate[$i] * $multiply;
+            $multiply++;
+            if ($multiply > 7)
+                $multiply = 2;
+        }
+        isset($data[1]) ? $verifyCode = strtolower($data[1]) : $verifyCode = '';
+        $result = 11 - ($store % 11);
+        if ($result == 10)
+            $result = 'k';
+        if ($result == 10)
+            $result = 'K';
+        if ($result == 11)
+            $result = 0;
+        if ($verifyCode != $result)
+            $this->addError('SO_rut', 'Rut inválido.');
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+ 
