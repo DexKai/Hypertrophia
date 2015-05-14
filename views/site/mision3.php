@@ -24,7 +24,11 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="row">
         
     <div class="col-md-4">
-<img src="http://www.musculacion.com/Uploads/musculacion.com/ImagenesGrandes/intensidad-clave-entrenamiento.jpg" class="img-thumbnail">
+    	</br>
+    	</br>
+</br>
+</br>
+<img src="http://ejerciciosencasa.es/wp-content/uploads/2013/11/Pull-Up-guy-crop-1.jpg" class="img-thumbnail">
 </div>  
 <div class="col-md-8">
 <div>
@@ -70,19 +74,7 @@ Las hay de dos tipos. De invierno y de media estación. Les aconsejamos utilizar
 Recuerda siempre que pequeños detalles marcan la diferencia para no detenerse en ninguna ocasión y mantener una buena salud. 
 </p>
 
-<strong>CALENTADORES DE PIERNAS, MÁS QUE UNA MODA DE LOS 80'S!</strong>
-<p>
 
-Que las bajas temperaturas no te quiten la motivación, te presentamos una prenda ideal para utilizar a la hora de entrenar en invierno y que además puedes combinar a gusto con tu look.
-
-¿Recuerdan la película “flashdance”? bueno, un elemento que se hizo muy popular en los 80’s, fueron los calentadores de piernas, los protagonistas los utilizaban durante sus ensayos y clases de danza. Los jóvenes pensaron que los calentadores que usaban sus ídolos podían llevarse también como prendas de calle, esto dio paso a distintos colores y diseños.
-
-Este simple complemento se utilizan básicamente para calentar los músculos antes de hacer ejercicio o en la primera parte del entrenamiento, previniendo lesiones, sobre todo en esta época fría donde la musculatura y cuerpo se ponen rígidos. Una vez que los músculos alcanzaron una temperatura ideal, se retiran.
-
-En los 80’s el material que se utilizaba para los calentadores de pierna era principalmente lana e hilo, actualmente su tela es lycra,  tejido deportivo elástico que generalmente se mezcla con otro material para mayor comodidad y uso. Algunos calentadores pueden tener pinzas de silicona, otros son antibacterianos y permiten la capacidad de respiración a la piel manteniendo el calor,  reducen el roce y pilling. Y lo mejor es que vienen por tallas no solo por género, si no que según el contorno de la pierna. 
-
-¡Anímate a ocuparlos y cuida tus músculos para seguir entrenando en perfectas condiciones este invierno!
-</p>
 
 
 

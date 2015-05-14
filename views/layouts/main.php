@@ -41,7 +41,7 @@ AppAsset::register($this);
                     ['label' => 'Inicio', 'url' => ['/site/index']],
                     ['label' => '¿Quienes Somos?', 'url' => ['/site/about']],
                     ['label' => 'Clases', 'url' => ['/site/about2']],
-                     ['label' => 'Socios', 'url' => ['/site/about3']],
+                     ['label' => 'BLOG', 'url' => ['/site/about3']],
                     ['label' => 'Contacto', 'url' => ['/site/contact']],
 
 
