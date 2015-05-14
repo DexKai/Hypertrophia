@@ -46,7 +46,11 @@ Luego de realizar tu entrenamiento diario en el gimnasio en época de invierno, 
 
 Evita enfriamientos y sigue los consejos de profesionales deportistas, quienes indican que hay que abrigarse muy bien al salir del gimnasio, ya que el cambio de temperatura propensa los resfriados normales y las fuertes gripes. Para ello, utiliza una gran chaqueta que cuide de tu tronco y cuello, o bien utiliza una bufanda y un gorro. 
 </p>
-
+<iframe width="700" height="400" src="https://www.youtube.com/embed/ViF1QWQlprw" frameborder="0" allowfullscreen></iframe>
+</br>
+</br>
+</br>
+</br>
 <strong>CALZADO DEPORTIVO: CLAVE A LA HORA DE ENTRENAR</strong>
 <p>
 	
@@ -58,7 +62,11 @@ Hay que tener en cuenta que hoy en día existe calzado que está diseñado para 
 
 Por último, es muy importante airear el calzado, para evitar el “pie de atleta” y tener en cuenta que a veces las zapatillas que dan buen resultado a un deportista, no tienen por qué ser buenas para otros, así que tómate el tiempo necesario para que puedas entrenar con completa comodidad.
 </p>
-
+<iframe width="700" height="400" src="https://www.youtube.com/embed/4TJx0UJXCL0" frameborder="0" allowfullscreen></iframe>
+</br>
+</br>
+</br>
+</br>
 <strong>PRIMERA CAPA: ¡QUE EL SUDOR NO TE JUEGUE UNA MALA PASADA!</strong>
 <p>
 
@@ -71,7 +79,7 @@ Es importante que se ajuste lo máximo posible al cuerpo, como si se tratara de 
 Ahora bien, hay que cuidar que no ajuste en exceso y ralentice la circulación de la sangre.
 Las hay de dos tipos. De invierno y de media estación. Les aconsejamos utilizar las de media estación, para usar en un ambiente de gimnasio. Las de invierno, son demasiado abrigadas para correr salir a correr y normalmente se utilizan para actividades más estáticas.
 
-Recuerda siempre que pequeños detalles marcan la diferencia para no detenerse en ninguna ocasión y mantener una buena salud. 
+Recuerda siempre que pequeños detalles marcan la diferencia para no detenerse en ninguna ocasión y mantener una buena salud. <iframe width="700" height="400" src="https://www.youtube.com/embed/pCyA6FOWBVE" frameborder="0" allowfullscreen></iframe>
 </p>
 
 

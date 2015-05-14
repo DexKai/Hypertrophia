@@ -42,6 +42,12 @@ $this->params['breadcrumbs'][] = $this->title;
 
 4. Entretención: Cuando comienzas a ver el gimnasio como una obligación, algo está mal. Puede que le estés dedicando mucho, puede que estés haciendo siempre lo mismo, puede que necesites cambiar el horario o que necesites ir con alguien, pero ahí la gracia: hacer cambios, probar rutinas en diferente orden, asistirse con un compañero de entrenamiento, cambiar la playlist de música, combinar la rutina del gym con otra disciplina, o cualquier otro aspecto que pueda ayudar a no perder la motivación del gimnasio.
 </p>
+
+<iframe width="700" height="400" src="https://www.youtube.com/embed/t88Skc721zs" frameborder="0" allowfullscreen></iframe>
+</br>
+</br>
+</br>
+</br>
 <strong>BENEFICIOS DE LA MÚSICA PARA LOS DEPORTISTAS</strong>
 
 <p>
@@ -62,6 +68,11 @@ Y si además le sumas el efecto relajante que provoca, lo ideal es hacer una sel
 Así que ya sabes, si quieres una motivación extra uno de esos días en los que no te apetece ir al gimnasio, toma tus audífonos y lánzate, que seguro que se te pasan todos los males y superas tus metas. 
 Fuente: Deporteysalud.hola.com  .</p>
 
+<iframe width="700" height="400" src="https://www.youtube.com/embed/cyWYC6X1X1s" frameborder="0" allowfullscreen></iframe>
+</br>
+</br>
+</br>
+</br>
 <strong>ALIMENTOS FUNDAMENTALES PARA UNA DIETA SANA</strong>
 
 <p>	
@@ -77,6 +88,11 @@ Carnes
 Fuente: Vivirsaludimujer.com
 </p>
 
+<iframe width="700" height="400" src="https://www.youtube.com/embed/JK3_tbEuxpY" frameborder="0" allowfullscreen></iframe>
+</br>
+</br>
+</br>
+</br>
 <strong>SEIS TRUCOS PARA APROVECHAR MEJOR TU TIEMPO EN Hypertrophia
 </strong>
 
@@ -87,6 +103,12 @@ No te olvides de las piernas: Es muy común para los hombres concentrarse en los
 Un día de furia: un día cada dos semanas, vuélvete loco y bate tu récord. Mejor si es en un ejercicio compuesto, como sentadillas, press de banca o dominadas. Tiene que ser un día en el que te encuentres bien, aprovecha para levantar más peso y hacer más repeticiones que nunca hasta entonces. Esfuérzate al límite y olvídate de tu programa habitual de entrenamiento. No te lesiones, pide a un monitor que te vigile.
 Busca compañía: Varios estudios corroboran que la mejor forma de ganar músculo y perder grasa son las repeticiones forzadas. Es decir, en la última serie, cuando has llegado al fallo, un compañero te ayuda a levantar el peso (pero muy poco, te hace sufrir) y así haces dos o tres repeticiones más que son las que en realidad cuentan.
 </p>
+
+<iframe width="700" height="400" src="https://www.youtube.com/embed/gyaGV7TIVbk" frameborder="0" allowfullscreen></iframe>
+</br>
+</br>
+</br>
+</br>
 </div>
 
 </div>
