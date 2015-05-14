@@ -129,4 +129,27 @@ class SiteController extends Controller
         return $this->render('valores2');
     }
 
+
+    /////////////////////////
+
+     public function actionAbout3()
+    {
+        return $this->render('about3');
+    }
+
+    public function actionMision3()
+    {
+        return $this->render('mision3');
+    }
+
+    public function actionVision3()
+    {
+        return $this->render('vision3');
+    }
+
+    public function actionValores3()
+    {
+        return $this->render('valores3');
+    }
+
 }
