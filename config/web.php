@@ -43,7 +43,7 @@ $config = [
                 'from' => ['admin@website.com' => 'Admin'], // this is needed for sending emails
                 'charset' => 'UTF-8',
             ],
-        ],/*
+        ],
         'urlManager' => [
             'class' => 'yii\web\UrlManager',
             // Disable index.php
@@ -58,7 +58,7 @@ $config = [
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
             ),
 
-        ],*/
+        ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [

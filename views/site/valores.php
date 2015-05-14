@@ -8,25 +8,23 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="container-fluid">
 
 <ul class="nav nav-tabs  ">
-  <li role="presentation" ><a href="index.php?r=site%2Fabout"><strong>Historia</strong></a></li>
-  <li role="presentation" ><a href="index.php?r=site%2Fmision"><strong>Mision</strong></a></li>
-  <li role="presentation" ><a href="index.php?r=site%2Fvision"><strong>Vision</strong></a></li>
-  <li class="active" role="presentation" ><a href="index.php?r=site%2Fvalores"><strong>Valores</strong></a></li>
+  <li><a href="about.html"><strong>Historia</strong></a></li>
+  <li><a href="mision.html"><strong>Mision</strong></a></li>
+  <li><a href="vision.html"><strong>Vision</strong></a></li>
+  <li class="active"><a href="valores.html"><strong>Valores</strong></a></li>
 </ul>
 
-	
-
 <div class="row">
-        
+
     <div class="col-md-4">
 <img src="http://www.sportlife.cl/img/somos/valores-1410276843-0.jpg?1412257452" class="img-circle">
-</div>  
+</div>
 <div class="col-md-8">
 <div>
 </br>
 </br>
 </br>
-
+<strong>
 <strong>Pasión</strong>
 <p>Somos apasionados por nuestro trabajo, anteponemos esta pasión por encima de todas las dificultades y nos entusiasman los desafíos que nos prepara el futuro.
 </p>
@@ -47,10 +45,11 @@ Buscamos el bienestar colectivo, con mentalidad de equipo que facilite la supera
 
 <p>Promovemos relaciones humanas cordiales, respetuosas y armoniosas con nuestros clientes y comunidad, respetamos la diversidad y reconocemos el diálogo como herramienta esencial para la solución de conflictos y diferencias.
 </p>
+</strong>
 </div>
 
 </div>
- 
+
 </div>
 
 

@@ -8,17 +8,17 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="container-fluid">
 
 <ul class="nav nav-tabs  ">
-  <li role="presentation" ><a href="index.php?r=site%2Fabout"><strong>Historia</strong></a></li>
-  <li role="presentation" ><a href="index.php?r=site%2Fmision"><strong>Mision</strong></a></li>
-  <li class="active" role="presentation" ><a href="index.php?r=site%2Fvision"><strong>Vision</strong></a></li>
-  <li role="presentation" ><a href="index.php?r=site%2Fvalores"><strong>Valores</strong></a></li>
+  <li><a href="about.html"><strong>Historia</strong></a></li>
+  <li><a href="mision.html"><strong>Mision</strong></a></li>
+  <li class="active"><a href="vision.html"><strong>Vision</strong></a></li>
+  <li><a href="valores.html"><strong>Valores</strong></a></li>
 </ul>
 
-
-
 <div class="row">
-        
-    <div class="col-md-6">
+    <div class="col-md-4">
+<img src="http://www.sportlife.cl/img/somos/vision-1410276830-0.jpg?1412257452" class="img-circle">
+</div>
+    <div class="col-md-8">
     </br>
 </br>
 </br>
@@ -31,9 +31,7 @@ entregando una “experiencia” única a nuestros socios.</p>
 
 </div>
 
-<div class="col-md-4">
-<img src="http://www.sportlife.cl/img/somos/vision-1410276830-0.jpg?1412257452" class="img-circle">
-</div>   
+
 
 
 </div>
