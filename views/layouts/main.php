@@ -37,7 +37,6 @@ AppAsset::register($this);
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
-
                     ['label' => 'Inicio', 'url' => ['/site/']],
                     ['label' => '¿Quienes Somos?', 'url' => ['/site/about']],
                     ['label' => 'Clases', 'url' => ['/site/clases']],
@@ -55,7 +54,15 @@ AppAsset::register($this);
                         ['label' => 'Profesores', 'url' => ['/profesor/index']],
                         ['label' => 'Tipo de profesores', 'url' => ['/tipo-profesor/index']],
                         ['label' => 'Informes medicos', 'url' => ['/informe-medico/index']],
+                    ]],
 
+                    ['label' => 'Usuario', 'items'=> [
+                        //['label' => 'Propiedades', 'url' => ['/user']],
+                        ['label' => 'Administrar', 'url' => ['/user/admin']],
+                        //['label' => 'Registrar', 'url' => ['/user/register']],
+                        ['label' => 'Modificar Perfil', 'url' => ['/user/account']],
+                        ['label' => 'Perfil', 'url' => ['/user/profile']],
+                        //'label' => 'Olvido Contraseña', 'url' => ['/user/forgot']],
                     ]],
 
                     Yii::$app->user->isGuest ?
