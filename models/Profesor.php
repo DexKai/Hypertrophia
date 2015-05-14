@@ -47,6 +47,19 @@ class Profesor extends \yii\db\ActiveRecord
         return [
             [['HOR_id', 'SUE_id', 'IM_id', 'TIP_id'], 'integer'],
             [['PRO_rut'], 'validarRut'],
+            [['PRO_rut'], 'unique', 'message'=>'Rut ya existe'],
+            [['PRO_rut'], 'required',  'message'=>'campo requerido'],
+
+            [['PRO_nombre','PRO_apellidop', 'PRO_apellidom'], 'string', 'max' => 20],
+            [['PRO_nombre','PRO_apellidop', 'PRO_apellidom'], 'required', 'message'=>'compo requerido'],
+
+            [['PRO_nombre'], 'match',"pattern" => '/^[a-zA-Z ñÑáéíóúüç]*$/', 'message'=>'Solo se pueden utilizar letras'],
+            [['PRO_apellidop'],'match',"pattern" => '/^[a-zA-Z ñÑáéíóúüç]*$/', 'message'=>'Solo se pueden utilizar letras'],
+            [['PRO_apellidom'],'match',"pattern" => '/^[a-zA-Z ñÑáéíóúüç]*$/', 'message'=>'Solo se pueden utilizar letras'],
+
+            [['PRO_email'], 'email'],
+            [['PRO_email'], 'unique', 'message'=>'correo ya existe'],
+            [['PRO_email'], 'required', 'message'=>'campo requerido'],
             [['PRO_nombre', 'PRO_apellidop', 'PRO_apellidom'], 'string', 'max' => 20],
             [['PRO_email'], 'email']
         ];
