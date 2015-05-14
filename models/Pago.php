@@ -45,9 +45,9 @@ class Pago extends \yii\db\ActiveRecord
     {
         return [
             'PA_id' => 'Pa ID',
-            'SO_id' => 'socio correspondiente al pago ',
+            'SO_id' => 'socio',
             'PA_monto' => 'Monto(CLP sin puntos)',
-            'PA_pago_mes' => '¿Efectuo este Mes?',
+            'PA_pago_mes' => 'Efectuo este Mes',
             'PA_fecha_pago' => 'Si se efectuo el pago.Ingrese la Fecha Pago(formato AAAA-MM-DD HH:MM:SS)',
         ];
     }
