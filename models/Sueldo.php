@@ -30,7 +30,8 @@ class Sueldo extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['PRO_id', 'SUE_sueldo'], 'integer']
+            [['PRO_id', 'SUE_sueldo'], 'integer'],
+            [['PRO_id', 'SUE_sueldo'], 'required','message'=>'Campo Requerido']
         ];
     }
 

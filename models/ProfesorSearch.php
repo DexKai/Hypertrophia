@@ -19,7 +19,7 @@ class ProfesorSearch extends Profesor
     {
         return [
             [['PRO_id', 'HOR_id', 'SUE_id', 'IM_id', 'TIP_id'], 'integer'],
-            [['PRO_rut', 'PRO_nombre', 'PRO_apellidop', 'PRO_apellidom', 'PRO_email'], 'safe'],
+            [['PRO_rut', 'PRO_nombre', 'PRO_apellidop', 'PRO_apellidom', 'PRO_email', 'PRO_disciplina', 'PRO_clases'], 'safe'],
         ];
     }
 
@@ -50,7 +50,7 @@ class ProfesorSearch extends Profesor
         $this->load($params);
 
         if (!$this->validate()) {
-            // uncomment the following line if you do not want to any records when validation fails
+            // uncomment the following line if you do not want to return any records when validation fails
             // $query->where('0=1');
             return $dataProvider;
         }
@@ -67,7 +67,9 @@ class ProfesorSearch extends Profesor
             ->andFilterWhere(['like', 'PRO_nombre', $this->PRO_nombre])
             ->andFilterWhere(['like', 'PRO_apellidop', $this->PRO_apellidop])
             ->andFilterWhere(['like', 'PRO_apellidom', $this->PRO_apellidom])
-            ->andFilterWhere(['like', 'PRO_email', $this->PRO_email]);
+            ->andFilterWhere(['like', 'PRO_email', $this->PRO_email])
+            ->andFilterWhere(['like', 'PRO_disciplina', $this->PRO_disciplina])
+            ->andFilterWhere(['like', 'PRO_clases', $this->PRO_clases]);
 
         return $dataProvider;
     }

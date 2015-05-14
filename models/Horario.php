@@ -32,7 +32,12 @@ class Horario extends \yii\db\ActiveRecord
     {
         return [
             [['PRO_id'], 'integer'],
-            [['HOR_entrada', 'HOR_salida'], 'safe']
+            [['HOR_entrada', 'HOR_salida'], 'safe'],
+            [['HOR_entrada', 'HOR_salida', 'PRO_id'], 'required','message'=>'campo requerido']
+
+
+
+
         ];
     }
 

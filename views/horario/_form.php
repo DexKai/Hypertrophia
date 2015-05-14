@@ -14,7 +14,7 @@ use app\models\Profesor;
 
     <?php $form = ActiveForm::begin(); ?>
 
-     
+
     <?= $form->field($model, 'PRO_id')->dropDownList(
         ArrayHelper::map(Profesor::find()->all(),'PRO_id','PRO_nombre'),
         ['prompt'=>'Seleccione un profesor']

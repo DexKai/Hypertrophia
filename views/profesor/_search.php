@@ -15,25 +15,20 @@ use yii\widgets\ActiveForm;
         'method' => 'get',
     ]); ?>
 
-    <?= $form->field($model, 'PRO_id') ?>
 
-    <?= $form->field($model, 'HOR_id') ?>
+    <?php $form->field($model, 'PRO_rut') ?>
 
-    <?= $form->field($model, 'SUE_id') ?>
+    <?php $form->field($model, 'PRO_nombre') ?>
 
-    <?= $form->field($model, 'IM_id') ?>
+    <?php $form->field($model, 'PRO_apellidop') ?>
 
-    <?= $form->field($model, 'TIP_id') ?>
+    <?php $form->field($model, 'PRO_apellidom') ?>
 
-    <?php // echo $form->field($model, 'PRO_rut') ?>
+    <?php $form->field($model, 'PRO_email') ?>
 
-    <?php // echo $form->field($model, 'PRO_nombre') ?>
+    <?php // echo $form->field($model, 'PRO_disciplina') ?>
 
-    <?php // echo $form->field($model, 'PRO_apellidop') ?>
-
-    <?php // echo $form->field($model, 'PRO_apellidom') ?>
-
-    <?php // echo $form->field($model, 'PRO_email') ?>
+    <?php // echo $form->field($model, 'PRO_clases') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

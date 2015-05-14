@@ -13,15 +13,19 @@ use yii\widgets\ActiveForm;
     <?php $form = ActiveForm::begin(); ?>
 
 
-    <?= $form->field($model, 'PRO_rut')->textInput(['maxlength' => 10]) ?>
+    <?= $form->field($model, 'PRO_rut')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'PRO_nombre')->textInput(['maxlength' => 20]) ?>
+    <?= $form->field($model, 'PRO_nombre')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'PRO_apellidop')->textInput(['maxlength' => 20]) ?>
+    <?= $form->field($model, 'PRO_apellidop')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'PRO_apellidom')->textInput(['maxlength' => 20]) ?>
+    <?= $form->field($model, 'PRO_apellidom')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'PRO_email')->textInput(['maxlength' => 100]) ?>
+    <?= $form->field($model, 'PRO_email')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'PRO_disciplina')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'PRO_clases')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

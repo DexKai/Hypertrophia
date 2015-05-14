@@ -17,6 +17,8 @@ use Yii;
  * @property string $PRO_apellidop
  * @property string $PRO_apellidom
  * @property string $PRO_email
+ * @property string $PRO_disciplina
+ * @property string $PRO_clases
  *
  * @property FkSocioProfesor[] $fkSocioProfesors
  * @property Socio[] $sOs
@@ -61,7 +63,9 @@ class Profesor extends \yii\db\ActiveRecord
             [['PRO_email'], 'unique', 'message'=>'correo ya existe'],
             [['PRO_email'], 'required', 'message'=>'campo requerido'],
             [['PRO_nombre', 'PRO_apellidop', 'PRO_apellidom'], 'string', 'max' => 20],
-            [['PRO_email'], 'email']
+            [['PRO_email'], 'email'],
+            [['PRO_email'], 'string', 'max' => 100],
+            [['PRO_disciplina', 'PRO_clases'], 'string', 'max' => 120]
         ];
     }
 
@@ -81,6 +85,8 @@ class Profesor extends \yii\db\ActiveRecord
             'PRO_rut' => 'Rut',
             'PRO_apellidom' => 'Apellido materno',
             'PRO_email' => 'Email',
+            'PRO_disciplina' => 'Disciplina',
+            'PRO_clases' => 'Clases',
         ];
     }
     /**
@@ -172,7 +178,7 @@ class Profesor extends \yii\db\ActiveRecord
 
 
 
-   
+
 
     public function validarRut($attribute, $params) {
         $data = explode('-', $this->PRO_rut);

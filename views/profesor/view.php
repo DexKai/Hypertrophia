@@ -6,12 +6,13 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Profesor */
 
-$this->title = $model->PRO_id;
+
 $this->params['breadcrumbs'][] = ['label' => 'Profesors', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="profesor-view">
 
+    <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
         <?= Html::a('Update', ['update', 'id' => $model->PRO_id], ['class' => 'btn btn-primary']) ?>
@@ -27,11 +28,14 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
+
             'PRO_rut',
             'PRO_nombre',
             'PRO_apellidop',
             'PRO_apellidom',
             'PRO_email:email',
+            'PRO_disciplina',
+            'PRO_clases',
         ],
     ]) ?>
 
