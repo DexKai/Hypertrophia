@@ -38,10 +38,10 @@ AppAsset::register($this);
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
 
-                    ['label' => 'Inicio', 'url' => ['/site/index']],
+                    ['label' => 'Inicio', 'url' => ['/site/']],
                     ['label' => '¿Quienes Somos?', 'url' => ['/site/about']],
-                    ['label' => 'Clases', 'url' => ['/site/about2']],
-                     ['label' => 'Socios', 'url' => ['/site/about3']],
+                    ['label' => 'Clases', 'url' => ['/site/clases']],
+                    ['label' => 'Socios', 'url' => ['/site/socios']],
                     ['label' => 'Contacto', 'url' => ['/site/contact']],
 
 
@@ -76,7 +76,8 @@ AppAsset::register($this);
             <?= $content ?>
         </div>
     </div>
-
+<?php
+/*
     <footer class="container">
     <div class="jumbotron">
     <div class="col-md-4 col-md-offset-4">
@@ -91,8 +92,8 @@ AppAsset::register($this);
     </div>
     </div>
     </footer>
-
-
+*/
+ ?>
 
 <!--
     <footer class="container">

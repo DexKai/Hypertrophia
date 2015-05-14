@@ -88,7 +88,7 @@ class SiteController extends Controller
             ]);
         }
     }
-
+//Quienes Somos
     public function actionAbout()
     {
         return $this->render('about');
@@ -108,15 +108,20 @@ class SiteController extends Controller
     {
         return $this->render('valores');
     }
-
-    public function actionAbout2()
+//Clases
+    public function actionClases()
     {
-        return $this->render('about2');
+        return $this->render('clases');
     }
 
-    public function actionMision2()
+    public function actionClases2()
     {
-        return $this->render('mision2');
+        return $this->render('clases2');
+    }
+
+    public function actionClases3()
+    {
+        return $this->render('clases3');
     }
 
     public function actionVision2()
