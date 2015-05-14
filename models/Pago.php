@@ -51,4 +51,29 @@ class Pago extends \yii\db\ActiveRecord
             'PA_fecha_pago' => 'Si se efectuo el pago.Ingrese la Fecha Pago(formato AAAA-MM-DD HH:MM:SS)',
         ];
     }
+
+
+
+public function getSO()
+    {
+        return $this->hasOne(Socio::className(), ['SO_id' => 'SO_id']);
+    }
+
+
+
+
+    public function getSocios()
+    {
+        return $this->hasMany(Socio::className(), ['PA_id' => 'PA_id']);
+    }
+
+
 }
+
+
+
+
+
+
+
+

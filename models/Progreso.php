@@ -57,4 +57,24 @@ class Progreso extends \yii\db\ActiveRecord
             'PROG_fecha_evaluacion' => 'Fecha Evaluacion(formato AAAA-MM-DD HH:MM:SS ) ',
         ];
     }
+
+
+
+public function getSO()
+    {
+        return $this->hasOne(Socio::className(), ['SO_id' => 'SO_id']);
+    }
+
+
+
+
+    public function getSocios()
+    {
+        return $this->hasMany(Socio::className(), ['PROG_id' => 'PROG_id']);
+    }
 }
+
+
+
+
+  
