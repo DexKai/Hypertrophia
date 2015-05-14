@@ -40,7 +40,7 @@ $config = [
             // for the mailer to send real emails.
             'useFileTransport' => true,
             'messageConfig' => [
-                'from' => ['admin@website.com' => 'Admin'], // this is needed for sending emails
+                'from' => ['pgsoto@alumnos.ubiobio.cl' => 'Admin'], // this is needed for sending emails
                 'charset' => 'UTF-8',
             ],
         ],
@@ -50,7 +50,7 @@ $config = [
             'showScriptName' => false,
             // Disable r= routes
             'enablePrettyUrl' => true,
-            'enableStrictParsing' => false,
+            //'enableStrictParsing' => false,
             'suffix' => '.html',
             'rules' => array(
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',

@@ -4,13 +4,13 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 $this->title = 'BLOG';
 $this->params['breadcrumbs'][] = $this->title;
-?><h1>BLOG</h1>
+?><h1>Blog</h1>
 <div class="container-fluid">
 
 <ul class="nav nav-tabs  ">
   <li class="active"><a href="about3.html"><strong>Eventos</strong></a></li>
-  <li ><a href="mision3.html"><strong>Consejos</strong></a></li>
-  <li><a href="vision3.html"><strong>Bienestar</strong></a></li>
+  <li role="presentation"><a href="mision3.html"><strong>Consejos</strong></a></li>
+  <li role="presentation"><a href="vision3.html"><strong>Bienestar</strong></a></li>
 </ul>
 
 <div class="row">
