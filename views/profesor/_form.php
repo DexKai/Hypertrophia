@@ -23,9 +23,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'PRO_email')->textInput(array('placeholder' => 'ejemplo@ejemplo.com')) ?>
 
-    <?= $form->field($model, 'PRO_disciplina')->textInput(['maxlength' => true]) ?>
+    <?php /*$form->field($model, 'PRO_disciplina')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'PRO_clases')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'PRO_clases')->textInput(['maxlength' => true]) */?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

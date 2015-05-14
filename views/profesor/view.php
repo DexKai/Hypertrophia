@@ -34,8 +34,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'PRO_apellidop',
             'PRO_apellidom',
             'PRO_email:email',
-            'PRO_disciplina',
-            'PRO_clases',
+            //'PRO_disciplina',
+            //'PRO_clases',
         ],
     ]) ?>
 
