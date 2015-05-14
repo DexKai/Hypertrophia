@@ -40,15 +40,9 @@ AppAsset::register($this);
 
                     ['label' => 'Inicio', 'url' => ['/site/']],
                     ['label' => '¿Quienes Somos?', 'url' => ['/site/about']],
-<<<<<<< HEAD
                     ['label' => 'Clases', 'url' => ['/site/clases']],
-                    ['label' => 'Socios', 'url' => ['/site/socios']],
-=======
-                    ['label' => 'Clases', 'url' => ['/site/about2']],
-                     ['label' => 'BLOG', 'url' => ['/site/about3']],
->>>>>>> 9779d058eb7d8652e75c0d18bf9cb49dd5bcbb2b
+                    ['label' => 'BLOG', 'url' => ['/site/about3']],
                     ['label' => 'Contacto', 'url' => ['/site/contact']],
-
 
                     ['label' => 'Administrar', 'items'=> [
                         ['label' => 'Disciplina', 'url' => ['/disciplina/index']],

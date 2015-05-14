@@ -8,18 +8,10 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="container-fluid">
 
 <ul class="nav nav-tabs  ">
-  <li><a href="clases.html"><strong>Meditacion</strong></a></li>
-  <li class="active"><a href="clases2.html"><strong>Musculacion</strong></a></li>
+  <li><a href="clases.html"><strong>Meditación</strong></a></li>
+  <li class="active"><a href="clases2.html"><strong>Musculación</strong></a></li>
   <li><a href="clases3.html"><strong>Fitness grupal</strong></a></li>
 </ul>
-
-
-
-
-
-
-
-
 
 <div class="row">
 
@@ -32,7 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
 </br>
 </br>
 
-
+<strong>
 <strong>Abdominales</strong>
 <p>
 	Actividad donde el abdomen es estimulado desde sus diferentes inserciones. Mantener buenos niveles de tonicidad en este grupo muscular evitará problemas a la espalda y ayudará a mejorar su postura
@@ -61,7 +53,7 @@ Trabajo intervalado de alta intensidad que dura 30’. Consiste en la utilizaci�
 <p>
 Programa de entrenamiento de alta intensidad donde el trabajo se enfoca básicamente en saltos, complementando con ejercicios de abdomen y brazos a través de intervalos de alta intensidad.
 </p>
-
+</strong>
 
 
 

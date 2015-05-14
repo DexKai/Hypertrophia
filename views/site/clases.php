@@ -7,10 +7,9 @@ $this->params['breadcrumbs'][] = $this->title;
 ?><h1>Clases</h1>
 <div class="container-fluid">
 
-
 <ul class="nav nav-tabs  ">
-  <li class="active"><a href="clases.html"><strong>Meditacion</strong></a></li>
-  <li ><a href="clases2.html"><strong>Musculacion</strong></a></li>
+  <li class="active"><a href="clases.html"><strong>Meditación</strong></a></li>
+  <li ><a href="clases2.html"><strong>Musculación</strong></a></li>
   <li><a href="clases3.html"><strong>Fitness grupal</strong></a></li>
 </ul>
 
@@ -24,6 +23,8 @@ $this->params['breadcrumbs'][] = $this->title;
 </br>
 </br>
 </br>
+
+<strong>
 <strong>Pilates</strong>
 <p>
 
@@ -45,7 +46,7 @@ Ejercitación del cuerpo y mente a través de posturas mantenidas, basados en tr
 <p>
 Entrenamiento inestable en circuito. Movimientos multiplanares integrados para la mejora de los sistemas músculo-articular y estabilización lumbo – pélvica y del core.
 </p>
-
+</strong>
 
 
 

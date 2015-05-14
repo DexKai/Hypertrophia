@@ -8,9 +8,9 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="container-fluid">
 
 <ul class="nav nav-tabs  ">
-  <li role="presentation" ><a href="index.php?r=site%2Fabout2"><strong>Meditacion</strong></a></li>
-  <li role="presentation" ><a href="index.php?r=site%2Fmision2"><strong>Musculacion</strong></a></li>
-  <li class="active" role="presentation" ><a href="index.php?r=site%2Fvision"><strong>Fitness grupal</strong></a></li>
+  <li><a href="clases.html"><strong>Meditación</strong></a></li>
+  <li><a href="clases2.html"><strong>Musculación</strong></a></li>
+  <li class="active"><a href="clases3.html"><strong>Fitness grupal</strong></a></li>
 </ul>
 
 <div class="row">
@@ -24,7 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
 </br>
 </br>
 
-
+<strong>
 <strong>Aero-local</strong>
 <p>
 	Ejercicios que combinan los golpes de box, al ritmo de la música, trabajando
@@ -57,7 +57,7 @@ Clase dinámica que se divide en dos segmentos . La primera parte se trabaja con
 <p>
 Clase grupal que mezcla golpes de puño y de pie, en las que se crean combinaciones de golpes que ayudan a mejorar la tonicidad muscular y la resistencia cardiovascular.
 </p>
-
+</strong>
 
 
 
