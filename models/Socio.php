@@ -36,9 +36,17 @@ class Socio extends \yii\db\ActiveRecord
     {
         return [
             [['PROG_id', 'IM_id', 'PA_id'], 'integer'],
-            [['SO_nombre', 'SO_apellido_materno', 'SO_apellido_paterno', 'SO_direccion', 'SO_estado_actividad'], 'string', 'max' => 256],
+            [['SO_nombre', 'SO_apellido_materno', 'SO_apellido_paterno', 'SO_direccion', 'SO_estado_actividad'], 'string', 'max' => 20],
           [['SO_rut'], 'validarRut'],
-          [['SO_email'], 'email']
+          [['SO_email'], 'email'],
+          [['SO_nombre'], 'required', 'message'=>'compo requerido'],
+          [['SO_apellido_materno'], 'required', 'message'=>'compo requerido'],
+          [['SO_apellido_paterno'], 'required', 'message'=>'compo requerido'],
+          [['SO_direccion'], 'required', 'message'=>'compo requerido'],
+          [['SO_rut'], 'required', 'message'=>'compo requerido'],
+          [['SO_email'], 'required', 'message'=>'compo requerido'],
+          [['SO_estado_actividad'], 'required', 'message'=>'compo requerido']
+
         ];
     }
 
