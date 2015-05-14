@@ -34,7 +34,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <strong>¡CUATRO CONSEJOS PARA ESTAR MOTIVADO!</strong>
 <p>
-
 1. Establece metas realistas: fijar metas a corto, mediano y largo plazo te permitirá reencontrarte con la motivación cada vez que cumplas un objetivo o que te acerques a él. De ahí que las metas deban ser realistas y periódicas. Sin metas no se tendrá razón para estar en el gym.
 
 2. Cuenta hacia atrás: en cada repetición, no empieces a contar desde cero, comienza desde el número de repeticiones que debes hacer y ve restando. Así visualizarás antes la meta.
@@ -46,7 +45,6 @@ $this->params['breadcrumbs'][] = $this->title;
 <strong>BENEFICIOS DE LA MÚSICA PARA LOS DEPORTISTAS</strong>
 
 <p>
-
 La música genera sensaciones positivas, levanta el ánimo, nos hace sentir bien, incluso eleva el autoestima.
 
 Pero además escuchar una selección de música adecuada mientras haces deporte te puede llevar a lograr hasta un 15% más de resistencia.
@@ -62,17 +60,13 @@ Incluso una investigación aseguran que géneros como el pop y el rock aumentan 
 Y si además le sumas el efecto relajante que provoca, lo ideal es hacer una selección de música más animada al inicio del entrenamiento y algo más suave al terminar. Los psicólogos deportivos lo tienen claro y lo consideran como parte de la preparación mental de los deportistas de cara a una competición.
 
 Así que ya sabes, si quieres una motivación extra uno de esos días en los que no te apetece ir al gimnasio, toma tus audífonos y lánzate, que seguro que se te pasan todos los males y superas tus metas. 
-
 Fuente: Deporteysalud.hola.com  .</p>
 
 <strong>ALIMENTOS FUNDAMENTALES PARA UNA DIETA SANA</strong>
 
-<p>
-	
+<p>	
 Los alimentos que ingerimos son los que nos proporcionan la energía y vitalidad que gastamos durante todo el día. Sin embargo, llevar una buena y saludable dieta no es tan sencillo como parece. Y de hecho, en muchas ocasiones es posible no consumir las calorías, vitaminas, y minerales necesarios para lograr vitalizar nuestro cuerpo de la mejor manera.
-
 Aquí te dejamos algunos de los alimentos más esenciales que si duda debes agregar a tu dieta para lograr una vida sana:
-
 Pescado
 Aceite de oliva
 Nueces
