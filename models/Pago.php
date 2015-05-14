@@ -32,7 +32,9 @@ class Pago extends \yii\db\ActiveRecord
             [['SO_id', 'PA_monto', 'PA_pago_mes'], 'integer'],
             [[ 'PA_monto', ], 'integer'],
             [[ 'PA_pago_mes'], 'integer'],
-            [['PA_fecha_pago'], 'safe']
+            [['PA_fecha_pago'], 'safe'],
+             [['SO_id', 'PA_monto', 'PA_pago_mes','PA_fecha_pago'], 'required', 'message'=>'compo requerido']
+
         ];
     }
 
@@ -44,7 +46,7 @@ class Pago extends \yii\db\ActiveRecord
         return [
             'PA_id' => 'Pa ID',
             'SO_id' => 'socio correspondiente al pago ',
-            'PA_monto' => 'Monto(UCL sin puntos)',
+            'PA_monto' => 'Monto(CLP sin puntos)',
             'PA_pago_mes' => '¿Efectuo este Mes?',
             'PA_fecha_pago' => 'Si se efectuo el pago.Ingrese la Fecha Pago(formato AAAA-MM-DD HH:MM:SS)',
         ];

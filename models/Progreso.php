@@ -33,11 +33,12 @@ class Progreso extends \yii\db\ActiveRecord
         return [
             [['SO_id'], 'integer'],
             
-             [['PROG_peso'], 'number', 'max' => 300,'min' => 0],
+             [['PROG_peso'], 'number', 'max' => 300,'min' => 30],
               [['PROG_altura'], 'number', 'max' => 240,'min' => 100 ],
                [['PROG_porcentaje_grasa'], 'number', 'max' => 50,'min' => 2],
                 [['PROG_indice_masa_corporal'], 'number', 'max' => 100,'min' => 10],
-            [['PROG_fecha_evaluacion'], 'safe']
+            [['PROG_fecha_evaluacion'], 'safe'],
+            [['PROG_peso','PROG_altura','SO_id','PROG_porcentaje_grasa','PROG_indice_masa_corporal','PROG_fecha_evaluacion'], 'required', 'message'=>'compo requerido'],
         ];
     }
 
