@@ -45,8 +45,13 @@ class InformeMedico extends \yii\db\ActiveRecord
     {
         return [
             [['SO_id', 'PRO_id'], 'integer'],
+            [['PRO_id'], 'unique', 'message'=>'El profesor ya tiene un informe medico asignado'],
+             [['PRO_id'], 'required',  'message'=>'compo requerido'],
+
             [['IM_cardicas_detalle', 'IM_alergia_detalle', 'IM_osea_detalle', 'IM_muscualr_detalle', 'IM_medicamentos'], 'string'],
-            [['IM_cardiacas', 'IM_alergias', 'IM_osea', 'IM_muscular', 'IM_asfixia', 'IM_embarazada', 'IM_anemia'], 'string', 'max' => 10]
+        
+            [['IM_cardiacas', 'IM_alergias', 'IM_osea', 'IM_muscular', 'IM_asfixia', 'IM_embarazada', 'IM_anemia'], 'string', 'max' => 10],
+            [['IM_cardiacas', 'IM_alergias', 'IM_osea', 'IM_muscular', 'IM_asfixia', 'IM_embarazada', 'IM_anemia'],'required', 'message'=>'compo requerido']
         ];
     }
 
