@@ -8,28 +8,20 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="container-fluid">
 
 <ul class="nav nav-tabs  ">
-  <li ><a href="index.php?r=site%2Fabout3"><strong>Eventos </strong></a></li>
-  <li class="active"><a href="index.php?r=site%2Fmision"><strong>Consejos</strong></a></li>
-  <li><a href="index.php?r=site%2Fvision3"><strong>Bienestar</strong></a></li>
+  <li ><a href="about3.html"><strong>Eventos</strong></a></li>
+  <li class="active.html"><a href="mision"><strong>Consejos</strong></a></li>
+  <li><a href="vision3.html"><strong>Bienestar</strong></a></li>
 </ul>
 
-
-
-
-
-
-
-
-
 <div class="row">
-        
+
     <div class="col-md-4">
     	</br>
     	</br>
 </br>
 </br>
 <img src="http://ejerciciosencasa.es/wp-content/uploads/2013/11/Pull-Up-guy-crop-1.jpg" class="img-thumbnail">
-</div>  
+</div>
 <div class="col-md-8">
 <div>
 </br>
@@ -44,7 +36,7 @@ En período de invierno y a causa del espantoso frío el gimnasio suele estar te
 
 Luego de realizar tu entrenamiento diario en el gimnasio en época de invierno, es primordial tomar una ducha tibia para quitar la transpiración, si no te duchas antes de ir a casa entonces intenta secarte muy bien y siempre cambiarte de ropa, ya que ésta al quedar húmeda sobre la piel ayuda a que padezcas un resfrío.
 
-Evita enfriamientos y sigue los consejos de profesionales deportistas, quienes indican que hay que abrigarse muy bien al salir del gimnasio, ya que el cambio de temperatura propensa los resfriados normales y las fuertes gripes. Para ello, utiliza una gran chaqueta que cuide de tu tronco y cuello, o bien utiliza una bufanda y un gorro. 
+Evita enfriamientos y sigue los consejos de profesionales deportistas, quienes indican que hay que abrigarse muy bien al salir del gimnasio, ya que el cambio de temperatura propensa los resfriados normales y las fuertes gripes. Para ello, utiliza una gran chaqueta que cuide de tu tronco y cuello, o bien utiliza una bufanda y un gorro.
 </p>
 <iframe width="700" height="400" src="https://www.youtube.com/embed/ViF1QWQlprw" frameborder="0" allowfullscreen></iframe>
 </br>
@@ -53,7 +45,7 @@ Evita enfriamientos y sigue los consejos de profesionales deportistas, quienes i
 </br>
 <strong>CALZADO DEPORTIVO: CLAVE A LA HORA DE ENTRENAR</strong>
 <p>
-	
+
 En la actualidad, los medios técnicos y la investigación, ha llevado a las marcas deportivas a desarrollar maravillas tecnológicas para proporcionar mayor seguridad Y comodidad.  Al elegir una zapatilla debemos tener en cuenta algunos factores como, por ejemplo, mejor comprar  a última hora del día, cuando los pies están algo hinchados, teniendo la contextura como cuando se practica deporte. También tenemos que tomar en cuenta que no deben quedar ni muy sueltas ni muy apretadas, debe existir una libertad de movimiento en los dedos y ojalá cuando las pruebes, usar el mismo tipo de calcetín con los que realizas deporte.
 
 Es recomendable no usar zapatillas nuevas a la hora de una competición, ya que pueden existir molestias al no estar previamente acostumbrados a la horma de la zapatilla.
@@ -100,7 +92,7 @@ Recuerda siempre que pequeños detalles marcan la diferencia para no detenerse e
 </div>
 
 </div>
- 
+
 </div>
 
 

@@ -8,23 +8,21 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="container-fluid">
 
 <ul class="nav nav-tabs  ">
-  <li role="presentation" ><a href="index.php?r=site%2Fabout3"><strong>Eventos</strong></a></li>
-  <li role="presentation" ><a href="index.php?r=site%2Fmision3"><strong>Consejos</strong></a></li>
-  <li class="active" role="presentation" ><a href="index.php?r=site%2Fvision3"><strong>Bienestar</strong></a></li>
+  <li role="presentation" ><a href="about3.html"><strong>Eventos</strong></a></li>
+  <li role="presentation" ><a href="mision3.html"><strong>Consejos</strong></a></li>
+  <li class="active" role="presentation" ><a href="vision3.html"><strong>Bienestar</strong></a></li>
 
 </ul>
 
-	
-
 <div class="row">
-        
+
     <div class="col-md-4">
     	</br>
 </br>
 </br></br>
 
 <img src="http://www.gentedecanaveral.com/wp-content/uploads/2012/05/19GECANXXA036_VERTI.jpg" class="img-thumbnail">
-</div>  
+</div>
 <div class="col-md-8">
 <div>
 </br>
@@ -38,7 +36,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 2. Cuenta hacia atrás: en cada repetición, no empieces a contar desde cero, comienza desde el número de repeticiones que debes hacer y ve restando. Así visualizarás antes la meta.
 
-3. Música: es uno de los elementos motivadores más importantes, aunque su efectividad varía de persona a persona. Hay quienes prefieren estar concentrados en su respiración y el entorno, otros no. El ritmo de la música puede ser fundamental para mantenerte activo. 
+3. Música: es uno de los elementos motivadores más importantes, aunque su efectividad varía de persona a persona. Hay quienes prefieren estar concentrados en su respiración y el entorno, otros no. El ritmo de la música puede ser fundamental para mantenerte activo.
 
 4. Entretención: Cuando comienzas a ver el gimnasio como una obligación, algo está mal. Puede que le estés dedicando mucho, puede que estés haciendo siempre lo mismo, puede que necesites cambiar el horario o que necesites ir con alguien, pero ahí la gracia: hacer cambios, probar rutinas en diferente orden, asistirse con un compañero de entrenamiento, cambiar la playlist de música, combinar la rutina del gym con otra disciplina, o cualquier otro aspecto que pueda ayudar a no perder la motivación del gimnasio.
 </p>
@@ -65,7 +63,7 @@ Incluso una investigación aseguran que géneros como el pop y el rock aumentan 
 
 Y si además le sumas el efecto relajante que provoca, lo ideal es hacer una selección de música más animada al inicio del entrenamiento y algo más suave al terminar. Los psicólogos deportivos lo tienen claro y lo consideran como parte de la preparación mental de los deportistas de cara a una competición.
 
-Así que ya sabes, si quieres una motivación extra uno de esos días en los que no te apetece ir al gimnasio, toma tus audífonos y lánzate, que seguro que se te pasan todos los males y superas tus metas. 
+Así que ya sabes, si quieres una motivación extra uno de esos días en los que no te apetece ir al gimnasio, toma tus audífonos y lánzate, que seguro que se te pasan todos los males y superas tus metas.
 Fuente: Deporteysalud.hola.com  .</p>
 
 <iframe width="700" height="400" src="https://www.youtube.com/embed/cyWYC6X1X1s" frameborder="0" allowfullscreen></iframe>
@@ -75,7 +73,7 @@ Fuente: Deporteysalud.hola.com  .</p>
 </br>
 <strong>ALIMENTOS FUNDAMENTALES PARA UNA DIETA SANA</strong>
 
-<p>	
+<p>
 Los alimentos que ingerimos son los que nos proporcionan la energía y vitalidad que gastamos durante todo el día. Sin embargo, llevar una buena y saludable dieta no es tan sencillo como parece. Y de hecho, en muchas ocasiones es posible no consumir las calorías, vitaminas, y minerales necesarios para lograr vitalizar nuestro cuerpo de la mejor manera.
 Aquí te dejamos algunos de los alimentos más esenciales que si duda debes agregar a tu dieta para lograr una vida sana:
 Pescado
@@ -112,7 +110,7 @@ Busca compañía: Varios estudios corroboran que la mejor forma de ganar múscul
 </div>
 
 </div>
- 
+
 </div>
 
 
