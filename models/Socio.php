@@ -38,14 +38,20 @@ class Socio extends \yii\db\ActiveRecord
             [['PROG_id', 'IM_id', 'PA_id'], 'integer'],
             [['SO_nombre', 'SO_apellido_materno', 'SO_apellido_paterno', 'SO_direccion', 'SO_estado_actividad'], 'string', 'max' => 20],
           [['SO_rut'], 'validarRut'],
+            [['SO_rut'], 'unique', 'message'=>'Rut ya existe'],
           [['SO_email'], 'email'],
+            [['SO_email'], 'unique', 'message'=>'correo ya existe'],
           [['SO_nombre'], 'required', 'message'=>'compo requerido'],
           [['SO_apellido_materno'], 'required', 'message'=>'compo requerido'],
           [['SO_apellido_paterno'], 'required', 'message'=>'compo requerido'],
           [['SO_direccion'], 'required', 'message'=>'compo requerido'],
           [['SO_rut'], 'required', 'message'=>'compo requerido'],
           [['SO_email'], 'required', 'message'=>'compo requerido'],
-          [['SO_estado_actividad'], 'required', 'message'=>'compo requerido']
+          [['SO_estado_actividad'], 'required', 'message'=>'compo requerido'],
+
+          [['SO_nombre'], 'match',"pattern" => '/^[a-zA-Z ñÑáéíóúüç]*$/', 'message'=>'Solo se pueden utilizar letras'],
+          [['SO_apellido_paterno'], 'match',"pattern" => '/^[a-zA-Z ñÑáéíóúüç]*$/', 'message'=>'Solo se pueden utilizar letras'],
+          [['SO_apellido_materno'], 'match',"pattern" => '/^[a-zA-Z ñÑáéíóúüç]*$/', 'message'=>'Solo se pueden utilizar letras'],
 
         ];
     }

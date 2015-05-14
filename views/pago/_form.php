@@ -21,7 +21,7 @@ use yii\helpers\ArrayHelper;
         )?>
 
 
-    <?= $form->field($model, 'PA_monto')->textInput() ?>
+    <?= $form->field($model, 'PA_monto')->textInput(array('placeholder' => 'ejemplo: 150000')) ?>
 
    
 
@@ -29,12 +29,12 @@ use yii\helpers\ArrayHelper;
 
 
     <?= $form->field($model, 'PA_pago_mes')->dropDownList(
-                    ['Si','NO'],
+                    ['Si'=> 'si','NO' => 'no'],
         ['prompt'=>'¿Se efectuo el pago ? ']
         )?>
 
 
-    <?= $form->field($model, 'PA_fecha_pago')->textInput() ?>
+    <?= $form->field($model, 'PA_fecha_pago')->textInput(array('placeholder' => 'ejemplo: 2015-02-10 10:12:15')) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

@@ -21,7 +21,7 @@ use app\models\Progreso;
 
     
 
-    <?= $form->field($model, 'SO_rut')->textInput([]) ?>
+    <?= $form->field($model, 'SO_rut')->textInput(array('placeholder' => 'ejemplo: 12345678-5')) ?>
 
 
     <?= $form->field($model, 'SO_nombre')->textInput(['maxlength' => 256]) ?>
@@ -30,21 +30,21 @@ use app\models\Progreso;
 
     <?= $form->field($model, 'SO_apellido_paterno')->textInput(['maxlength' => 256]) ?>
 
-    <?= $form->field($model, 'SO_email')->textInput(['maxlength' => 256]) ?>
+    <?= $form->field($model, 'SO_email')->textInput(array('placeholder' => 'ejemplo@ejemplo.com')) ?>
 
     <?= $form->field($model, 'SO_direccion')->textInput(['maxlength' => 256]) ?>
 
     
 
     <?= $form->field($model, 'SO_estado_actividad')->dropDownList(
-                    ['activo','inactivo','expulsado'],
+                    ['activo' =>'activo','inactivo'=> 'inactivo','expulsado'=>'expulsado'],
         ['prompt'=>'Seleccione el estado de actividad del socio ']
         )?>
 
 
 
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? 'crear' : 'actualizar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton($model->isNewRecord ? 'crear' : 'Actualizar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

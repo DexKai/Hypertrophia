@@ -29,9 +29,9 @@ class Pago extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['SO_id', 'PA_monto', 'PA_pago_mes'], 'integer'],
+            [['SO_id', 'PA_monto'], 'integer'],
             [[ 'PA_monto', ], 'integer'],
-            [[ 'PA_pago_mes'], 'integer'],
+            [[ 'PA_pago_mes'], 'string'],
             [['PA_fecha_pago'], 'safe'],
              [['SO_id', 'PA_monto', 'PA_pago_mes','PA_fecha_pago'], 'required', 'message'=>'compo requerido']
 
