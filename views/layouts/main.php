@@ -60,8 +60,8 @@ AppAsset::register($this);
                     ]],
 
                     Yii::$app->user->isGuest ?
-                        ['label' => 'Iniciar Sesión', 'url' => ['/user/security/login']] :
-                        ['label' => 'Cierrar Sesión (' . Yii::$app->user->identity->username . ')',
+                        ['label' => 'Iniciar Sesión', 'url' => ['/user/login']] :
+                        ['label' => 'Cierrar Sesión (' . Yii::$app->user->displayName . ')',
                             'url' => ['/user/logout'],
                             'linkOptions' => ['data-method' => 'post']],
                 ],

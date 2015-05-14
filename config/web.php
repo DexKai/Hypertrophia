@@ -5,7 +5,16 @@ $params = require(__DIR__ . '/params.php');
 $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],
+    'bootstrap' => [
+        'log',
+        function () { return Yii::$app->getModule("user"); }, // to set up /user routes
+    ],
+    'modules' => [
+        'user' => [
+            'class' => 'amnah\yii2\user\Module',
+            // set custom module properties here ...
+        ],
+    ],
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
@@ -18,6 +27,9 @@ $config = [
             'identityClass' => 'app\models\User',
             'enableAutoLogin' => true,
         ],
+        'user' => [
+            'class' => 'amnah\yii2\user\components\User',
+        ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
@@ -27,6 +39,20 @@ $config = [
             // 'useFileTransport' to false and configure a transport
             // for the mailer to send real emails.
             'useFileTransport' => true,
+            'messageConfig' => [
+                'from' => ['admin@website.com' => 'Admin'], // this is needed for sending emails
+                'charset' => 'UTF-8',
+            ],
+        ],
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'enableStrictParsing' => false,
+            'suffix' => '.html',
+            'rules' => array(
+                    //.....
+            ),
+
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
