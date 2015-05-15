@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\helpers\ArrayHelper;
+use app\models\Disciplina;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Clase */
@@ -12,11 +14,14 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'DIS_id')->textInput() ?>
+    <?= $form->field($model, 'DIS_id')->dropDownList(
+        ArrayHelper::map(Disciplina::find()->all(),'DIS_id','DIS_nombre'),
+        ['prompt'=>'Seleccione la disciplina que corresponde la clase ']
+        )?>
 
-    <?= $form->field($model, 'CLA_nombre')->textInput(['maxlength' => 20]) ?>
+    <?= $form->field($model, 'CLA_nombre')->textInput(array('placeholder' => 'ejemplo: AeroBox')) ?>
 
-    <?= $form->field($model, 'CLA_descripcion')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'CLA_descripcion')->textarea(array('placeholder' => 'ejemplo: Entrenamiento de alto redimiento...')) ?>
 
     <?= $form->field($model, 'CLA_imagen')->textInput(['maxlength' => 1024]) ?>
 

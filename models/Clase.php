@@ -32,8 +32,13 @@ class Clase extends \yii\db\ActiveRecord
     {
         return [
             [['DIS_id'], 'integer'],
+            [['DIS_id'], 'required', 'message'=>'compo requerido'],
             [['CLA_descripcion'], 'string'],
+            [['CLA_descripcion'],'match',"pattern" => '/^[0-9a-zA-Z ñÑáéíóúüç]*$/', 'message'=>'Solo se pueden utilizar letras y números'],
+            [['CLA_descripcion'], 'required', 'message'=>'Campo requerido'],
             [['CLA_nombre'], 'string', 'max' => 20],
+            [['CLA_nombre'], 'required', 'message'=>'Campo requerido'],
+            [['CLA_nombre'], 'match',"pattern" => '/^[a-zA-Z ñÑáéíóúüç]*$/', 'message'=>'Solo se pueden utilizar letras'],
             [['CLA_imagen'], 'string', 'max' => 1024]
         ];
     }

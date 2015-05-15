@@ -32,7 +32,11 @@ class Disciplina extends \yii\db\ActiveRecord
     {
         return [
             [['DIS_descripcion'], 'string'],
-            [['DIS_nombre'], 'string', 'max' => 256]
+            [['DIS_descripcion'], 'required', 'message'=>'Campo requerido'],
+            [['DIS_descripcion'],'match',"pattern" => '/^[0-9a-zA-Z ñÑáéíóúüç]*$/', 'message'=>'Solo se pueden utilizar letras y números'],
+            [['DIS_nombre'], 'string', 'max' => 256],
+            [['DIS_nombre'], 'required', 'message'=>'Campo requerido'],
+            [['DIS_nombre'],'match',"pattern" => '/^[a-zA-Z ñÑáéíóúüç]*$/', 'message'=>'Solo se pueden utilizar letras'],
         ];
     }
 
