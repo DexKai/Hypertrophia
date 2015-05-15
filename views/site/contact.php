@@ -72,7 +72,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
         <!-- /.row -->
-
+<?php /*
         <!-- Contact Form -->
         <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
     <div class="row">
@@ -93,5 +93,6 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
 
+*/ ?>
     <?php endif; ?>
 </div>
