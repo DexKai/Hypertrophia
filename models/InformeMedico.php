@@ -51,7 +51,7 @@ class InformeMedico extends \yii\db\ActiveRecord
             [['IM_cardicas_detalle', 'IM_alergia_detalle', 'IM_osea_detalle', 'IM_muscualr_detalle', 'IM_medicamentos'], 'string'],
         
             [['IM_cardiacas', 'IM_alergias', 'IM_osea', 'IM_muscular', 'IM_asfixia', 'IM_embarazada', 'IM_anemia'], 'string', 'max' => 10],
-            [['IM_cardiacas', 'IM_alergias', 'IM_osea', 'IM_muscular', 'IM_asfixia', 'IM_embarazada', 'IM_anemia'],'required', 'message'=>'compo requerido']
+            [['IM_cardiacas', 'IM_alergias', 'IM_osea', 'IM_muscular', 'IM_asfixia', 'IM_embarazada', 'IM_anemia'],'required', 'message'=>'campo requerido']
         ];
     }
 
