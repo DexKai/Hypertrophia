@@ -88,7 +88,7 @@ $config = [
     ],
     'params' => $params,
 ];
-
+/*
 if (YII_ENV_DEV) {
     // configuration adjustments for 'dev' environment
     $config['bootstrap'][] = 'debug';
@@ -97,5 +97,5 @@ if (YII_ENV_DEV) {
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = 'yii\gii\Module';
 }
-
+*/
 return $config;
