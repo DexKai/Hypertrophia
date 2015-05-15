@@ -6,7 +6,7 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'language' => 'es',
-    'sourceLanguage' => 'es',
+    //'sourceLanguage' => 'es',
     'bootstrap' => [
         'log',
         function () { return Yii::$app->getModule("user"); }, // to set up /user routes
@@ -29,6 +29,20 @@ $config = [
             'identityClass' => 'app\models\User',
             'enableAutoLogin' => true,
         ],
+        'i18n' => [
+            'translations' => [
+                'app*' => [
+                    'user' => [
+                        'class' => 'yii\i18n\PhpMessageSource',
+                        'basePath' => '@app/messages', // example: @app/messages/fr/user.php
+                        //'sourceLanguage' => 'es',
+                        //'fileMap' => [
+                        //'app' => 'app.php',
+                        //]
+                    ]
+                ],
+            ],
+        ],
         'user' => [
             'class' => 'amnah\yii2\user\components\User',
         ],
@@ -44,15 +58,6 @@ $config = [
             'messageConfig' => [
                 'from' => ['pgsoto@alumnos.ubiobio.cl' => 'Admin'], // this is needed for sending emails
                 'charset' => 'UTF-8',
-            ],
-        ],
-        'i18n' => [
-            'translations' => [
-                'user' => [
-                    'class' => 'yii\i18n\PhpMessageSource',
-                    'basePath' => '@app/messages/es/user.php', // example: @app/messages/fr/user.php
-                    'sourceLanguage' => 'es-ES',
-                ]
             ],
         ],
         'urlManager' => [
