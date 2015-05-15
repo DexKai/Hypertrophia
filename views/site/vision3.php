@@ -29,7 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
 </br>
 </br>
 
-
+<strong>
 <strong>¡CUATRO CONSEJOS PARA ESTAR MOTIVADO!</strong>
 <p>
 1. Establece metas realistas: fijar metas a corto, mediano y largo plazo te permitirá reencontrarte con la motivación cada vez que cumplas un objetivo o que te acerques a él. De ahí que las metas deban ser realistas y periódicas. Sin metas no se tendrá razón para estar en el gym.
@@ -103,6 +103,8 @@ Busca compañía: Varios estudios corroboran que la mejor forma de ganar múscul
 </p>
 
 <iframe width="700" height="400" src="https://www.youtube.com/embed/gyaGV7TIVbk" frameborder="0" allowfullscreen></iframe>
+
+</strong>
 </br>
 </br>
 </br>

@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
 </br>
 </br>
 
-
+<strong>
 <strong>CUÍDATE DE LOS RESFRÍOS AL SALIR DEL GIMNASIO</strong>
 <p>
 
@@ -75,7 +75,7 @@ Recuerda siempre que pequeños detalles marcan la diferencia para no detenerse e
 </p>
 
 
-
+</strong>
 
 
 

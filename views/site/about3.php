@@ -26,6 +26,8 @@ $this->params['breadcrumbs'][] = $this->title;
 </br>
 </br>
 </br>
+
+<strong>
 <strong>EVENTO CARDIO ULTRA </strong>
 <p>
 
@@ -69,7 +71,7 @@ Si te gusta la zumba, tenemos una invitación para ti. No te pierdas este espect
 </br>
 </br>
 
-
+</strong>
 
 </div>
 
