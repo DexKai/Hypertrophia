@@ -5,6 +5,8 @@ $params = require(__DIR__ . '/params.php');
 $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
+    'language' => 'es',
+    'sourceLanguage' => 'es',
     'bootstrap' => [
         'log',
         function () { return Yii::$app->getModule("user"); }, // to set up /user routes
@@ -42,6 +44,15 @@ $config = [
             'messageConfig' => [
                 'from' => ['pgsoto@alumnos.ubiobio.cl' => 'Admin'], // this is needed for sending emails
                 'charset' => 'UTF-8',
+            ],
+        ],
+        'i18n' => [
+            'translations' => [
+                'user' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@app/messages/es/user.php', // example: @app/messages/fr/user.php
+                    'sourceLanguage' => 'es-ES',
+                ]
             ],
         ],
         'urlManager' => [
