@@ -54,7 +54,7 @@ AppAsset::register($this);
                         ['label' => 'Profesores', 'url' => ['/profesor/index']],
                         //['label' => 'Tipo de profesores', 'url' => ['/tipo-profesor/index']],
                         ['label' => 'Informes medicos', 'url' => ['/informe-medico/index']],
-                    ]],
+                    ], 'visible'=>!Yii::$app->user->isGuest],
 
                     ['label' => 'Usuario', 'items'=> [
                         //['label' => 'Propiedades', 'url' => ['/user']],
@@ -63,7 +63,7 @@ AppAsset::register($this);
                         ['label' => 'Modificar Perfil', 'url' => ['/user/account']],
                         ['label' => 'Perfil', 'url' => ['/user/profile']],
                         //'label' => 'Olvido Contraseña', 'url' => ['/user/forgot']],
-                    ]],
+                    ], 'visible'=>!Yii::$app->user->isGuest],
 
                     Yii::$app->user->isGuest ?
                         ['label' => 'Iniciar Sesión', 'url' => ['/user/login']] :

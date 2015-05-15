@@ -158,7 +158,7 @@ class Module extends \yii\base\Module implements BootstrapInterface
             Yii::$app->i18n->translations['user'] = [
                 'class' => 'yii\i18n\PhpMessageSource',
                 'basePath' => __DIR__ . '/messages',
-                //'forceTranslation' => true,
+                'forceTranslation' => true,
             ];
         }
 

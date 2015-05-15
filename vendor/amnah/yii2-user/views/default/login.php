@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="user-default-login">
 
 	<h1><?= Html::encode($this->title) ?></h1>
-
+<strong>
 	<p><?= Yii::t("user", "Please fill out the following fields to login:") ?></p>
 
 	<?php $form = ActiveForm::begin([
@@ -39,9 +39,9 @@ $this->params['breadcrumbs'][] = $this->title;
 			<?= Html::submitButton(Yii::t('user', 'Login'), ['class' => 'btn btn-primary']) ?>
 
             <br/><br/>
-            <?= Html::a(Yii::t("user", "Register"), ["/user/register"]) ?> /
+            <?php //Html::a(Yii::t("user", "Register"), ["/user/register"]) ?> /
             <?= Html::a(Yii::t("user", "Forgot password") . "?", ["/user/forgot"]) ?> /
-            <?= Html::a(Yii::t("user", "Resend confirmation email"), ["/user/resend"]) ?>
+            <?php //Html::a(Yii::t("user", "Resend confirmation email"), ["/user/resend"]) ?>
 		</div>
 	</div>
 
@@ -54,10 +54,5 @@ $this->params['breadcrumbs'][] = $this->title;
             ]) ?>
         </div>
     <?php endif; ?>
-
-	<div class="col-lg-offset-2" style="color:#999;">
-		You may login with <strong>neo/neo</strong>.<br>
-		To modify the username/password, log in first and then <?= HTML::a("update your account", ["/user/account"]) ?>.
-	</div>
-
+</strong>
 </div>
