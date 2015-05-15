@@ -44,15 +44,15 @@ AppAsset::register($this);
                     ['label' => 'Contacto', 'url' => ['/site/contact']],
 
                     ['label' => 'Administrar', 'items'=> [
-                        ['label' => 'Disciplina', 'url' => ['/disciplina/index']],
-                        ['label' => 'Clases', 'url' => ['/clase/index']],
+                       // ['label' => 'Disciplina', 'url' => ['/disciplina/index']],
+                        //['label' => 'Clases', 'url' => ['/clase/index']],
                         ['label' => 'Socios', 'url' => ['/socio/index']],
                         ['label' => 'Pagos', 'url' => ['/pago/index']],
                         ['label' => 'Progresos', 'url' => ['/progreso/index']],
                         ['label' => 'Horarios', 'url' => ['/horario/index']],
                         ['label' => 'Sueldos', 'url' => ['/sueldo/index']],
                         ['label' => 'Profesores', 'url' => ['/profesor/index']],
-                        ['label' => 'Tipo de profesores', 'url' => ['/tipo-profesor/index']],
+                        //['label' => 'Tipo de profesores', 'url' => ['/tipo-profesor/index']],
                         ['label' => 'Informes medicos', 'url' => ['/informe-medico/index']],
                     ]],
 
