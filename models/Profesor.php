@@ -53,7 +53,7 @@ class Profesor extends \yii\db\ActiveRecord
             [['PRO_rut'], 'required',  'message'=>'campo requerido'],
 
             [['PRO_nombre','PRO_apellidop', 'PRO_apellidom'], 'string', 'max' => 20],
-            [['PRO_nombre','PRO_apellidop', 'PRO_apellidom'], 'required', 'message'=>'compo requerido'],
+            [['PRO_nombre','PRO_apellidop', 'PRO_apellidom'], 'required', 'message'=>'campo requerido'],
 
             [['PRO_nombre'], 'match',"pattern" => '/^[a-zA-Z ñÑáéíóúüç]*$/', 'message'=>'Solo se pueden utilizar letras'],
             [['PRO_apellidop'],'match',"pattern" => '/^[a-zA-Z ñÑáéíóúüç]*$/', 'message'=>'Solo se pueden utilizar letras'],
@@ -65,7 +65,8 @@ class Profesor extends \yii\db\ActiveRecord
             [['PRO_nombre', 'PRO_apellidop', 'PRO_apellidom'], 'string', 'max' => 20],
             [['PRO_email'], 'email'],
             [['PRO_email'], 'string', 'max' => 100],
-            [['PRO_disciplina', 'PRO_clases'], 'string', 'max' => 120]
+            [['PRO_disciplina', 'PRO_clases'], 'string', 'max' => 120],
+            [['PRO_disciplina', 'PRO_clases'],  'required',  'message'=>'campo requerido'],
         ];
     }
 
@@ -86,7 +87,7 @@ class Profesor extends \yii\db\ActiveRecord
             'PRO_apellidom' => 'Apellido materno',
             'PRO_email' => 'Email',
             'PRO_disciplina' => 'Disciplina',
-            'PRO_clases' => 'Clases',
+            'PRO_clases' => 'Especialización',
         ];
     }
     /**

@@ -23,9 +23,34 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'PRO_email')->textInput(array('placeholder' => 'ejemplo@ejemplo.com')) ?>
 
-    <?php /*$form->field($model, 'PRO_disciplina')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'PRO_clases')->textInput(['maxlength' => true]) */?>
+    <?= $form->field($model, 'PRO_disciplina')->dropDownList(['Meditación'=> 'Meditación', 'Musculación'=> 'Musculación', 'Fitness grupal'=>'Fitness grupal' ],['prompt'=>'Seleccione una opción']) ?>
+
+    <?= $form->field($model, 'PRO_clases')->dropDownList([
+
+        'Pilates'=> 'Pilates',
+        'Yoga'=> 'Yoga',
+        'Oxígeno'=> 'Oxígeno',
+        'Shaki fit'=> 'Shaki fit',
+        'Abdominales'=> 'Abdominales',
+        'Body pump'=> 'Body pump',
+        'Endurance'=> 'Endurance',
+        'Grit series'=> 'Grit series',
+        'Insanity'=> 'Insanity',
+        'Aero-local'=> 'Aero-local',
+        'Baile entretenido'=> 'Baile entretenido',
+        'Body Combat'=> 'Body Combat',
+        'Cardio box'=> 'Cardio box',
+        'Local Step'=> 'Local Step',
+        'Power punch'=> 'Power punch',
+        
+    ],['prompt'=>'Seleccione una opción'])?>
+
+
+
+
+
+
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
