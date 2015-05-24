@@ -74,7 +74,7 @@ $this->title = 'Hypertrophia';
 
               <h1>Bienvenidos a Hypertrophia!</h1>
 
-              <p class="lead">Obtenen nuestra Aplicación Movil!</p>
+              <p class="lead">Obtén nuestra Aplicación Movil!</p>
 
 
               <p><a class="btn btn-lg btn-success" href="#"><span class="glyphicon glyphicon-download" aria-hidden="true"></span> Descargar</a></p>
