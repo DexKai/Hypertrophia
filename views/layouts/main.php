@@ -28,7 +28,8 @@ AppAsset::register($this);
         <?php
 
             NavBar::begin([
-                'brandLabel' => 'Hypertrophia',
+               //'brandLabel' => 'HYPERTROPHIA',
+                'brandLabel'=> '<img src="img/logo.png" class="img-responsive">',
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-inverse navbar-fixed-top',

@@ -10,6 +10,7 @@ use yii\captcha\Captcha;
 $this->title = 'Contacto';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+
 <div class="site-contact">
     <h1><?= Html::encode($this->title) ?></h1>
 
@@ -96,3 +97,4 @@ $this->params['breadcrumbs'][] = $this->title;
 */ ?>
     <?php endif; ?>
 </div>
+

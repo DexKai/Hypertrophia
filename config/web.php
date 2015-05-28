@@ -2,11 +2,13 @@
 
 $params = require(__DIR__ . '/params.php');
 
+
 $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'language' => 'es',
     //'sourceLanguage' => 'es',
+    
     'bootstrap' => [
         'log',
         function () { return Yii::$app->getModule("user"); }, // to set up /user routes
