@@ -48,7 +48,9 @@ class Profesor extends \yii\db\ActiveRecord
     {
         return [
             [['HOR_id', 'SUE_id', 'IM_id', 'TIP_id'], 'integer'],
+
             [['PRO_rut'], 'validarRut'],
+            [['PRO_rut'],'validarSoloNumerosYGuion'],
             [['PRO_rut'], 'unique', 'message'=>'Rut ya existe'],
             [['PRO_rut'], 'required',  'message'=>'campo requerido'],
 
@@ -192,6 +194,7 @@ class Profesor extends \yii\db\ActiveRecord
             if ($multiply > 7)
                 $multiply = 2;
         }
+       
         isset($data[1]) ? $verifyCode = strtolower($data[1]) : $verifyCode = '';
         $result = 11 - ($store % 11);
         if ($result == 10)
@@ -203,6 +206,36 @@ class Profesor extends \yii\db\ActiveRecord
         if ($verifyCode != $result)
             $this->addError('PRO_rut', 'Rut inválido.');
     }
+
+
+
+
+    public function validarSoloNumerosYGuion($attribute,$params)
+        {
+        
+          $pattern ='/(?!^[0-9]*$)(-)/';
+
+         
+        if(!preg_match($pattern, $this->$attribute))
+          $this->addError($attribute, 
+          'Rut solo debe contener digitos y un guion');
+          
+        }
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
 
 
 }
