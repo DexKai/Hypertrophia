@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="user-default-register">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+	<h1><?= Html::encode($this->title) ?></h1>
 
     <?php if ($flash = Yii::$app->session->getFlash("Register-success")): ?>
 
@@ -62,14 +62,6 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
 
         <?php ActiveForm::end(); ?>
-
-        <?php if (Yii::$app->get("authClientCollection", false)): ?>
-            <div class="col-lg-offset-2 col-lg-10">
-                <?= yii\authclient\widgets\AuthChoice::widget([
-                    'baseAuthUrl' => ['/user/auth/login']
-                ]) ?>
-            </div>
-        <?php endif; ?>
 
     <?php endif; ?>
 
