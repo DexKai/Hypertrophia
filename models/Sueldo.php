@@ -31,7 +31,13 @@ class Sueldo extends \yii\db\ActiveRecord
     {
         return [
             [['PRO_id', 'SUE_sueldo'], 'integer'],
-            [['PRO_id', 'SUE_sueldo'], 'required','message'=>'Campo Requerido']
+            [['PRO_id', 'SUE_sueldo'], 'required','message'=>'Campo Requerido'],
+            [['SUE_sueldo'], 'match',"pattern" => "/^.{6,7}$/", 'message'=>'sueldo invalido'],
+
+
+
+
+
         ];
     }
 
