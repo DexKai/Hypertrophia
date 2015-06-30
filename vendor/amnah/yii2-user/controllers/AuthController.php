@@ -128,12 +128,6 @@ class AuthController extends Controller
         ]);
         if ($userAuth) {
             $user = $user::findOne($userAuth->user_id);
-
-            // check if user is banned
-            if ($user && $user->ban_time) {
-                return false;
-            }
-
             Yii::$app->user->login($user, Yii::$app->getModule("user")->loginDuration);
             return true;
         }

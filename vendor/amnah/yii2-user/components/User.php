@@ -25,23 +25,6 @@ class User extends \yii\web\User
     public $loginUrl = ["/user/login"];
 
     /**
-     * @inheritdoc
-     */
-    public function init()
-    {
-        parent::init();
-
-        // check if user is banned. if so, log user out and redirect home
-        /** @var \amnah\yii2\user\models\User $user */
-        $user = $this->getIdentity();
-        if ($user && $user->ban_time) {
-            $this->logout();
-            Yii::$app->getResponse()->redirect(['/'])->send();
-            return;
-        }
-    }
-
-    /**
      * Check if user is logged in
      *
      * @return bool

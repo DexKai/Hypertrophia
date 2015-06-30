@@ -30,17 +30,15 @@ AppAsset::register($this);
             NavBar::begin([
                //'brandLabel' => 'HYPERTROPHIA',
                 'brandLabel'=> '<img src="img/logo.png" class="img-responsive">',
-
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-inverse navbar-fixed-top',
                 ],
             ]);
             echo Nav::widget([
-                //'encodeLabels' => false,
-               'options' => ['class' => 'navbar-nav navbar-right'],
+                'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
-                    ['label'=>'Inicio', 'class'=>'list-group-item', 'url' => Yii::$app->homeUrl],
+                    ['label' => 'Inicio', 'url' => Yii::$app->homeUrl],
                     ['label' => '¿Quienes Somos?', 'url' => ['/site/about']],
                     ['label' => 'Clases', 'url' => ['/site/clases']],
                     ['label' => 'Blog', 'url' => ['/site/about3']],
