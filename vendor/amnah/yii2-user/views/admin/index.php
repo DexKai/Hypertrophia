@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            //'id',
+            'id',
             [
                 'attribute' => 'role_id',
                 'label' => Yii::t('user', 'Role'),

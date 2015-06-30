@@ -49,9 +49,6 @@ return [
     'Incorrect password' => 'Contraseña incorrecta',
     'Remember Me' => 'Recuérdame',
     'Email is already active' => 'El correo ya está activo',
-    'Not Found' => 'No encontrado',
-    'The above error occurred while the Web server was processing your request.'
-    => 'Se ha producido el error anterior , mientras que el servidor Web se procesando su solicitud.',
 //    'Passwords do not match' => '',
 //    '{attribute} can contain only letters, numbers, and "_"' => '',
 
