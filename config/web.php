@@ -65,7 +65,7 @@ $config = [
         'urlManager' => [
             'class' => 'yii\web\UrlManager',
             // Disable index.php
-            'showScriptName' => true,
+            'showScriptName' => false,
             // Disable r= routes
             'enablePrettyUrl' => true,
             'enableStrictParsing' => false,
