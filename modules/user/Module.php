@@ -1,6 +1,6 @@
 <?php
 
-namespace app\\modules\\user;
+namespace app\modules\user;
 
 use Yii;
 use yii\base\InvalidConfigException;
@@ -90,11 +90,11 @@ class Module extends \yii\base\Module
     public $emailViewPath = "@user/mail";
 
     /**
-     * @var array Model classes, e.g., ["User" => "app\\modules\\user\models\User"]
+     * @var array Model classes, e.g., ["User" => "app\modules\user\models\User"]
      * Usage:
      *   $user = Yii::$app->getModule("user")->model("User", $config);
      *   (equivalent to)
-     *   $user = new \app\\modules\\user\models\User($config);
+     *   $user = new \app\modules\user\models\User($config);
      *
      * The model classes here will be merged with/override the [[getDefaultModelClasses()|default ones]]
      */
@@ -177,8 +177,8 @@ class Module extends \yii\base\Module
         // this typically causes problems in the yii2-advanced app
         // when people set it in "common/config" instead of "frontend/config" and/or "backend/config"
         //   -> this results in users failing to login without any feedback/error message
-        if (!Yii::$app->request->isConsoleRequest && !Yii::$app->get("user") instanceof \app\\modules\\user\components\User) {
-            throw new InvalidConfigException('Yii::$app->user is not set properly. It needs to extend \app\\modules\\user\components\User');
+        if (!Yii::$app->request->isConsoleRequest && !Yii::$app->get("user") instanceof \app\modules\user\components\User) {
+            //throw new InvalidConfigException('Yii::$app->user is not set properly. It needs to extend \app\modules\user\components\User');
         }
     }
 
@@ -188,15 +188,15 @@ class Module extends \yii\base\Module
     protected function getDefaultModelClasses()
     {
         return [
-            'User'       => 'app\\modules\\user\models\User',
-            'Profile'    => 'app\\modules\\user\models\Profile',
-            'Role'       => 'app\\modules\\user\models\Role',
-            'UserKey'    => 'app\\modules\\user\models\UserKey',
-            'UserAuth'   => 'app\\modules\\user\models\UserAuth',
-            'ForgotForm' => 'app\\modules\\user\models\forms\ForgotForm',
-            'LoginForm'  => 'app\\modules\\user\models\forms\LoginForm',
-            'ResendForm' => 'app\\modules\\user\models\forms\ResendForm',
-            'UserSearch' => 'app\\modules\\user\models\search\UserSearch',
+            'User'       => 'app\modules\user\models\User',
+            'Profile'    => 'app\modules\user\models\Profile',
+            'Role'       => 'app\modules\user\models\Role',
+            'UserKey'    => 'app\modules\user\models\UserKey',
+            'UserAuth'   => 'app\modules\user\models\UserAuth',
+            'ForgotForm' => 'app\modules\user\models\forms\ForgotForm',
+            'LoginForm'  => 'app\modules\user\models\forms\LoginForm',
+            'ResendForm' => 'app\modules\user\models\forms\ResendForm',
+            'UserSearch' => 'app\modules\user\models\search\UserSearch',
         ];
     }
 

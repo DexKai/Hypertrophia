@@ -1,6 +1,6 @@
 <?php
 
-namespace app\\modules\\user\controllers;
+namespace app\modules\user\controllers;
 
 use Yii;
 use yii\web\Controller;
@@ -69,7 +69,7 @@ class DefaultController extends Controller
      */
     public function actionLogin()
     {
-        /** @var \app\\modules\\user\models\forms\LoginForm $model */
+        /** @var \app\modules\user\models\forms\LoginForm $model */
 
         // load post data and login
         $model = Yii::$app->getModule("user")->model("LoginForm");
@@ -112,9 +112,9 @@ class DefaultController extends Controller
      */
     public function actionRegister()
     {
-        /** @var \app\\modules\\user\models\User    $user */
-        /** @var \app\\modules\\user\models\Profile $profile */
-        /** @var \app\\modules\\user\models\Role    $role */
+        /** @var \app\modules\user\models\User    $user */
+        /** @var \app\modules\user\models\Profile $profile */
+        /** @var \app\modules\user\models\Role    $role */
 
         // set up new user/profile objects
         $user    = Yii::$app->getModule("user")->model("User", ["scenario" => "register"]);
@@ -163,11 +163,11 @@ class DefaultController extends Controller
     /**
      * Process data after registration
      *
-     * @param \app\\modules\\user\models\User $user
+     * @param \app\modules\user\models\User $user
      */
     protected function afterRegister($user)
     {
-        /** @var \app\\modules\\user\models\UserKey $userKey */
+        /** @var \app\modules\user\models\UserKey $userKey */
 
         // determine userKey type to see if we need to send email
         $userKey = Yii::$app->getModule("user")->model("UserKey");
@@ -199,8 +199,8 @@ class DefaultController extends Controller
      */
     public function actionConfirm($key)
     {
-        /** @var \app\\modules\\user\models\UserKey $userKey */
-        /** @var \app\\modules\\user\models\User $user */
+        /** @var \app\modules\user\models\UserKey $userKey */
+        /** @var \app\modules\user\models\User $user */
 
         // search for userKey
         $success = false;
@@ -230,8 +230,8 @@ class DefaultController extends Controller
      */
     public function actionAccount()
     {
-        /** @var \app\\modules\\user\models\User $user */
-        /** @var \app\\modules\\user\models\UserKey $userKey */
+        /** @var \app\modules\user\models\User $user */
+        /** @var \app\modules\user\models\UserKey $userKey */
 
         // set up user and load post data
         $user = Yii::$app->user->identity;
@@ -276,7 +276,7 @@ class DefaultController extends Controller
      */
     public function actionProfile()
     {
-        /** @var \app\\modules\\user\models\Profile $profile */
+        /** @var \app\modules\user\models\Profile $profile */
 
         // set up profile and load post data
         $profile = Yii::$app->user->identity->profile;
@@ -306,7 +306,7 @@ class DefaultController extends Controller
      */
     public function actionResend()
     {
-        /** @var \app\\modules\\user\models\forms\ResendForm $model */
+        /** @var \app\modules\user\models\forms\ResendForm $model */
 
         // load post data and send email
         $model = Yii::$app->getModule("user")->model("ResendForm");
@@ -327,8 +327,8 @@ class DefaultController extends Controller
      */
     public function actionResendChange()
     {
-        /** @var \app\\modules\\user\models\User    $user */
-        /** @var \app\\modules\\user\models\UserKey $userKey */
+        /** @var \app\modules\user\models\User    $user */
+        /** @var \app\modules\user\models\UserKey $userKey */
 
         // find userKey of type email change
         $user    = Yii::$app->user->identity;
@@ -350,8 +350,8 @@ class DefaultController extends Controller
      */
     public function actionCancel()
     {
-        /** @var \app\\modules\\user\models\User    $user */
-        /** @var \app\\modules\\user\models\UserKey $userKey */
+        /** @var \app\modules\user\models\User    $user */
+        /** @var \app\modules\user\models\UserKey $userKey */
 
         // find userKey of type email change
         $user    = Yii::$app->user->identity;
@@ -377,7 +377,7 @@ class DefaultController extends Controller
      */
     public function actionForgot()
     {
-        /** @var \app\\modules\\user\models\forms\ForgotForm $model */
+        /** @var \app\modules\user\models\forms\ForgotForm $model */
 
         // load post data and send email
         $model = Yii::$app->getModule("user")->model("ForgotForm");
@@ -398,8 +398,8 @@ class DefaultController extends Controller
      */
     public function actionReset($key)
     {
-        /** @var \app\\modules\\user\models\User    $user */
-        /** @var \app\\modules\\user\models\UserKey $userKey */
+        /** @var \app\modules\user\models\User    $user */
+        /** @var \app\modules\user\models\UserKey $userKey */
 
         // check for valid userKey
         $userKey = Yii::$app->getModule("user")->model("UserKey");

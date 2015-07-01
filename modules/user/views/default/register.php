@@ -6,8 +6,8 @@ use yii\widgets\ActiveForm;
 /**
  * @var yii\web\View $this
  * @var yii\widgets\ActiveForm $form
- * @var app\\modules\\user\models\User $user
- * @var app\\modules\\user\models\User $profile
+ * @var app\modules\user\models\User $user
+ * @var app\modules\user\models\User $profile
  * @var string $userDisplayName
  */
 

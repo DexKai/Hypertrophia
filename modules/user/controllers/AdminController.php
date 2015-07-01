@@ -1,11 +1,11 @@
 <?php
 
-namespace app\\modules\\user\controllers;
+namespace app\modules\user\controllers;
 
 use Yii;
-use app\\modules\\user\models\User;
-use app\\modules\\user\models\UserKey;
-use app\\modules\\user\models\UserAuth;
+use app\modules\user\models\User;
+use app\modules\user\models\UserKey;
+use app\modules\user\models\UserAuth;
 use yii\web\Controller;
 use yii\web\ForbiddenHttpException;
 use yii\web\NotFoundHttpException;
@@ -52,7 +52,7 @@ class AdminController extends Controller
      */
     public function actionIndex()
     {
-        /** @var \app\\modules\\user\models\search\UserSearch $searchModel */
+        /** @var \app\modules\user\models\search\UserSearch $searchModel */
         $searchModel = Yii::$app->getModule("user")->model("UserSearch");
         $dataProvider = $searchModel->search(Yii::$app->request->getQueryParams());
 
@@ -83,8 +83,8 @@ class AdminController extends Controller
      */
     public function actionCreate()
     {
-        /** @var \app\\modules\\user\models\User $user */
-        /** @var \app\\modules\\user\models\Profile $profile */
+        /** @var \app\modules\user\models\User $user */
+        /** @var \app\modules\user\models\Profile $profile */
 
         $user = Yii::$app->getModule("user")->model("User");
         $user->setScenario("admin");
@@ -163,7 +163,7 @@ class AdminController extends Controller
      */
     protected function findModel($id)
     {
-        /** @var \app\\modules\\user\models\User $user */
+        /** @var \app\modules\user\models\User $user */
         $user = Yii::$app->getModule("user")->model("User");
         if (($user = $user::findOne($id)) !== null) {
             return $user;

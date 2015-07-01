@@ -6,7 +6,7 @@ use yii\widgets\ActiveForm;
 /**
  * @var yii\web\View $this
  * @var yii\widgets\ActiveForm $form
- * @var app\\modules\\user\models\Profile $profile
+ * @var app\modules\user\models\Profile $profile
  */
 
 $this->title = Yii::t('user', 'Profile');

@@ -13,7 +13,7 @@ return [
     'modules' => [
         'gii' => 'yii\gii\Module',
         'user' => [
-            'class' => 'amnah\yii2\user\Module',
+            'class' => 'app\modules\user\Module',
         ],
     ],
     'components' => [

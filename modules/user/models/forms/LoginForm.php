@@ -1,6 +1,6 @@
 <?php
 
-namespace app\\modules\\user\models\forms;
+namespace app\modules\user\models\forms;
 
 use Yii;
 use yii\base\Model;
@@ -26,7 +26,7 @@ class LoginForm extends Model
     public $rememberMe = true;
 
     /**
-     * @var \app\\modules\\user\models\User
+     * @var \app\modules\user\models\User
      */
     protected $_user = false;
 
@@ -77,7 +77,7 @@ class LoginForm extends Model
         // check status and resend email if inactive
         if ($user->status == $user::STATUS_INACTIVE) {
 
-            /** @var \app\\modules\\user\models\UserKey $userKey */
+            /** @var \app\modules\user\models\UserKey $userKey */
             $userKey = Yii::$app->getModule("user")->model("UserKey");
             $userKey = $userKey::generate($user->id, $userKey::TYPE_EMAIL_ACTIVATE);
             $user->sendEmailConfirmation($userKey);
@@ -95,7 +95,7 @@ class LoginForm extends Model
             return;
         }
 
-        /** @var \app\\modules\\user\models\User $user */
+        /** @var \app\modules\user\models\User $user */
 
         // check if 1) user registered using social auth and 2) password is correct
         $user = $this->getUser();
@@ -111,7 +111,7 @@ class LoginForm extends Model
     /**
      * Get user based on email and/or username
      *
-     * @return \app\\modules\\user\models\User|null
+     * @return \app\modules\user\models\User|null
      */
     public function getUser()
     {

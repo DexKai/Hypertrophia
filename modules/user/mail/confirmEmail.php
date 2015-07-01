@@ -4,9 +4,9 @@ use yii\helpers\Url;
 
 /**
  * @var string $subject
- * @var \app\\modules\\user\models\User $user
- * @var \app\\modules\\user\models\Profile $profile
- * @var \app\\modules\\user\models\UserKey $userKey
+ * @var \app\modules\user\models\User $user
+ * @var \app\modules\user\models\Profile $profile
+ * @var \app\modules\user\models\UserKey $userKey
  */
 ?>
 

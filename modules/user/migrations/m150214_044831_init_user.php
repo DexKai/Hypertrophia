@@ -1,7 +1,7 @@
 <?php
 
-use app\\modules\\user\models\User;
-use app\\modules\\user\models\Role;
+use app\modules\user\models\User;
+use app\modules\user\models\Role;
 use yii\db\Schema;
 use yii\db\Migration;
 

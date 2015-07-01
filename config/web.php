@@ -15,7 +15,7 @@ $config = [
     ],
     'modules' => [
         'user' => [
-            'class' => 'amnah\yii2\user\Module',
+            'class' => 'app\modules\user\Module',
             // set custom module properties here ...
         ],
     ],

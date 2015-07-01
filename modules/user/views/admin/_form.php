@@ -6,8 +6,8 @@ $role = Yii::$app->getModule("user")->model("Role");
 
 /**
  * @var yii\web\View $this
- * @var app\\modules\\user\models\User $user
- * @var app\\modules\\user\models\Profile $profile
+ * @var app\modules\user\models\User $user
+ * @var app\modules\user\models\Profile $profile
  * @var yii\widgets\ActiveForm $form
  */
 ?>
