@@ -12,6 +12,9 @@ return [
     'controllerNamespace' => 'app\commands',
     'modules' => [
         'gii' => 'yii\gii\Module',
+        'user' => [
+            'class' => 'amnah\yii2\user\Module',
+        ],
     ],
     'components' => [
         'cache' => [

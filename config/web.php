@@ -8,7 +8,7 @@ $config = [
     'basePath' => dirname(__DIR__),
     'language' => 'es',
     //'sourceLanguage' => 'es',
-    
+
     'bootstrap' => [
         'log',
         function () { return Yii::$app->getModule("user"); }, // to set up /user routes
@@ -28,8 +28,8 @@ $config = [
             'class' => 'yii\caching\FileCache',
         ],
         'user' => [
-            'identityClass' => 'app\models\User',
-            'enableAutoLogin' => true,
+            'class' => 'amnah\yii2\user\components\User',
+            'enableAutoLogin' => false,
         ],
         'i18n' => [
             'translations' => [
@@ -53,9 +53,6 @@ $config = [
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
-            // send all mails to a file by default. You have to set
-            // 'useFileTransport' to false and configure a transport
-            // for the mailer to send real emails.
             'useFileTransport' => true,
             'messageConfig' => [
                 'from' => ['pgsoto@alumnos.ubiobio.cl' => 'Admin'], // this is needed for sending emails
@@ -75,7 +72,6 @@ $config = [
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
             ),
-
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
@@ -90,7 +86,7 @@ $config = [
     ],
     'params' => $params,
 ];
-/*
+
 if (YII_ENV_DEV) {
     // configuration adjustments for 'dev' environment
     $config['bootstrap'][] = 'debug';
@@ -99,5 +95,5 @@ if (YII_ENV_DEV) {
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = 'yii\gii\Module';
 }
-*/
+
 return $config;

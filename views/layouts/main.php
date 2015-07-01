@@ -58,12 +58,12 @@ AppAsset::register($this);
                     ], 'visible'=>!Yii::$app->user->isGuest],
 
                     ['label' => 'Usuario', 'items'=> [
-                        //['label' => 'Propiedades', 'url' => ['/user']],
+                        ['label' => 'Propiedades', 'url' => ['/user']],
                         ['label' => 'Administrar', 'url' => ['/user/admin']],
                         //['label' => 'Registrar', 'url' => ['/user/register']],
                         ['label' => 'Modificar Perfil', 'url' => ['/user/account']],
                         ['label' => 'Perfil', 'url' => ['/user/profile']],
-                        //'label' => 'Olvido Contraseña', 'url' => ['/user/forgot']],
+                        //['label' => 'Olvido Contraseña', 'url' => ['/user/forgot']],
                     ], 'visible'=>!Yii::$app->user->isGuest],
 
                     Yii::$app->user->isGuest ?
