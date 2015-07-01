@@ -6,7 +6,7 @@ use yii\helpers\ArrayHelper;
 use app\models\Profesor;
 use dosamigos\datetimepicker\DateTimePicker;
 
-use kartik\widgets\TimePicker;
+//use kartik\widgets\TimePicker;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Horario */
@@ -56,15 +56,6 @@ use kartik\widgets\TimePicker;
            'todayBtn' => false
        ]
      ]);?>
-
-
-
-
-
-
-
-
-   
 
 
 
