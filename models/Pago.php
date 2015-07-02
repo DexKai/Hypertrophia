@@ -48,7 +48,7 @@ class Pago extends \yii\db\ActiveRecord
             'SO_id' => 'socio',
             'PA_monto' => 'Monto(CLP sin puntos)',
             'PA_pago_mes' => 'Efectuo este Mes',
-            'PA_fecha_pago' => 'Si se efectuo el pago.Ingrese la Fecha Pago(formato AAAA-MM-DD HH:MM:SS)',
+            'PA_fecha_pago' => 'Si se efectuo el pago.Ingrese la hora del pago',
         ];
     }
 

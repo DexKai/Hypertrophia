@@ -6,6 +6,7 @@ use app\models\Socio;
 use yii\helpers\ArrayHelper;
 use dosamigos\datetimepicker\DateTimePicker;
 use kartik\widgets\TimePicker;
+use kartik\money\MaskMoney;
 /* @var $this yii\web\View */
 /* @var $model app\models\Pago */
 /* @var $form yii\widgets\ActiveForm */
@@ -25,9 +26,17 @@ use kartik\widgets\TimePicker;
         )?>
 
 
-    <?= $form->field($model, 'PA_monto')->textInput(array('placeholder' => 'ejemplo: 150000')) ?>
 
-   
+    <?= $form->field($model, 'PA_monto')->widget(MaskMoney::classname(), [
+    'pluginOptions' => [
+        'prefix' => '$ ',
+       
+        'allowNegative' => false
+        ]
+      ]);?>
+
+
+
 
 
 
