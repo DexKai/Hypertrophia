@@ -64,7 +64,7 @@ $config = [
             // Disable index.php
             'showScriptName' => true,
             // Disable r= routes
-            'enablePrettyUrl' => true,
+            'enablePrettyUrl' => false,
             'enableStrictParsing' => false,
             'suffix' => '.html',
             'rules' => array(

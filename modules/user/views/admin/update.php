@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use yii\base\Model;
 
 /**
  * @var yii\web\View $this
@@ -22,6 +23,7 @@ $this->params['breadcrumbs'][] = Yii::t('user', 'Update');
     <?= $this->render('_form', [
         'user' => $user,
         'profile' => $profile,
+        'socio' => $socio,
     ]) ?>
 
 </div>

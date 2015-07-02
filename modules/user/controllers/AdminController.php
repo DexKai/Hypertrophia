@@ -10,6 +10,8 @@ use yii\web\Controller;
 use yii\web\ForbiddenHttpException;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\base\Model;
+use app\models\Socio;
 
 /**
  * AdminController implements the CRUD actions for User model.
@@ -89,11 +91,17 @@ class AdminController extends Controller
         $user = Yii::$app->getModule("user")->model("User");
         $user->setScenario("admin");
         $profile = Yii::$app->getModule("user")->model("Profile");
+        //$socio = Yii::$app->model("Socio");
+        $socio = new Socio();
 
-        $post = Yii::$app->request->post();
-        if ($user->load($post) && $user->validate() && $profile->load($post) && $profile->validate()) {
+        //$post = Yii::$app->request->post();
+        if ($user->load(Yii::$app->request->post()) && $profile->load(Yii::$app->request->post()) && $profile->validate() && $socio->load(Yii::$app->request->post()) && Model::validateMultiple([$model, $socio])){
             $user->save(false);
             $profile->setUser($user->id)->save(false);
+            $socio->SO_id = $model->user_id;
+            $model->user_id = $socio->SO_id;
+            $socio->save();
+
             return $this->redirect(['view', 'id' => $user->id]);
         }
 
@@ -101,6 +109,7 @@ class AdminController extends Controller
         return $this->render('create', [
             'user' => $user,
             'profile' => $profile,
+            'socio' => $socio,
         ]);
     }
 

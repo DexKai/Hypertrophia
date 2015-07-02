@@ -2,15 +2,15 @@
 
 use yii\helpers\Html;
 
+
 /* @var $this yii\web\View */
 /* @var $model app\models\Socio */
 
-$this->title = 'Update Socio: ' . ' ' . $model->SO_id;
+$this->title = 'Crear Socio';
 $this->params['breadcrumbs'][] = ['label' => 'Socios', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->SO_id, 'url' => ['view', 'id' => $model->SO_id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="socio-update">
+<div class="socio-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

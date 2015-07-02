@@ -64,7 +64,7 @@ AppAsset::register($this);
                         ['label' => 'Modificar Perfil', 'url' => ['/user/account']],
                         ['label' => 'Perfil', 'url' => ['/user/profile']],
                         //['label' => 'Olvido Contraseña', 'url' => ['/user/forgot']],
-                    ], 'visible'=>!Yii::$app->user->isGuest],
+                    ], 'visible'=>Yii::$app->user->can('admin')],
 
                     Yii::$app->user->isGuest ?
                         ['label' => 'Iniciar Sesión', 'url' => ['/user/login']] :
