@@ -54,7 +54,7 @@ class Progreso extends \yii\db\ActiveRecord
             'PROG_altura' => 'Altura(CM)',
             'PROG_porcentaje_grasa' => 'Porcentaje Grasa(%)',
             'PROG_indice_masa_corporal' => 'Indice Masa Corporal(IMC)',
-            'PROG_fecha_evaluacion' => 'Fecha Evaluacion(formato AAAA-MM-DD HH:MM:SS ) ',
+            'PROG_fecha_evaluacion' => 'Fecha y hora Evaluacion ',
         ];
     }
 

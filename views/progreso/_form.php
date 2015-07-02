@@ -4,7 +4,9 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 use app\models\Socio;
+use dosamigos\datetimepicker\DateTimePicker;
 
+use kartik\widgets\TimePicker;
 /* @var $this yii\web\View */
 /* @var $model app\models\Progreso */
 /* @var $form yii\widgets\ActiveForm */
@@ -29,8 +31,23 @@ use app\models\Socio;
 
     <?= $form->field($model, 'PROG_indice_masa_corporal')->textInput(array('placeholder' => 'ejemplo: 24')) ?>
 
-    <?= $form->field($model, 'PROG_fecha_evaluacion')->textInput(array('placeholder' => 'ejemplo: 2015-02-10 10:12:15')) ?>
 
+     <?= $form->field($model, 'PROG_fecha_evaluacion')->widget(DateTimePicker::className(), [
+       'language' => 'es',
+       'size' => 'ms',
+       'template' => '{input}',
+       'inline' => false,
+       'clientOptions' => [
+           'startView' => 1,
+           'minView' => 0,
+           'maxView' => 1,
+           'autoclose' => false,
+           'linkFormat' => 'HH:ii P', // if inline = true
+        // 'format' => 'HH:ii P', // if inline = false
+           'todayBtn' => false
+       ]
+     ]);?>
+    
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'crear' : 'actualizar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
