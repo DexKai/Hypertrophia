@@ -29,15 +29,36 @@ use kartik\money\MaskMoney;
      <?= $form->field($model, 'PROG_peso')->widget(MaskMoney::classname(), [
     'pluginOptions' => [
         
-       'sufix' => 'KG',
+       'prefix' => ' ',
+       'suffix' => ' kg.',
         'allowNegative' => false
         ]
       ]);?>
 
 
-    <?= $form->field($model, 'PROG_altura')->textInput(array('placeholder' => 'ejemplo: 180')) ?>
 
-    <?= $form->field($model, 'PROG_porcentaje_grasa')->textInput(array('placeholder' => 'ejemplo: 20')) ?>
+
+
+
+     <?= $form->field($model, 'PROG_altura')->widget(MaskMoney::classname(), [
+    'pluginOptions' => [
+       
+       'prefix' => ' ',
+       'suffix' => ' cm.',
+        'allowNegative' => false
+        ]
+      ]);?>
+
+
+
+    <?= $form->field($model, 'PROG_porcentaje_grasa')->widget(MaskMoney::classname(), [
+    'pluginOptions' => [       
+       'prefix' => ' ',
+       'suffix' => ' %',
+        'allowNegative' => false
+        ]
+      ]);?>
+
 
     <?= $form->field($model, 'PROG_indice_masa_corporal')->textInput(array('placeholder' => 'ejemplo: 24')) ?>
 
