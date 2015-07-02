@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use app\models\Profesor;
 use yii\helpers\ArrayHelper;
+use kartik\money\MaskMoney;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Sueldo */
@@ -20,7 +21,19 @@ use yii\helpers\ArrayHelper;
         ['prompt'=>'Seleccione un profesor']
         )?>
 
-    <?= $form->field($model, 'SUE_sueldo')->textInput() ?>
+
+     <?= $form->field($model, 'SUE_sueldo')->widget(MaskMoney::classname(), [
+    'pluginOptions' => [
+        'prefix' => '$ ',
+       
+        'allowNegative' => false
+        ]
+      ]);?>
+
+
+
+
+  
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('user', 'Create') : Yii::t('user', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

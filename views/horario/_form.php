@@ -4,6 +4,9 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 use app\models\Profesor;
+use dosamigos\datetimepicker\DateTimePicker;
+
+//use kartik\widgets\TimePicker;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Horario */
@@ -20,10 +23,41 @@ use app\models\Profesor;
         ['prompt'=>'Seleccione un profesor']
         )?>
 
+    <?= $form->field($model, 'HOR_entrada')->widget(DateTimePicker::className(), [
+       'language' => 'es',
+       'size' => 'ms',
+       'template' => '{input}',
+       'inline' => false,
+       'clientOptions' => [
+           'startView' => 1,
+           'minView' => 0,
+           'maxView' => 1,
+           'autoclose' => false,
+           'linkFormat' => 'HH:ii P', // if inline = true
+        // 'format' => 'HH:ii P', // if inline = false
+           'todayBtn' => false
+       ]
+     ]);?>
 
-    <?= $form->field($model, 'HOR_entrada')->textInput(array('placeholder' => 'ejemplo: 09:40')) ?>
 
-    <?= $form->field($model, 'HOR_salida')->textInput(array('placeholder' => 'ejemplo: 17:00')) ?>
+
+    <?= $form->field($model, 'HOR_salida')->widget(DateTimePicker::className(), [
+       'language' => 'es',
+       'size' => 'ms',
+       'template' => '{input}',
+       'inline' => false,
+       'clientOptions' => [
+           'startView' => 1,
+           'minView' => 0,
+           'maxView' => 1,
+           'autoclose' => false,
+           'linkFormat' => 'HH:ii P', // if inline = true
+        // 'format' => 'HH:ii P', // if inline = false
+           'todayBtn' => false
+       ]
+     ]);?>
+
+
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
