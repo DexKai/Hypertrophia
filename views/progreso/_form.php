@@ -7,6 +7,7 @@ use app\models\Socio;
 use dosamigos\datetimepicker\DateTimePicker;
 
 use kartik\widgets\TimePicker;
+use kartik\money\MaskMoney;
 /* @var $this yii\web\View */
 /* @var $model app\models\Progreso */
 /* @var $form yii\widgets\ActiveForm */
@@ -23,7 +24,16 @@ use kartik\widgets\TimePicker;
         ['prompt'=>'Seleccione a que socio corresponde el progreso ']
         )?>
 
-    <?= $form->field($model, 'PROG_peso')->textInput(array('placeholder' => 'ejemplo: 80')) ?>
+    
+
+     <?= $form->field($model, 'PROG_peso')->widget(MaskMoney::classname(), [
+    'pluginOptions' => [
+        
+       'sufix' => 'KG',
+        'allowNegative' => false
+        ]
+      ]);?>
+
 
     <?= $form->field($model, 'PROG_altura')->textInput(array('placeholder' => 'ejemplo: 180')) ?>
 
