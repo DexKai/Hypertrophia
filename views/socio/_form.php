@@ -12,11 +12,11 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'PROG_id')->textInput() ?>
+    <?php // $form->field($model, 'PROG_id')->textInput() ?>
 
-    <?= $form->field($model, 'IM_id')->textInput() ?>
+    <?php // $form->field($model, 'IM_id')->textInput() ?>
 
-    <?= $form->field($model, 'PA_id')->textInput() ?>
+    <?php // $form->field($model, 'PA_id')->textInput() ?>
 
     <?= $form->field($model, 'SO_nombre')->textInput(['maxlength' => 256]) ?>
 
@@ -24,11 +24,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'SO_apellido_paterno')->textInput(['maxlength' => 256]) ?>
 
-    <?= $form->field($model, 'SO_email')->textInput(array('placeholder' => 'ejemplo@ejemplo.com')) ?>
-
     <?= $form->field($model, 'SO_direccion')->textInput(['maxlength' => 256]) ?>
 
-    <?= $form->field($model, 'user_id')->textInput() ?>
+    <?php // $form->field($model, 'user_id')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

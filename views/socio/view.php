@@ -37,7 +37,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'SO_apellido_materno',
             'SO_apellido_paterno',
             'SO_direccion',
-            'user_id',
+            'user.username',
         ],
     ]) ?>
 

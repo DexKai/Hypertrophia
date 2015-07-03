@@ -94,13 +94,13 @@ class AdminController extends Controller
         //$socio = Yii::$app->model("Socio");
         $socio = new Socio();
 
-        //$post = Yii::$app->request->post();
-        if ($user->load(Yii::$app->request->post()) && $profile->load(Yii::$app->request->post()) && $profile->validate() && $socio->load(Yii::$app->request->post()) && Model::validateMultiple([$model, $socio])){
+        $post = Yii::$app->request->post();
+        if (Model::loadMultiple([$user,$socio],$post) && $profile->load($post) && $profile->validate() && Model::validateMultiple([$model, $socio])){
             $user->save(false);
             $profile->setUser($user->id)->save(false);
-            $socio->SO_id = $model->user_id;
+            $socio->SO_id = $model->setUser($user->id);
             $model->user_id = $socio->SO_id;
-            $socio->save();
+            $socio->save(false);
 
             return $this->redirect(['view', 'id' => $user->id]);
         }
