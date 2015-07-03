@@ -17,11 +17,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a(Yii::t('user', 'Update'), ['update', 'id' => $user->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a(Yii::t('user', 'Delete'), ['delete', 'id' => $user->id], [
+        <?= Html::a(Yii::t('user', 'Actualizar'), ['update', 'id' => $user->id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a(Yii::t('user', 'Borrar'), ['delete', 'id' => $user->id], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => Yii::t('user', 'Are you sure you want to delete this item?'),
+                'confirm' => Yii::t('user', '¿Estas seguro que deseas borrar este item?'),
                 'method' => 'post',
             ],
         ]) ?>
@@ -30,14 +30,14 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $user,
         'attributes' => [
-            'id',
-            'role_id',
-            'status',
+            //'id',
+            //'role_id',
+            //'status',
             'email:email',
-            'new_email:email',
+            //'new_email:email',
             'username',
             //'profile.full_name',
-            'password',
+            //'password',
             //'auth_key',
             //'api_key',
             //'login_ip',
@@ -47,6 +47,11 @@ $this->params['breadcrumbs'][] = $this->title;
             //'update_time',
             //'ban_time',
             //'ban_reason',
+            //'sO.SO_rut',
+            //'sO.SO_nombre',
+            //'sO.SO_apellido_materno',
+            //'sO.SO_apellido_paterno',
+            //'sO.SO_direccion',
         ],
     ]) ?>
 

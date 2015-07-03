@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Socio */
 
-$this->title = $model->SO_id;
+//$this->title = $model->SO_id;
 $this->params['breadcrumbs'][] = ['label' => 'Socios', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -15,8 +15,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'id' => $model->SO_id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->SO_id], [
+        <?= Html::a('Actualizar', ['update', 'id' => $model->SO_id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Borrar', ['delete', 'id' => $model->SO_id], [
             'class' => 'btn btn-danger',
             'data' => [
                 'confirm' => '¿Estas seguro que deseas borrar este item?',
@@ -28,16 +28,16 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'SO_id',
+            //'SO_id',
+            'SO_rut',
+            'SO_nombre',
+            'SO_apellido_paterno',
+            'SO_apellido_materno',
+            'SO_direccion',
+            'user_id',
             'PROG_id',
             'IM_id',
             'PA_id',
-            'SO_rut',
-            'SO_nombre',
-            'SO_apellido_materno',
-            'SO_apellido_paterno',
-            'SO_direccion',
-            'user.username',
         ],
     ]) ?>
 

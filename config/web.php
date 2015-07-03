@@ -58,7 +58,7 @@ $config = [
                 'from' => ['pgsoto@alumnos.ubiobio.cl' => 'Admin'], // this is needed for sending emails
                 'charset' => 'UTF-8',
             ],
-        ],
+        ],/*
         'urlManager' => [
             'class' => 'yii\web\UrlManager',
             // Disable index.php
@@ -72,7 +72,7 @@ $config = [
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
             ),
-        ],
+        ],*/
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [

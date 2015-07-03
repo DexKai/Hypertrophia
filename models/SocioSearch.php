@@ -18,7 +18,7 @@ class SocioSearch extends Socio
     public function rules()
     {
         return [
-            [['SO_id', 'PROG_id', 'IM_id', 'PA_id', 'user_id'], 'integer'],
+            [['SO_id', 'user_id', 'PROG_id', 'IM_id', 'PA_id'], 'integer'],
             [['SO_rut', 'SO_nombre', 'SO_apellido_materno', 'SO_apellido_paterno', 'SO_direccion'], 'safe'],
         ];
     }
@@ -57,10 +57,10 @@ class SocioSearch extends Socio
 
         $query->andFilterWhere([
             'SO_id' => $this->SO_id,
+            'user_id' => $this->user_id,
             'PROG_id' => $this->PROG_id,
             'IM_id' => $this->IM_id,
             'PA_id' => $this->PA_id,
-            'user_id' => $this->user_id,
         ]);
 
         $query->andFilterWhere(['like', 'SO_rut', $this->SO_rut])

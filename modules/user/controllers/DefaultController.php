@@ -31,7 +31,7 @@ class DefaultController extends Controller
                     [
                         'actions' => ['account', 'profile', 'resend-change', 'cancel', 'logout'],
                         'allow'   => true,
-                        'roles'   => ['@'],
+                        'roles'   => ['admin'],
                     ],
                     [
                         'actions' => ['login', 'register', 'forgot', 'reset'],

@@ -8,15 +8,15 @@ use Yii;
  * This is the model class for table "socio".
  *
  * @property integer $SO_id
- * @property integer $PROG_id
- * @property integer $IM_id
- * @property integer $PA_id
  * @property string $SO_rut
  * @property string $SO_nombre
  * @property string $SO_apellido_materno
  * @property string $SO_apellido_paterno
  * @property string $SO_direccion
  * @property integer $user_id
+ * @property integer $PROG_id
+ * @property integer $IM_id
+ * @property integer $PA_id
  *
  * @property FkSocioProfesor[] $fkSocioProfesors
  * @property Profesor[] $pROs
@@ -27,7 +27,6 @@ use Yii;
  * @property Pago $pA
  * @property Progreso $pROG
  * @property User $user
- * @property User[] $users
  */
 class Socio extends \yii\db\ActiveRecord
 {
@@ -45,17 +44,13 @@ class Socio extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['PROG_id', 'IM_id', 'PA_id', 'user_id'], 'integer'],
-
-            [['SO_nombre', 'SO_apellido_materno', 'SO_apellido_paterno', 'SO_direccion'], 'string', 'max' => 256],
+            [['user_id', 'PROG_id', 'IM_id', 'PA_id'], 'integer'],
+            [['SO_rut', 'SO_nombre', 'SO_apellido_materno', 'SO_apellido_paterno', 'SO_direccion'], 'string', 'max' => 256],
 
             [['SO_rut'], 'validarRut'],
 
             [['SO_rut'], 'unique', 'message'=>'Rut ya existe'],
             [['SO_rut'],'validarSoloNumerosYGuion'],
-            [['SO_email'], 'email'],
-
-            [['SO_email'], 'unique', 'message'=>'correo ya existe'],
 
             [['SO_nombre'], 'required', 'message'=>'compo requerido'],
 
@@ -67,11 +62,11 @@ class Socio extends \yii\db\ActiveRecord
 
             [['SO_rut'], 'required', 'message'=>'compo requerido'],
 
-            [['SO_email'], 'required', 'message'=>'compo requerido'],
 
             [['SO_nombre'], 'match',"pattern" => '/^[a-zA-Z ñÑáéíóúüç]*$/', 'message'=>'Solo se pueden utilizar letras'],
             [['SO_apellido_paterno'], 'match',"pattern" => '/^[a-zA-Z ñÑáéíóúüç]*$/', 'message'=>'Solo se pueden utilizar letras'],
             [['SO_apellido_materno'], 'match',"pattern" => '/^[a-zA-Z ñÑáéíóúüç]*$/', 'message'=>'Solo se pueden utilizar letras'],
+
 
 
         ];
@@ -83,16 +78,16 @@ class Socio extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'SO_id' => 'So ID',
-            'PROG_id' => 'Prog ID',
-            'IM_id' => 'Im ID',
-            'PA_id' => 'Pa ID',
+            'SO_id' => 'ID',
             'SO_rut' => 'Rut',
             'SO_nombre' => 'Nombre',
             'SO_apellido_materno' => 'Apellido Materno',
             'SO_apellido_paterno' => 'Apellido Paterno',
             'SO_direccion' => 'Dirección',
             'user_id' => 'Usuario',
+            'PROG_id' => 'Prog ID',
+            'IM_id' => 'Im ID',
+            'PA_id' => 'Pa ID',
         ];
     }
 
@@ -132,9 +127,6 @@ class Socio extends \yii\db\ActiveRecord
         if ($verifyCode != $result)
             $this->addError('SO_rut', 'Rut inválido.');
     }
-
-
-
 
     /**
      * @return \yii\db\ActiveQuery
@@ -206,13 +198,5 @@ class Socio extends \yii\db\ActiveRecord
     public function getUser()
     {
         return $this->hasOne(User::className(), ['id' => 'user_id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getUsers()
-    {
-        return $this->hasMany(User::className(), ['SO_id' => 'SO_id']);
     }
 }

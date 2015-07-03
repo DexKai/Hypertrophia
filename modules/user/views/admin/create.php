@@ -9,8 +9,8 @@ use yii\helpers\Html;
 * @var app\models\Socio $socio
  */
 
-$this->title = Yii::t('user', 'Create {modelClass}', [
-  'modelClass' => 'User',
+$this->title = Yii::t('user', 'Crear {modelClass}', [
+  'modelClass' => 'Usuario',
 ]);
 $this->params['breadcrumbs'][] = ['label' => Yii::t('user', 'Users'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
@@ -21,7 +21,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?= $this->render('_form', [
         'user' => $user,
-        'profile' => $profile,
+        //'profile' => $profile,
         'socio' => $socio,
     ]) ?>
 

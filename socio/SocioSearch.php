@@ -18,8 +18,8 @@ class SocioSearch extends Socio
     public function rules()
     {
         return [
-            [['SO_id', 'PROG_id', 'IM_id', 'PA_id'], 'integer'],
-            [['SO_rut', 'SO_nombre', 'SO_apellido_materno', 'SO_apellido_paterno', 'SO_email', 'SO_direccion', 'SO_estado_actividad'], 'safe'],
+            [['SO_id', 'PROG_id', 'IM_id', 'PA_id', 'user_id'], 'integer'],
+            [['SO_rut', 'SO_nombre', 'SO_apellido_materno', 'SO_apellido_paterno', 'SO_direccion'], 'safe'],
         ];
     }
 
@@ -50,7 +50,7 @@ class SocioSearch extends Socio
         $this->load($params);
 
         if (!$this->validate()) {
-            // uncomment the following line if you do not want to any records when validation fails
+            // uncomment the following line if you do not want to return any records when validation fails
             // $query->where('0=1');
             return $dataProvider;
         }
@@ -60,15 +60,14 @@ class SocioSearch extends Socio
             'PROG_id' => $this->PROG_id,
             'IM_id' => $this->IM_id,
             'PA_id' => $this->PA_id,
+            'user_id' => $this->user_id,
         ]);
 
         $query->andFilterWhere(['like', 'SO_rut', $this->SO_rut])
             ->andFilterWhere(['like', 'SO_nombre', $this->SO_nombre])
             ->andFilterWhere(['like', 'SO_apellido_materno', $this->SO_apellido_materno])
             ->andFilterWhere(['like', 'SO_apellido_paterno', $this->SO_apellido_paterno])
-            ->andFilterWhere(['like', 'SO_email', $this->SO_email])
-            ->andFilterWhere(['like', 'SO_direccion', $this->SO_direccion])
-            ->andFilterWhere(['like', 'SO_estado_actividad', $this->SO_estado_actividad]);
+            ->andFilterWhere(['like', 'SO_direccion', $this->SO_direccion]);
 
         return $dataProvider;
     }

@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+            //'id',
             [
                 'attribute' => 'role_id',
                 'label' => Yii::t('user', 'Role'),
@@ -57,7 +57,7 @@ $this->params['breadcrumbs'][] = $this->title;
             //'profile.full_name',
             //'create_time',
             // 'new_email:email',
-            // 'username',
+             'username',
             // 'password',
             // 'auth_key',
             // 'api_key',

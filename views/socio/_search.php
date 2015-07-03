@@ -15,27 +15,25 @@ use yii\widgets\ActiveForm;
         'method' => 'get',
     ]); ?>
 
-    <?php //$form->field($model, 'SO_id') ?>
+    <?php // $form->field($model, 'SO_id') ?>
 
-    <?php //$form->field($model, 'PROG_id') ?>
+    <?= $form->field($model, 'SO_rut') ?>
 
-    <?php //$form->field($model, 'IM_id') ?>
+    <?= $form->field($model, 'SO_nombre') ?>
 
-    <?php //$form->field($model, 'PA_id') ?>
+    <?= $form->field($model, 'SO_apellido_materno') ?>
 
-    <?php $form->field($model, 'SO_rut') ?>
+    <?= $form->field($model, 'SO_apellido_paterno') ?>
 
-    <?php  echo $form->field($model, 'SO_nombre') ?>
-
-    <?php  echo $form->field($model, 'SO_apellido_materno') ?>
-
-    <?php  echo $form->field($model, 'SO_apellido_paterno') ?>
-
-    <?php  echo $form->field($model, 'SO_email') ?>
-
-    <?php  echo $form->field($model, 'SO_direccion') ?>
+    <?php // echo $form->field($model, 'SO_direccion') ?>
 
     <?php // echo $form->field($model, 'user_id') ?>
+
+    <?php // echo $form->field($model, 'PROG_id') ?>
+
+    <?php // echo $form->field($model, 'IM_id') ?>
+
+    <?php // echo $form->field($model, 'PA_id') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

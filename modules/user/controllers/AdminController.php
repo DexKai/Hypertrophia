@@ -10,7 +10,6 @@ use yii\web\Controller;
 use yii\web\ForbiddenHttpException;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use yii\base\Model;
 use app\models\Socio;
 
 /**
@@ -90,25 +89,24 @@ class AdminController extends Controller
 
         $user = Yii::$app->getModule("user")->model("User");
         $user->setScenario("admin");
-        $profile = Yii::$app->getModule("user")->model("Profile");
-        //$socio = Yii::$app->model("Socio");
-        $socio = new Socio();
+        //$profile = Yii::$app->getModule("user")->model("Profile");
+        $socio = Socio::findModel($SO_id);
 
         $post = Yii::$app->request->post();
-        if (Model::loadMultiple([$user,$socio],$post) && $profile->load($post) && $profile->validate() && Model::validateMultiple([$model, $socio])){
+        //if ($user->load($post) && $user->validate() && $profile->load($post) && $socio->load($post)) {
+        if ($user->load($post) && $socio->load($post) && $user->validate() && $socio->validate()) {
             $user->save(false);
-            $profile->setUser($user->id)->save(false);
-            $socio->SO_id = $model->setUser($user->id);
-            $model->user_id = $socio->SO_id;
-            $socio->save(false);
+            //$profile->setUser($user->id)->save(false);
 
+            $socio->user_id = $user->id;
+            $socio->save(false);
             return $this->redirect(['view', 'id' => $user->id]);
         }
 
         // render
         return $this->render('create', [
             'user' => $user,
-            'profile' => $profile,
+            //'profile' => $profile,
             'socio' => $socio,
         ]);
     }
@@ -125,20 +123,25 @@ class AdminController extends Controller
         // set up user and profile
         $user = $this->findModel($id);
         $user->setScenario("admin");
-        $profile = $user->profile;
+        //$profile = $user->profile;
 
+        $socio = new Socio();
+        $socio->scenario = 'update';
         // load post data and validate
         $post = Yii::$app->request->post();
-        if ($user->load($post) && $user->validate() && $profile->load($post) && $profile->validate()) {
+        //if ($user->load($post) && $user->validate() && $profile->load($post) && $profile->validate()) {
+        if ($user->load($post) && $user->validate() && $socio->load($post) && $socio->validate()) {
             $user->save(false);
-            $profile->setUser($user->id)->save(false);
+            //$profile->setUser($user->id)->save(false);
+            $socio->save(false);
             return $this->redirect(['view', 'id' => $user->id]);
         }
 
         // render
         return $this->render('update', [
             'user' => $user,
-            'profile' => $profile,
+            //'profile' => $profile,
+            'socio' => $socio,
         ]);
     }
 
@@ -153,10 +156,10 @@ class AdminController extends Controller
     {
         // delete profile and userkeys first to handle foreign key constraint
         $user = $this->findModel($id);
-        $profile = $user->profile;
+        //$profile = $user->profile;
         UserKey::deleteAll(['user_id' => $user->id]);
         UserAuth::deleteAll(['user_id' => $user->id]);
-        $profile->delete();
+        //$profile->delete();
         $user->delete();
 
         return $this->redirect(['index']);

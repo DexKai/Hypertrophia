@@ -9,8 +9,8 @@ use yii\base\Model;
  * @var app\modules\user\models\Profile $profile
  */
 
-$this->title = Yii::t('user', 'Update {modelClass}: ', [
-  'modelClass' => 'User',
+$this->title = Yii::t('user', 'Actualizar {modelClass}: ', [
+  'modelClass' => 'Usuario',
 ]) . ' ' . $user->id;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('user', 'Users'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $user->id, 'url' => ['view', 'id' => $user->id]];
@@ -22,7 +22,7 @@ $this->params['breadcrumbs'][] = Yii::t('user', 'Update');
 
     <?= $this->render('_form', [
         'user' => $user,
-        'profile' => $profile,
+        //'profile' => $profile,
         'socio' => $socio,
     ]) ?>
 

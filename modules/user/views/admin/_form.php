@@ -8,7 +8,6 @@ $role = Yii::$app->getModule("user")->model("Role");
  * @var yii\web\View $this
  * @var app\modules\user\models\User $user
  * @var app\modules\user\models\Profile $profile
- * @var app\models\Socio $socio
  * @var yii\widgets\ActiveForm $form
  */
 ?>
@@ -23,7 +22,7 @@ $role = Yii::$app->getModule("user")->model("Role");
 
     <?= $form->field($user, 'newPassword')->passwordInput() ?>
 
-    <?= $form->field($profile, 'full_name'); ?>
+    <?php //$form->field($profile, 'full_name'); ?>
 
     <?= $form->field($user, 'role_id')->dropDownList($role::dropdown()); ?>
 
@@ -31,13 +30,14 @@ $role = Yii::$app->getModule("user")->model("Role");
 
     <?php // use checkbox for ban_time ?>
     <?php // convert `ban_time` to int so that the checkbox gets set properly ?>
-    <?= $user->ban_time = $user->ban_time ? 1 : 0 ?>
-    <?= Html::activeLabel($user, 'ban_time', ['label' => Yii::t('user', 'Banned')]); ?>
-    <?= Html::activeCheckbox($user, 'ban_time'); ?>
-    <?= Html::error($user, 'ban_time'); ?>
+    <?php //$user->ban_time = $user->ban_time ? 1 : 0 ?>
+    <?php //Html::activeLabel($user, 'ban_time', ['label' => Yii::t('user', 'Banned')]); ?>
+    <?php //Html::activeCheckbox($user, 'ban_time'); ?>
+    <?php //Html::error($user, 'ban_time'); ?>
 
-    <?= $form->field($user, 'ban_reason'); ?>
+    <?php //$form->field($user, 'ban_reason'); ?>
 
+    <?php //SOCIO ?>
 
     <?= $form->field($socio, 'SO_rut')->textInput(array('placeholder' => 'ejemplo: 12345678-5')) ?>
 

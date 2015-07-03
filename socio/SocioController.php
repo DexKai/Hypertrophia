@@ -14,19 +14,6 @@ use yii\filters\VerbFilter;
  */
 class SocioController extends Controller
 {
-
-    public function init()
-    {
-        // check for admin permission (`tbl_role.can_admin`)
-        // note: check for Yii::$app->user first because it doesn't exist in console commands (throws exception)
-        if (!empty(Yii::$app->user) && !Yii::$app->user->can("admin")) {
-
-           throw new NotFoundHttpException('Página no encontrada.');
-        }
-
-        parent::init();
-    }
-    
     public function behaviors()
     {
         return [
