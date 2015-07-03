@@ -33,9 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?php else: ?>
 
-    <p>
-        Si tiene consultas comerciales u otras preguntas, por favor, rellene el siguiente formulario para contactar con nosotros. Gracias.
-    </p>
+
 
         <!-- Content Row -->
         <div class="row">
