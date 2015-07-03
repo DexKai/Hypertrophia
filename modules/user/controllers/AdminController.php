@@ -90,7 +90,7 @@ class AdminController extends Controller
         $user = Yii::$app->getModule("user")->model("User");
         $user->setScenario("admin");
         //$profile = Yii::$app->getModule("user")->model("Profile");
-        $socio = Socio::findModel($SO_id);
+        $socio = new Socio();
 
         $post = Yii::$app->request->post();
         //if ($user->load($post) && $user->validate() && $profile->load($post) && $socio->load($post)) {

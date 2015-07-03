@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Sueldo */
 
-$this->title = Yii::t('user', 'Create {modelClass}', [
+$this->title = Yii::t('user', 'Crear {modelClass}', [
   'modelClass' => 'Sueldo',
 ]);
 //$this->title = 'Create Sueldo';

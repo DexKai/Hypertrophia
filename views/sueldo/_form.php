@@ -15,25 +15,19 @@ use kartik\money\MaskMoney;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    
+
     <?= $form->field($model, 'PRO_id')->dropDownList(
         ArrayHelper::map(Profesor::find()->all(),'PRO_id','PRO_nombre'),
         ['prompt'=>'Seleccione un profesor']
         )?>
 
 
-     <?= $form->field($model, 'SUE_sueldo')->widget(MaskMoney::classname(), [
-    'pluginOptions' => [
-        'prefix' => '$ ',
-       
-        'allowNegative' => false
-        ]
-      ]);?>
+     <?= $form->field($model, 'SUE_sueldo')->textInput() ?>
 
 
 
 
-  
+
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('user', 'Create') : Yii::t('user', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
